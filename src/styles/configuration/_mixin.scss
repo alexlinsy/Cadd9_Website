@@ -1,0 +1,149 @@
+//   ========================================================================
+//   Mixins
+//   ========================================================================
+  
+  //Media Queries
+  @mixin MQ($canvas) {
+    // breakpoints
+  
+    @if $canvas == xs {
+      //xs
+      @media only screen and ($bp-min-xs) {
+        @content;
+      }
+    } @else if $canvas == sm {
+      //sm
+      @media only screen and ($bp-min-sm) {
+        @content;
+      }
+    } @else if $canvas == md {
+      //md
+      @media only screen and ($bp-min-md) {
+        @content;
+      }
+    } @else if $canvas == lg {
+      //lg
+      @media only screen and ($bp-min-lg) {
+        @content;
+      }
+    } @else if $canvas == lgr {
+      //lgr
+      @media only screen and ($bp-min-lgr) {
+        @content;
+      }
+    } @else if $canvas == xl {
+      //xl
+      @media only screen and ($bp-min-xl) {
+        @content;
+      }
+    } @else if $canvas == xlr {
+      //xlr
+      @media only screen and ($bp-min-xlr) {
+        @content;
+      }
+    } @else if $canvas == xxl {
+      //xxl
+      @media only screen and ($bp-min-xxl) {
+        @content;
+      }
+    }
+  }
+  
+  
+  @mixin MaxMQ($canvas) {
+    // breakpoints
+    @if $canvas == xs {
+      //xs
+      @media only screen and ($bp-max-xs) {
+        @content;
+      }
+    } @else if $canvas == sm {
+      //sm
+      @media only screen and ($bp-max-sm) {
+        @content;
+      }
+    } @else if $canvas == md {
+      //md
+      @media only screen and ($bp-max-md) {
+        @content;
+      }
+    } @else if $canvas == lg {
+      //lg
+      @media only screen and ($bp-max-lg) {
+        @content;
+      }
+    } @else if $canvas == lgr {
+      //lgr
+      @media only screen and ($bp-max-lgr) {
+        @content;
+      }
+    } @else if $canvas == xl {
+      //xl
+      @media only screen and ($bp-max-xl) {
+        @content;
+      }
+    } @else if $canvas == xlr {
+      //xlr
+      @media only screen and ($bp-max-xlr) {
+        @content;
+      }
+    } @else if $canvas == xxl {
+      //xxl
+      @media only screen and ($bp-max-xxl) {
+        @content;
+      }
+    }
+  }
+  
+  //Conditionally Target IE10 and 11
+  @mixin OnIE($canvas: null) {
+    @if $canvas == null {
+      //Default without media query
+      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        @content;
+      }
+    } @else if $canvas == xs {
+      //xs
+      @media only screen and ($bp-min-xs) and (-ms-high-contrast: none),
+        (-ms-high-contrast: active) {
+        @content;
+      }
+    } @else if $canvas == sm {
+      //sm
+      @media only screen and ($bp-min-sm) and (-ms-high-contrast: none),
+        (-ms-high-contrast: active) {
+        @content;
+      }
+    } @else if $canvas == md {
+      //md
+      @media only screen and ($bp-min-md) and (-ms-high-contrast: none),
+        (-ms-high-contrast: active) {
+        @content;
+      }
+    } @else if $canvas == lg {
+      //lg
+      @media only screen and ($bp-min-lg) and (-ms-high-contrast: none),
+        (-ms-high-contrast: active) {
+        @content;
+      }
+    } @else if $canvas == lgr {
+      //lg
+      @media only screen and ($bp-min-lgr) and (-ms-high-contrast: none),
+        (-ms-high-contrast: active) {
+        @content;
+      }
+    } @else if $canvas == xlr {
+      //xlr
+      @media only screen and ($bp-min-xlr) and (-ms-high-contrast: none),
+        (-ms-high-contrast: active) {
+        @content;
+      }
+    } @else if $canvas == xl {
+      //xl
+      @media only screen and ($bp-min-xl) and (-ms-high-contrast: none),
+        (-ms-high-contrast: active) {
+        @content;
+      }
+    }
+  }
+  

@@ -1,0 +1,114 @@
+@import 'mixins';
+
+// sizes
+$xxs: 275px;
+$xs: 320px;
+$sm: 576px;
+$md-sm: 650px;
+$md: 768px;
+$md-lg: 880px;
+$lg: 1024px;
+$lgr: 1180px;
+$xl: 1340px;
+$xlr: 1480px;
+$xxl: 1920px;
+
+$sizes: (
+  xxs: $xxs,
+  xs: $xs,
+  sm: $sm,
+  md-sm: $md-sm,
+  md: $md,
+  md-lg: $md-lg,
+  lg: $lg,
+  lgr: $lgr,
+  xl: $xl,
+  xlr: $xlr,
+  xxl: $xxl,
+);
+
+// breakpoints min
+$bp-min-xs: 'min-width: 320px';
+$bp-min-sm: 'min-width: 480px';
+$bp-min-md: 'min-width: 768px';
+$bp-min-lg: 'min-width: 1024px';
+$bp-min-lgr: 'min-width: 1180px';
+$bp-min-xl: 'min-width: 1340px';
+$bp-min-xlr: 'min-width: 1480px';
+$bp-min-xxl: 'min-width: 1920px';
+
+// breakpoints max
+$bp-max-xs: 'max-width: 319px';
+$bp-max-sm: 'max-width: 479px';
+$bp-max-md: 'max-width: 767px';
+$bp-max-lg: 'max-width: 1023px';
+$bp-max-lgr: 'max-width: 1179px';
+$bp-max-xl: "max-width: 1339px";
+$bp-max-xlr: "max-width: 1479px";
+$bp-max-xxl: 'max-width: 1919px';
+
+// default and brand colors
+$black: #000;
+$white: #fff;
+$dark-grey: #333;
+$grey: #e5e5e5;
+$light-grey: #f5f5f5;
+$blue: #1279B1;
+$button-yellow: #FFF5DB;
+// layouts variables
+$app-max-width: 1920px;
+$content-max-width: 1440px;
+$content-min-width: 720px;
+$content-max-width-alt: 1080px;
+$medium-max-width: 992px;
+
+// containers
+$max-width-container: 1440px;
+$max-width-text-container: 660px;
+
+// typography variables
+$serif-stack: 'Brown';
+$sans-serif-stack: 'Brown';
+
+$font-size-base: 18px;
+$font-size-small: $font-size-base - 3;
+$font-base: 400 18px/18px $sans-serif-stack;
+$font-color-base: #000;
+$font-weight-base: normal;
+$font-weight-heading: $font-weight-base;
+
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 600;
+$font-weight-bold: 700;
+$line-height-copy: 1;
+$line-height-heading: 1;
+$letter-spacing: 1px;
+
+// margin and padding
+$col-gutter: 20px;
+$mb-base: 20px;
+
+// borders and shadows
+$border-light: 1px solid $light-grey;
+$border-main:  1px solid $grey;
+
+// buttons
+$button-primary-bg: #000;
+$button-font-weight: 600;
+
+// transitions
+$transition-speed: 0.25s;
+
+$axes: top, right, bottom, left;
+$spacing-properties: (
+  p: padding,
+  m: margin,
+);
+
+$axes: (
+  b: bottom,
+  l: left,
+  r: right,
+  t: top,
+);
