@@ -9,6 +9,7 @@ const Navigation = () => (
     {steps.map((item, index) => (
       <Link className="nav-item" key={index} to={item.value}>
         {item.title}
+        <span className="nav-span">{item.subTitle}</span>
       </Link>
     ))}
   </nav>
