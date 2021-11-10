@@ -4,4 +4,26 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    .home_header {
+      width: 90%;
+      height: 75%;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      .home_letter {
+       width: 62px;
+      }
+      .home_a {
+        margin-bottom: 100px;
+      }
+      .home_d {
+        margin-bottom: 200px;
+      }
+      .home_dd {
+        margin-bottom: 300px;
+      }
+      .home_9 {
+        margin-bottom: 400px;
+      }
+    }
 }
