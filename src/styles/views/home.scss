@@ -1,38 +1,43 @@
+@import '../configuration/config';
+
 .home {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  @include MaxMQ(md) {
+    height: 96%;
+  }
+  .home_header {
+    position: relative;
+    width: 92%;
     height: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    .home_header {
-      position: relative;
-      width: 92%;
-      height: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
-      .home_letter {
-       width: 62px;
-       position: absolute;
-      }
-      .home_c {
-        bottom: 15%;
-      }
-      .home_a {
-        bottom: 30%;
-        left: 22.5%;
-      }
-      .home_d {
-        bottom: 45%;
-        left: 45%;
-      }
-      .home_dd {
-        bottom: 60%;
-        left: 67.5%;
-      }
-      .home_9 {
-        bottom: 75%;
-        left: 90%;
-      }
+    justify-content: space-between;
+    align-items: flex-end;
+    .home_letter {
+      width: 62px;
+      position: absolute;
     }
+    .home_c {
+      bottom: 15%;
+    }
+    .home_a {
+      bottom: 30%;
+      left: 22.5%;
+    }
+    .home_d {
+      bottom: 45%;
+      left: 45%;
+    }
+    .home_dd {
+      bottom: 60%;
+      left: 67.5%;
+    }
+    .home_9 {
+      bottom: 75%;
+      left: 90%;
+    }
+  }
 }
