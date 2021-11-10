@@ -6,8 +6,8 @@
     flex-direction: column;
     .home_header {
       position: relative;
-      width: 90%;
-      height: 75%;
+      width: 92%;
+      height: 100%;
       display: flex;
       justify-content: space-between;
       align-items: flex-end;
@@ -15,20 +15,23 @@
        width: 62px;
        position: absolute;
       }
+      .home_c {
+        bottom: 15%;
+      }
       .home_a {
-        bottom: 25%;
-        left: 25%;
+        bottom: 30%;
+        left: 22.5%;
       }
       .home_d {
-        bottom: 50%;
-        left: 50%;
+        bottom: 45%;
+        left: 45%;
       }
       .home_dd {
-        bottom: 75%;
-        left: 75%;
+        bottom: 60%;
+        left: 67.5%;
       }
       .home_9 {
-        bottom: 90%;
+        bottom: 75%;
         left: 90%;
       }
     }
