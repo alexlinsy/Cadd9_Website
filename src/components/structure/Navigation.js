@@ -1,4 +1,5 @@
 import React from 'react';
+import {motion} from 'framer-motion'
 import {steps} from '../../configuration/router';
 import {Link} from 'react-router-dom';
 
@@ -8,8 +9,7 @@ const Navigation = () => (
   <nav className="nav-bar">
     {steps.map((item, index) => (
       <Link className="nav-item" key={index} to={item.value}>
-        {item.title}
-        <span className="nav-span">{item.subTitle}</span>
+        <motion.p whileHover={{letterSpacing: '15px'}} transition={{duration: 0.5}}>{item.title}</motion.p>
       </Link>
     ))}
   </nav>

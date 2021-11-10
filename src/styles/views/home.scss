@@ -5,6 +5,7 @@
     align-items: center;
     flex-direction: column;
     .home_header {
+      position: relative;
       width: 90%;
       height: 75%;
       display: flex;
@@ -12,18 +13,23 @@
       align-items: flex-end;
       .home_letter {
        width: 62px;
+       position: absolute;
       }
       .home_a {
-        margin-bottom: 100px;
+        bottom: 25%;
+        left: 25%;
       }
       .home_d {
-        margin-bottom: 200px;
+        bottom: 50%;
+        left: 50%;
       }
       .home_dd {
-        margin-bottom: 300px;
+        bottom: 75%;
+        left: 75%;
       }
       .home_9 {
-        margin-bottom: 400px;
+        bottom: 90%;
+        left: 90%;
       }
     }
 }

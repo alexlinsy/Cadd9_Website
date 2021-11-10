@@ -1,6 +1,6 @@
 .nav-bar {
   position: absolute;
-  bottom: 40px;
+  bottom: 30px;
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -9,13 +9,4 @@
 .nav-item {
   text-decoration: none;
   color: black;
-}
-
-.nav-span {
-  margin-left: 0px;
-  transition: margin-left 1s;
-}
-
-.nav-item:hover .nav-span {
-  margin-left: 20px;
 }

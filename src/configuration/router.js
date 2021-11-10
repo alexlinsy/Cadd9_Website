@@ -14,42 +14,34 @@ export default routes;
 export const steps = [
   {
     title: '主页',
-    subTitle: 'Home',
     value: routes.home,
   },
   {
-    title: '关于',
-    subTitle: '我们',
+    title: '关于我们',
     value: routes.about,
   },
   {
-    title: '录取',
-    subTitle: '案例',
+    title: '录取案例',
     value: routes.cases,
   },
   {
-    title: '我们的',
-    subTitle: '优势',
+    title: '我们的优势',
     value: routes.advantages,
   },
   {
-    title: '课程',
-    subTitle: '特色',
+    title: '课程特色',
     value: routes.features,
   },
   {
-    title: '合作',
-    subTitle: '伙伴',
+    title: '合作伙伴',
     value: routes.partners,
   },
   {
-    title: '联系',
-    subTitle: '我们',
+    title: '联系我们',
     value: routes.contact,
   },
   {
     title: '新闻',
-    subTitle: 'News',
     value: routes.news,
   }
 ];
