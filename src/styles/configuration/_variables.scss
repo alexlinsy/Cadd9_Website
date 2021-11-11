@@ -53,8 +53,14 @@ $white: #fff;
 $dark-grey: #333;
 $grey: #e5e5e5;
 $light-grey: #f5f5f5;
-$blue: #1279B1;
-$button-yellow: #FFF5DB;
+
+$colors: (
+  black: $black,
+  white: $white,
+  dark-grey: $dark-grey,
+  grey: $grey,
+  light-grey: $light-grey
+);
 
 // layouts variables
 $app-max-width: 1920px;
@@ -68,10 +74,11 @@ $max-width-container: 1440px;
 $max-width-text-container: 660px;
 
 // typography variables
-$serif-stack: 'SourceHanSans-regular';
-$sans-serif-stack: 'SourceHanSans-regular';
-$primary-heading-font-family: 'SourceHanSans-bold', sans-serif;
-$primary-body-font-family: 'SourceHanSans-regular', sans-serif;
+$serif-stack: 'SourceHanSans-light';
+$sans-serif-stack: 'SourceHanSans-light';
+$primary-heading-font-family: 'SourceHanSans-bold';
+$primary-body-font-family: 'SourceHanSans-regular';
+$primary-body-font-family-light: 'SourceHanSans-light';
 
 $font-size-base: 18px;
 $font-size-small: $font-size-base - 3;
@@ -94,7 +101,7 @@ $mb-base: 20px;
 
 // borders and shadows
 $border-light: 1px solid $light-grey;
-$border-main:  1px solid $grey;
+$border-main:  1px solid $black;
 
 // buttons
 $button-primary-bg: #000;

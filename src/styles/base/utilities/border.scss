@@ -1,0 +1,80 @@
+@import '../../configuration/config';
+
+#cadd9 {
+  // BORDERS
+  .border {
+    border: $border-main;
+  }
+  .border-bottom {
+    border-bottom: $border-main;
+  }
+  .border-top {
+    border-top: $border-main;
+  }
+  .border-left {
+    border-left: $border-main;
+  }
+  .border-right {
+    border-right: $border-main;
+  }
+  .border-none {
+    border: 0;
+  }
+
+  /*
+    this generates
+    .border-grey for each color
+  */
+  @each $name, $color in $colors {
+    .border-#{$name} {
+      border-color: #{$color};
+    }
+  }
+
+  .box-shadow {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  }
+  .drop-shadow {
+    filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.25));
+  }
+
+  /*
+    this generates
+    .border-md-up etc,
+    .border-md-max etc,
+    .border-left-md-up etc,
+    .border-left-md-max etc,
+  */
+  @each $key, $size in $sizes {
+    .border-#{$key}-up {
+      @include MQ($key) {
+        border: $border-main;
+      }
+    }
+    .border-#{$key}-max {
+      @include MaxMQ($key) {
+        border: $border-main;
+      }
+    }
+    @each $code, $axis in $axes {
+      .border-#{$axis}-#{$key}-up {
+        @include MQ($key) {
+          border-#{$axis}: $border-main;
+        }
+      }
+      .border-#{$axis}-#{$key}-max {
+        @include MaxMQ($key) {
+          border-#{$axis}: $border-main;
+        }
+      }
+    }
+  }
+  /*
+   Generate border-radius
+   */
+  @for $i from 1 through 20 {
+    .border-radius-#{$i} {
+      border-radius: #{$i}px;
+    }
+  }
+}

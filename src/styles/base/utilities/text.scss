@@ -1,0 +1,69 @@
+@import '../../configuration/config';
+#cadd9 {
+  // TEXT
+  .text-center {
+    text-align: center;
+  }
+
+  .text-left {
+    text-align: left;
+  }
+
+  .text-right {
+    text-align: right;
+  }
+
+  .bold {
+    font-weight: $font-weight-bold;
+  }
+  .normal {
+    font-weight: $font-weight-base;
+  }
+  .font-heading {
+    font-family: $primary-heading-font-family;
+  }
+  .font-body {
+    font-family: $primary-body-font-family;
+  }
+  .uppercase {
+    text-transform: uppercase;
+  }
+  .no-text-decoration {
+    text-decoration: none;
+  }
+  .text-underline {
+    text-decoration: underline;
+  }
+  .no-text-transform {
+    text-transform: none;
+  }
+  .no-wrap {
+    white-space: nowrap;
+  }
+  .pre-line {
+    white-space: pre-line;
+  }
+  @for $i from 10 through 36 {
+    .f-#{$i} {
+      font-size: #{$i}px;
+    }
+  }
+  .leading-none {
+    line-height: 1;
+  }
+  .leading-tight {
+    line-height: 1.25;
+  }
+  .leading-snug {
+    line-height: 1.375;
+  }
+  .leading-normal {
+    line-height: 1.5;
+  }
+  .leading-relaxed {
+    line-height: 1.625;
+  }
+  .leading-loose {
+    line-height: 2;
+  }
+}

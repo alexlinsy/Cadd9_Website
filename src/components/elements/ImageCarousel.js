@@ -7,8 +7,8 @@ const ImageCarousel = () => {
   const settings = {
     dots: false,
     infinite: true,
-    autoplay: true,
-    autoplaySpeed: 500,
+   
+    
     speed: 500,
     cssEase: "linear",
     slidesToShow: 1,

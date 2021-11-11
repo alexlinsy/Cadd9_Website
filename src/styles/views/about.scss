@@ -5,10 +5,11 @@
   padding-right: 40px;
   .intro-section {
     margin-top: 40px;
+    border-bottom: 1px solid black;
     .intro {
-      font-size: 22px;
+      font-size: 29px;
       line-height: 2;
-      font-family: $primary-body-font-family;
+      font-family: $primary-body-font-family-light;
     }
   }
 }

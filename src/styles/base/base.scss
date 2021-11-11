@@ -1,0 +1,53 @@
+@import '../configuration/config';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+html,
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $font-color-base;
+  font: $font-base;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+
+  @include OnIE {
+    height: 100%;
+  }
+}
+
+body {
+  overflow-y: scroll;
+  overflow-x: auto;
+}
+
+body,
+#cadd9 {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body.ReactModal__Body--open {
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: $serif-stack, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+}

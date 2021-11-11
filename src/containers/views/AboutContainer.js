@@ -1,5 +1,6 @@
 import React from 'react';
 import {motion} from 'framer-motion';
+import AboutFirstSection from '../../components/elements/AboutFistSection';
 import ImageCarousel from '../../components/elements/ImageCarousel';
 import {aboutContent} from '../../data/about-content';
 import '../../styles/views/about.scss';
@@ -19,6 +20,7 @@ const AboutContainer = () => {
           {intro}
         </motion.p>
       </div>
+      <AboutFirstSection content={aboutContent} />
     </div>
   );
 };

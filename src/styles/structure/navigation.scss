@@ -1,8 +1,10 @@
 @import '../configuration/config';
 
 .nav-bar {
-  position: absolute;
-  bottom: 30px;
+  position: fixed;
+  overflow: hidden;
+  bottom: 0;
+  padding-top: 10px;
   width: 100%;
   display: flex;
   justify-content: space-around;

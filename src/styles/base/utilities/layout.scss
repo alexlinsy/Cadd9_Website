@@ -1,0 +1,530 @@
+@import '../../configuration/config';
+
+#cadd9 {
+  .full-width {
+    width: 100%;
+  }
+  .half-width {
+    width: 50%;
+  }
+  .two-thirds-width {
+    width: 67%;
+  }
+  .full-height {
+    height: 100%;
+  }
+  @each $key, $size in $sizes {
+    .h-#{$key} {
+      height: $size;
+    }
+  }
+
+  .full-height {
+    height: 100%;
+  }
+
+  // POSITIONING
+  .absolute {
+    position: absolute;
+  }
+  .relative {
+    position: relative;
+  }
+
+  // LAYOUT
+  // FLEX
+  .flex {
+    display: flex;
+  }
+
+  .flex-column {
+    flex-direction: column;
+  }
+  .flex-column-reverse {
+    flex-direction: column-reverse;
+  }
+  .flex-row {
+    flex-direction: row;
+  }
+
+  .flex-row-reverse {
+    flex-direction: row-reverse;
+  }
+
+  .flex-justify-center {
+    justify-content: center;
+  }
+  .flex-justify-end {
+    justify-content: flex-end;
+  }
+  .flex-justify-start {
+    justify-content: flex-start;
+  }
+
+  .flex-align-start {
+    align-items: flex-start;
+  }
+  .flex-align-center {
+    align-items: center;
+  }
+  .flex-align-stretch {
+    align-items: stretch;
+  }
+  .flex-align-end {
+    align-items: flex-end;
+  }
+  .flex-space-between {
+    justify-content: space-between;
+  }
+  .flex-space-evenly {
+    justify-content: space-evenly;
+  }
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+
+  .flex-fill {
+    flex: 1;
+  }
+  .flex-half {
+    flex: 1 0 50%;
+  }
+  .flex-third {
+    flex: 1 0 33%;
+  }
+  .flex-no-shrink {
+    flex-shrink: 0;
+  }
+  .flex-reset {
+    flex: 0 auto;
+  }
+  .flex-align-self-start {
+    align-self: flex-start;
+  }
+  .flex-align-self-center {
+    align-self: center;
+  }
+  .flex-align-self-end {
+    align-self: flex-end;
+  }
+
+  .flex-align-self-stretch {
+    align-self: stretch;
+  }
+  .flex-align-self-center {
+    align-self: center;
+  }
+  .flex-align-self-end {
+    align-self: end;
+  }
+
+  .flex-justify-self-end {
+    justify-self: flex-end;
+  }
+
+  .flex-grow {
+    flex: 1 0 auto;
+  }
+
+  .block {
+    display: block;
+  }
+
+  .inline {
+    display: inline;
+  }
+
+  @for $i from 1 through 6 {
+    .flex-order-#{$i} {
+      order: $i;
+    }
+  }
+
+  @each $key, $size in $sizes {
+    .full-width-#{$key}-up {
+      @include MQ($key) {
+        width: 100%;
+      }
+    }
+    .half-width-#{$key}-up {
+      @include MQ($key) {
+        width: 50%;
+      }
+    }
+    .two-thirds-width-#{$key}-up {
+      @include MQ($key) {
+        width: 66%;
+      }
+    }
+
+    .full-width-#{$key}-max {
+      @include MaxMQ($key) {
+        width: 100%;
+      }
+    }
+    .half-width-#{$key}-max {
+      @include MaxMQ($key) {
+        width: 50%;
+      }
+    }
+    .two-thirds-width-#{$key}-max {
+      @include MaxMQ($key) {
+        width: 66%;
+      }
+    }
+    .w-auto-#{$key}-max {
+      @include MaxMQ($key) {
+        width: auto;
+      }
+    }
+
+    .flex-#{$key}-up {
+      @include MQ($key) {
+        display: flex;
+      }
+    }
+    .flex-column-#{$key}-up {
+      @include MQ($key) {
+        flex-direction: column;
+      }
+    }
+    .flex-row-#{$key}-up {
+      @include MQ($key) {
+        flex-direction: row;
+      }
+    }
+    .flex-row-reverse-#{$key}-up {
+      @include MQ($key) {
+        flex-direction: row-reverse;
+      }
+    }
+    .flex-justify-center-#{$key}-up {
+      @include MQ($key) {
+        justify-content: center;
+      }
+    }
+
+    .flex-justify-end-#{$key}-up {
+      @include MQ($key) {
+        justify-content: flex-end;
+      }
+    }
+    .flex-justify-start-#{$key}-up {
+      @include MQ($key) {
+        justify-content: flex-start;
+      }
+    }
+
+    .flex-align-start-#{$key}-up {
+      @include MQ($key) {
+        align-items: flex-start;
+      }
+    }
+    .flex-align-center-#{$key}-up {
+      @include MQ($key) {
+        align-items: center;
+      }
+    }
+    .flex-align-end-#{$key}-up {
+      @include MQ($key) {
+        align-items: flex-end;
+      }
+    }
+
+    .flex-align-stretch-#{$key}-up {
+      @include MQ($key) {
+        align-items: stretch;
+      }
+    }
+
+    .flex-space-between-#{$key}-up {
+      @include MQ($key) {
+        justify-content: space-between;
+      }
+    }
+    .flex-wrap-#{$key}-up {
+      @include MQ($key) {
+        flex-wrap: wrap;
+      }
+    }
+
+    .flex-fill-#{$key}-up {
+      @include MQ($key) {
+        flex: 1;
+      }
+    }
+
+    .flex-reset-#{$key}-up {
+      @include MQ($key) {
+        flex: 0 auto;
+      }
+    }
+
+    .flex-#{$key}-max {
+      @include MaxMQ($key) {
+        display: flex;
+      }
+    }
+
+    .flex-reset-#{$key}-max {
+      @include MaxMQ($key) {
+        flex: 0 auto;
+      }
+    }
+
+    .flex-fill-#{$key}-max {
+      @include MaxMQ($key) {
+        flex: 1;
+      }
+    }
+    .flex-column-#{$key}-max {
+      @include MaxMQ($key) {
+        flex-direction: column;
+      }
+    }
+    .flex-align-items-start-#{$key}-max {
+      @include MaxMQ($key) {
+        align-items: flex-start;
+      }
+    }
+    .flex-half-#{$key}-up {
+      @include MQ($key) {
+        flex: 1 0 50%;
+      }
+    }
+    .flex-third-#{$key}-up {
+      @include MQ($key) {
+        flex: 1 0 33%;
+      }
+    }
+
+    .flex-align-self-end-#{$key}-up {
+      @include MQ($key) {
+        align-self: flex-end;
+      }
+    }
+
+    .flex-align-self-stretch-#{$key}-up {
+      @include MQ($key) {
+        align-self: stretch;
+      }
+    }
+
+    .flex-align-self-center-#{$key}-up {
+      @include MQ($key) {
+        align-self: center;
+      }
+    }
+
+    .flex-grow-#{$key}-up {
+      @include MQ($key) {
+        flex: 1 0 auto;
+      }
+    }
+    .flex-justify-self-end-#{$key}-up {
+      @include MQ($key) {
+        align-self: flex-end;
+      }
+    }
+
+    .block-#{$key}-up {
+      @include MQ($key) {
+        display: block;
+      }
+    }
+
+    .inline-#{$key}-up {
+      @include MQ($key) {
+        display: inline;
+      }
+    }
+
+    @for $i from 1 through 6 {
+      .flex-order-#{$i}-#{$key}-up {
+        @include MQ($key) {
+          order: $i;
+        }
+      }
+    }
+  }
+
+  // SPACING
+  .remove-margin {
+    margin: 0;
+  }
+  .remove-padding {
+    padding: 0;
+  }
+  .mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @each $propertyID, $property in $spacing-properties {
+    @for $i from 0 through 20 {
+      // generates...
+      //  .p-1 {
+      //    padding: 4px;
+      //  }
+      //  .px-1 {
+      //    padding-left: 4px;
+      //    padding-right: 4px;
+      //  }
+      //  .py-1 {
+      //    padding-top: 4px;
+      //    padding-bottom: 4px;
+      //  }
+      .#{$propertyID}-#{$i} {
+        #{$property}: $font-size-base * $i * 0.25;
+      }
+
+      .#{$propertyID}x-#{$i} {
+        #{$property}-left: $font-size-base * $i * 0.25;
+        #{$property}-right: $font-size-base * $i * 0.25;
+      }
+
+      .#{$propertyID}y-#{$i} {
+        #{$property}-top: $font-size-base * $i * 0.25;
+        #{$property}-bottom: $font-size-base * $i * 0.25;
+      }
+
+      @if $property == margin {
+        .negative-margin-#{$i} {
+          margin: $font-size-base * $i * -0.25;
+        }
+        .negative-margin-x-#{$i} {
+          margin-left: $font-size-base * $i * -0.25;
+          margin-right: $font-size-base * $i * -0.25;
+        }
+        .negative-margin-y-#{$i} {
+          margin-top: $font-size-base * $i * -0.25;
+          margin-bottom: $font-size-base * $i * -0.25;
+        }
+      }
+
+      @each $code, $axis in $axes {
+        // adds top,bottom,left,right,
+        //  .pt-1 {
+        //    padding-top: 4px;
+        //  }
+        .#{$propertyID}#{$code}-#{$i} {
+          #{$property}-#{$axis}: $font-size-base * $i * 0.25;
+        }
+        @if $property == margin {
+          .negative-margin-#{$code}-#{$i} {
+            margin-#{$axis}: $font-size-base * $i * -0.25;
+          }
+        }
+      }
+    }
+  }
+  // same as above but adds the md-up and md-max
+  // .pt-1-md-max, .pt-2-lg-up
+  @each $propertyID, $property in $spacing-properties {
+    @for $i from 0 through 20 {
+      @each $sizeKey, $size in $sizes {
+        .#{$propertyID}-#{$i}-#{$sizeKey}-up {
+          @include MQ($sizeKey) {
+            #{$property}: $font-size-base * $i * 0.25;
+          }
+        }
+
+        .#{$propertyID}-#{$i}-#{$sizeKey}-max {
+          @include MaxMQ($sizeKey) {
+            #{$property}: $font-size-base * $i * 0.25;
+          }
+        }
+
+        .#{$propertyID}x-#{$i}-#{$sizeKey}-up {
+          @include MQ($sizeKey) {
+            #{$property}-left: $font-size-base * $i * 0.25;
+            #{$property}-right: $font-size-base * $i * 0.25;
+          }
+        }
+
+        .#{$propertyID}x-#{$i}-#{$sizeKey}-max {
+          @include MaxMQ($sizeKey) {
+            #{$property}-left: $font-size-base * $i * 0.25;
+            #{$property}-right: $font-size-base * $i * 0.25;
+          }
+        }
+
+        .#{$propertyID}y-#{$i}-#{$sizeKey}-up {
+          @include MQ($sizeKey) {
+            #{$property}-top: $font-size-base * $i * 0.25;
+            #{$property}-bottom: $font-size-base * $i * 0.25;
+          }
+        }
+
+        .#{$propertyID}y-#{$i}-#{$sizeKey}-max {
+          @include MaxMQ($sizeKey) {
+            #{$property}-top: $font-size-base * $i * 0.25;
+            #{$property}-bottom: $font-size-base * $i * 0.25;
+          }
+        }
+
+        @if $property == margin {
+          .negative-margin-#{$i}-#{$sizeKey}-up {
+            @include MQ($sizeKey) {
+              margin: $font-size-base * $i * -0.25;
+            }
+          }
+          .negative-margin-#{$i}-#{$sizeKey}-max {
+            @include MaxMQ($sizeKey) {
+              margin: $font-size-base * $i * -0.25;
+            }
+          }
+          .negative-margin-x-#{$i}-#{$sizeKey}-up {
+            @include MQ($sizeKey) {
+              margin-left: $font-size-base * $i * -0.25;
+              margin-right: $font-size-base * $i * -0.25;
+            }
+          }
+          .negative-margin-x-#{$i}-#{$sizeKey}-max {
+            @include MaxMQ($sizeKey) {
+              margin-left: $font-size-base * $i * -0.25;
+              margin-right: $font-size-base * $i * -0.25;
+            }
+          }
+          .negative-margin-y-#{$i}-#{$sizeKey}-up {
+            @include MQ($sizeKey) {
+              margin-left: $font-size-base * $i * -0.25;
+              margin-right: $font-size-base * $i * -0.25;
+            }
+          }
+          .negative-margin-y-#{$i}-#{$sizeKey}-max {
+            @include MaxMQ($sizeKey) {
+              margin-left: $font-size-base * $i * -0.25;
+              margin-right: $font-size-base * $i * -0.25;
+            }
+          }
+          @each $code, $axis in $axes {
+            .negative-margin-#{$code}-#{$sizeKey}-up {
+              @include MQ($sizeKey) {
+                margin-#{$axis}: $font-size-base * $i * -0.25;
+              }
+            }
+            .negative-margin-#{$code}-#{$sizeKey}-max {
+              @include MaxMQ($sizeKey) {
+                margin-#{$axis}: $font-size-base * $i * -0.25;
+              }
+            }
+          }
+        }
+
+        @each $code, $axis in $axes {
+          .#{$propertyID}#{$code}-#{$i}-#{$sizeKey}-up {
+            @include MQ($sizeKey) {
+              #{$property}-#{$axis}: $font-size-base * $i * 0.25;
+            }
+          }
+          .#{$propertyID}#{$code}-#{$i}-#{$sizeKey}-max {
+            @include MaxMQ($sizeKey) {
+              #{$property}-#{$axis}: $font-size-base * $i * 0.25;
+            }
+          }
+        }
+      }
+    }
+  }
+}
