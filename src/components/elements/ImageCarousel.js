@@ -1,13 +1,16 @@
 import React from 'react';
 import Slider from 'react-slick';
-
+import SliderImageOne from '../../assets/images/slider-image-one.png';
 import '../../styles/elements/image-carousel.scss';
 
 const ImageCarousel = () => {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
+    autoplay: true,
+    autoplaySpeed: 500,
     speed: 500,
+    cssEase: "linear",
     slidesToShow: 1,
     slidesToScroll: 1,
   };
@@ -15,23 +18,8 @@ const ImageCarousel = () => {
   return (
     <div>
       <Slider {...settings}>
-        <div>
-          <h3>1</h3>
-        </div>
-        <div>
-          <h3>2</h3>
-        </div>
-        <div>
-          <h3>3</h3>
-        </div>
-        <div>
-          <h3>4</h3>
-        </div>
-        <div>
-          <h3>5</h3>
-        </div>
-        <div>
-          <h3>6</h3>
+        <div className="slider-image-container">
+          <img className="slider-image" src={SliderImageOne} alt="slider-one"/>
         </div>
       </Slider>
     </div>

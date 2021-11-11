@@ -1,0 +1,146 @@
+@import '../configuration/config';
+
+@font-face {
+  font-family: 'SourceHanSans-light';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../../../assets/fonts/SourceHanSansSC-Light.otf') format('otf');
+}
+
+@font-face {
+  font-family: 'SourceHanSans-regular';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../../../assets/fonts/SourceHanSansSC-Regular.otf') format('otf');
+}
+
+@font-face {
+  font-family: 'SourceHanSans-bold';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../../../assets/fonts/SourceHanSansSC-Bold.otf') format('otf');
+}
+
+p {
+  font: $font-base;
+  margin: 0 0 $mb-base 0;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  color: $black;
+  font-family: $primary-heading-font-family;
+  font-weight: $font-weight-heading;
+  line-height: $line-height-heading;
+  margin: 0 0 $mb-base 0;
+}
+
+h1,
+.h1 {
+  font-family: $primary-heading-font-family;
+  font-size: $font-size-base + 14;
+}
+
+h2,
+.h2 {
+  font-family: $primary-heading-font-family;
+  font-size: $font-size-base + 0.6;
+
+  @media screen and ($bp-min-md) {
+    font-size: $font-size-base + 1.3;
+  }
+
+  @media screen and ($bp-min-xxl) {
+    font-size: $font-size-base + 2.1;
+  }
+}
+
+h3,
+.h3 {
+  font-family: $primary-heading-font-family;
+  font-size: $font-size-base + 0.3;
+
+  @media screen and ($bp-min-md) {
+    font-size: $font-size-base + 0.7;
+  }
+
+  @media screen and ($bp-min-lg) {
+    font-size: $font-size-base + 0.9;
+  }
+
+  @media screen and ($bp-min-xxl) {
+    font-size: $font-size-base + 1.2;
+  }
+}
+
+h4,
+.h4 {
+  font-family: $primary-heading-font-family;
+  font-size: $font-size-base + 0.2;
+
+  @media screen and ($bp-min-md) {
+    font-size: $font-size-base + 0.4;
+  }
+
+  @media screen and ($bp-min-lg) {
+    font-size: $font-size-base + 0.6;
+  }
+
+  @media screen and ($bp-min-xxl) {
+    font-size: $font-size-base + 0.9;
+  }
+}
+
+h5,
+.h5 {
+  font-family: $primary-heading-font-family;
+  font-size: $font-size-base + 0.1;
+
+  @media screen and ($bp-min-md) {
+    font-size: $font-size-base + 0.3;
+  }
+
+  @media screen and ($bp-min-lg) {
+    font-size: $font-size-base + 0.5;
+  }
+
+  @media screen and ($bp-min-xxl) {
+    font-size: $font-size-base + 0.7;
+  }
+}
+
+h6,
+.h6 {
+  font-family: $primary-heading-font-family;
+  font-size: $font-size-base;
+}
+
+ul {
+  margin: 0;
+  padding: 0 0 20px 10px;
+  list-style: none;
+
+  li {
+    margin: 0;
+    padding: 0 0 0 20px;
+    position: relative;
+    text-align: left;
+
+    &:before {
+      content: '\2022';
+      left: 0;
+      top: 0;
+      position: absolute;
+    }
+  }
+}

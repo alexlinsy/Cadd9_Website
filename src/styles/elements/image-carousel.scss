@@ -1,2 +1,12 @@
-@import "~slick-carousel/slick/slick.css"; 
-@import "~slick-carousel/slick/slick-theme.css";
+@import '~slick-carousel/slick/slick.css';
+@import '~slick-carousel/slick/slick-theme.css';
+
+.slick-slider {
+  .slider-image-container {
+    width: 100%;
+    .slider-image {
+      width: 100%;
+      max-height: 650px;
+    }
+  }
+}
