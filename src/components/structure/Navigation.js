@@ -9,10 +9,11 @@ const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>
-      <nav className={`nav-bar ${isOpen ? 'open-nav-bar' : ''}`}>
+      <nav className={`nav-bar ${isOpen ? 'open-nav-bar' : ''} pt-2 full-width flex flex-space-around flex-column-md-max flex-align-center-md-max`}>
         {steps.map((item, index) => (
           <Link className="nav-item" key={index} to={item.value}>
             <motion.p
+              className="font-heading"
               whileHover={{letterSpacing: '15px'}}
               transition={{duration: 0.5}}
             >
