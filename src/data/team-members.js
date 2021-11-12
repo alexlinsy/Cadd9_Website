@@ -6,6 +6,13 @@ import avatar5 from '../assets/avatars/avatar5.png';
 import avatar6 from '../assets/avatars/avatar6.png';
 import avatar7 from '../assets/avatars/avatar7.png';
 import avatar8 from '../assets/avatars/avatar8.png';
+import avatar9 from '../assets/avatars/avatar9.png';
+import avatar10 from '../assets/avatars/avatar10.png';
+import avatar11 from '../assets/avatars/avatar11.png';
+import avatar12 from '../assets/avatars/avatar12.png';
+//import avatar13 from '../assets/avatars/avatar13.png';
+import avatar14 from '../assets/avatars/avatar14.png';
+import avatar15 from '../assets/avatars/avatar15.png';
 
 export const teamMembers = {
   header: '我们的团队',
@@ -66,26 +73,26 @@ export const teamMembers = {
     {
         name: 'MA',
         title: ' ',
-        image: avatar8,
+        image: avatar9,
         intro:
           '于2015年加入美国新英格兰音乐学院，在美国大都会歌剧院中多次亮相。2012格莱美最佳歌剧录音奖，及多个国际歌剧比赛奖项获得者。本科毕业于伊士曼音乐学院学习歌剧表演专业，并获新英格兰音乐学院艺术家文凭。她的国际代表作品包括在意大利米兰斯卡拉大剧院的《意大利的伊莎⻉拉》中饰演的伊莎⻉拉；在都灵大剧院的 Il Trovatore 饰演的Azucena ，以及在罗⻢歌剧院的卡⻔⻆色等。',
     },
     {
         name: 'YX',
         title: ' ',
-        image: avatar8,
+        image: avatar10,
         intro: '毕业于美国伯克利音乐学院，音乐治疗专业，辅修心理学，曾在美国波士顿，特殊儿童教育、精神康复及肿瘤康复等领域进行音乐治疗临床实践。并于世界顶尖的综合医院 - 麻省总医院Massachusetts General Hospital(全世界前三的医院)完成了毕业临床实习，通过了美国音乐治疗职业考试，获得注册音乐治疗师资格证。辅导过多名备考生，均顺利考入伯克利音乐学院。'
     },
     {
         name: 'XTF',
         title: ' ',
-        image: avatar8,
+        image: avatar11,
         intro: '毕业于美国伯克利音乐学院，professional music 专业，专读CWP、MPE，与Performance三个专业。是一位职业键盘手，编曲人，制作人，作曲家。参演哈尔滨国际冰雪节，哈尔滨街头音乐节（乐队金奖），国际bass音乐节等多个音乐节活动。参与2012超级女声节目，2012“尤雅哈尔滨‘魅力一生’演唱会，2014“为爱向前冲”节目录制。15年担任辽宁爱乐乐团键盘手，17年任全国打击乐比赛评委及键盘手。'
     },
     {
         name: 'XYW',
         title: ' ',
-        image: avatar8,
+        image: avatar12,
         intro: '混音师，录音师，制作人。 2020届美国伯克利音乐学院录音工程专业优秀毕业生。性格开朗，有耐心。现为多次格莱美获奖制作人，混音师Josh Gudwin的工程师，同时为Justin BieberVocal Engineer。合作的艺人有Justin Bieber, Dua Lipa, J Balvin, Bad Bunny, BTS等。 教授高级混音课程'
     },
     {
@@ -97,13 +104,13 @@ export const teamMembers = {
     {
         name: 'Yohei',
         title: ' ',
-        image: avatar8,
+        image: avatar14,
         intro: '日裔音乐家，京都出生，音乐家，艺术家。毕业于美国伯克利音乐学院，师从大师 BillyKilson。擅⻓爵士，流行，funk等音乐类型，目前是三个乐队的成员，常年在日本和美国的大小舞台演出，曾在Boston进行多次商演，在校期间非常有名，是一名实力得到所有教授和同学认可的鼓手，具备自己的独树一帜的演奏⻛格。'
     },
     {
         name: 'D哥',
         title: ' ',
-        image: avatar8,
+        image: avatar15,
         intro: '男中音歌唱家，博士毕业于德国科隆音乐与舞蹈学院声乐专业，精通美声演唱技巧、舞台表演，声乐艺术，多种语言演唱指导。签约于德国亚琛歌剧院、德国波恩歌剧院、法兰克福Cantate音乐厅、卢森堡音乐厅等。曾获德国瓦格纳奖学金、世界华人声乐大赛首奖及最佳歌剧角色诠释奖等奖项。也是17年德国科隆国际声乐大赛中唯一入围决赛的中国选手。'
     }
   ],

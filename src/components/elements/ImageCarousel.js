@@ -1,16 +1,16 @@
 import React from 'react';
 import Slider from 'react-slick';
 import SliderImageOne from '../../assets/images/slider-image-one.png';
+import {LazyLoadImage} from 'react-lazy-load-image-component';
 import '../../styles/elements/image-carousel.scss';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const ImageCarousel = () => {
   const settings = {
     dots: false,
     infinite: true,
-   
-    
     speed: 500,
-    cssEase: "linear",
+    cssEase: 'linear',
     slidesToShow: 1,
     slidesToScroll: 1,
   };
@@ -19,7 +19,7 @@ const ImageCarousel = () => {
     <div>
       <Slider {...settings}>
         <div className="slider-image-container">
-          <img className="slider-image" src={SliderImageOne} alt="slider-one"/>
+          <LazyLoadImage className="slider-image" alt="slider-one" src={SliderImageOne} effect="blur"/>
         </div>
       </Slider>
     </div>

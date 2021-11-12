@@ -4,9 +4,12 @@ import TeamMembers from '../../components/elements/TeamMembers';
 import AboutFirstSection from '../../components/elements/AboutFistSection';
 import ImageCarousel from '../../components/elements/ImageCarousel';
 import ScrollAnimation from 'react-animate-on-scroll';
+import {LazyLoadImage} from 'react-lazy-load-image-component'
 import {aboutContent} from '../../data/about-content';
 import {teamMembers} from '../../data/team-members';
+
 import '../../styles/views/about.scss';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const AboutContainer = () => {
   const {intro, aboutImageThree, aboutImageFour} = aboutContent;
@@ -29,12 +32,10 @@ const AboutContainer = () => {
         duration={3}
         className="py-10 flex flex-column border-bottom"
       >
-        <img src={aboutImageThree} alt="banner" className="full-width" />
-        <img src={aboutImageFour} alt="banner" className="full-width" />
+        <LazyLoadImage src={aboutImageThree} alt="banner" className="full-width" />
+        <LazyLoadImage src={aboutImageFour} alt="banner" className="full-width" />
       </ScrollAnimation>
-      <div>
-        <TeamMembers teams={teamMembers} />
-      </div>
+      <TeamMembers teams={teamMembers} />
     </div>
   );
 };

@@ -1,5 +1,8 @@
 import React from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
+import {LazyLoadImage} from'react-lazy-load-image-component';
+
+import 'react-lazy-load-image-component/src/effects/black-and-white.css';
 
 const AboutFirstSection = ({content}) => {
   const {aboutImageOne, aboutImageTwo, aboutContentOne, aboutContentTwo} =
@@ -17,7 +20,7 @@ const AboutFirstSection = ({content}) => {
           duration={3}
           className="py-20 pr-5 border-bottom"
         >
-          <img src={aboutImageOne} alt="about" />
+          <LazyLoadImage src={aboutImageOne} alt="about" effect="black-and-white"/>
         </ScrollAnimation>
         <ScrollAnimation
           animateIn="fadeIn"
@@ -25,7 +28,7 @@ const AboutFirstSection = ({content}) => {
           className="pr-5"
           style={{paddingTop: '200px', paddingBottom: '150px'}}
         >
-          <img src={aboutImageTwo} alt="about" />
+          <LazyLoadImage src={aboutImageTwo} alt="about" effect="black-and-white"/>
         </ScrollAnimation>
       </div>
       <div className="flex flex-column">
