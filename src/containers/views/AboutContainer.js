@@ -1,12 +1,15 @@
 import React from 'react';
 import {motion} from 'framer-motion';
+import TeamMembers from '../../components/elements/TeamMembers';
 import AboutFirstSection from '../../components/elements/AboutFistSection';
 import ImageCarousel from '../../components/elements/ImageCarousel';
+import ScrollAnimation from 'react-animate-on-scroll';
 import {aboutContent} from '../../data/about-content';
+import {teamMembers} from '../../data/team-members';
 import '../../styles/views/about.scss';
 
 const AboutContainer = () => {
-  const {intro} = aboutContent;
+  const {intro, aboutImageThree, aboutImageFour} = aboutContent;
   return (
     <div className="about-container">
       <ImageCarousel />
@@ -21,6 +24,17 @@ const AboutContainer = () => {
         </motion.p>
       </div>
       <AboutFirstSection content={aboutContent} />
+      <ScrollAnimation
+        animateIn="fadeIn"
+        duration={3}
+        className="py-10 flex flex-column border-bottom"
+      >
+        <img src={aboutImageThree} alt="banner" className="full-width" />
+        <img src={aboutImageFour} alt="banner" className="full-width" />
+      </ScrollAnimation>
+      <div>
+        <TeamMembers teams={teamMembers} />
+      </div>
     </div>
   );
 };

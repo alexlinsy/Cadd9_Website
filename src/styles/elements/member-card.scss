@@ -1,0 +1,22 @@
+@import '../configuration/config';
+
+.member-card {
+  height: 430px;
+  max-width: 330px;
+  .avatar {
+    max-height: 323px;
+  }
+  .member-intro {
+    z-index: 11;
+    background-color: white;
+    opacity: 0.8;
+  }
+}
+
+.member-card:nth-child(2n) {
+  padding-top: 200px;
+}
+
+.member-card:nth-child(15) {
+  padding-top: 200px;
+}
