@@ -11,11 +11,11 @@ const MemberCard = ({memberInfo}) => {
       className="flex flex-column member-card"
       onMouseEnter={() => setIsOpen(true)}
       onMouseLeave={() => setIsOpen(false)}
-      whileHover={{y: -200}}
+      whileHover={{y: -210}}
       transition={{duration: 1}}
     >
       <div>
-        <p className="f-24 bold mb-1">{name}</p>
+        <p className="f-24 bold mb-1 font-heading-english card-name">{name}</p>
         <p className="mb-2">{title}</p>
       </div>
       <div>
@@ -24,7 +24,7 @@ const MemberCard = ({memberInfo}) => {
       {isOpen && (
         <div className="member-intro">
           <motion.p
-            className="leading-loose"
+            className="leading-normal font-heading"
             initial={{opacity: 0}}
             animate={{opacity: 1}}
             transition={{duration: 1}}

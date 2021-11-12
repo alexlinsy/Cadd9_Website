@@ -3,6 +3,9 @@
 .member-card {
   height: 430px;
   max-width: 330px;
+  .card-name {
+    letter-spacing: .15rem;
+  }
   .avatar {
     max-height: 323px;
   }

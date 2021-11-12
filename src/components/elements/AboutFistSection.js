@@ -34,10 +34,10 @@ const AboutFirstSection = ({content}) => {
           duration={3}
           className="py-10 pl-5 border-bottom"
         >
-          <p className="f-24 pre-line leading-loose">{aboutContentOne}</p>
+          <p className="f-24 pre-line leading-loose font-heading">{aboutContentOne}</p>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeIn" duration={3} className="py-15 pl-5">
-          <p className="f-24 pre-line leading-loose">{aboutContentTwo}</p>
+          <p className="f-24 pre-line font-heading leading-loose">{aboutContentTwo}</p>
         </ScrollAnimation>
       </div>
     </ScrollAnimation>
