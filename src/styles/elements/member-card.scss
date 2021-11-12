@@ -1,7 +1,7 @@
 @import '../configuration/config';
 
 .member-card {
-  height: 430px;
+  max-height: 730px;
   max-width: 330px;
   .card-name {
     letter-spacing: .15rem;
@@ -10,6 +10,8 @@
     max-height: 323px;
   }
   .member-intro {
+    height: 250px;
+    overflow: auto;
     z-index: 11;
     background-color: white;
     opacity: 0.8;

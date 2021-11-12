@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
-import {motion} from 'framer-motion';
-import {LazyLoadImage} from 'react-lazy-load-image-component'
+import {motion, AnimatePresence} from 'framer-motion';
+import {LazyLoadImage} from 'react-lazy-load-image-component';
 import '../../styles/elements/member-card.scss';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
@@ -13,7 +13,7 @@ const MemberCard = ({memberInfo}) => {
       className="flex flex-column member-card"
       onMouseEnter={() => setIsOpen(true)}
       onMouseLeave={() => setIsOpen(false)}
-      whileHover={{y: -210}}
+      whileHover={{y: -10}}
       transition={{duration: 1}}
     >
       <div>
@@ -21,20 +21,31 @@ const MemberCard = ({memberInfo}) => {
         <p className="mb-2">{title}</p>
       </div>
       <div>
-        <LazyLoadImage src={image} alt="avatar" className="full-width avatar" effect="blur" />
+        <LazyLoadImage
+          src={image}
+          alt="avatar"
+          className="full-width avatar"
+          effect="blur"
+        />
       </div>
-      {isOpen && (
-        <div className="member-intro">
-          <motion.p
-            className="leading-normal font-heading"
-            initial={{opacity: 0}}
-            animate={{opacity: 1}}
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            className="member-intro"
+            exit={{opacity: 0}}
             transition={{duration: 1}}
           >
-            {intro}
-          </motion.p>
-        </div>
-      )}
+            <motion.p
+              className="leading-normal font-heading"
+              initial={{opacity: 0}}
+              animate={{opacity: 1}}
+              transition={{duration: 1}}
+            >
+              {intro}
+            </motion.p>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </motion.div>
   );
 };
