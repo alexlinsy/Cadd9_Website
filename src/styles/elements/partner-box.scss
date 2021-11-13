@@ -1,0 +1,17 @@
+@import '../configuration/config';
+
+.partner-box {
+  width: 300px;
+  height: 300px;
+  filter: grayscale(100%);
+  @include MaxMQ(lg) {
+    filter: grayscale(0);
+  }
+}
+.partner-box:nth-child(n + 2) {
+  margin-left: -1px;
+  margin-bottom: -1px;
+}
+.partner-box:nth-child(-n + 5) {
+  margin-bottom: -1px;
+}
