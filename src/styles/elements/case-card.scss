@@ -1,0 +1,19 @@
+@import '../configuration/config';
+
+.case-card {
+  max-width: 700px;
+  max-height: 410px;
+  .case-intro {
+    max-height: 260px;
+    overflow: auto;
+  }
+  .case-card-name {
+    letter-spacing: 0.15em;
+  }
+}
+
+.case-card:nth-child(2) {
+  @include MaxMQ(lg) {
+    margin-top: 40px;
+  }
+}

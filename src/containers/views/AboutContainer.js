@@ -14,7 +14,7 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 const AboutContainer = () => {
   const {intro, aboutImageThree, aboutImageFour} = aboutContent;
   return (
-    <div className="about-container">
+    <div className="about-container px-10">
       <ImageCarousel />
       <div className="intro-section">
         <motion.p
