@@ -290,10 +290,15 @@
       }
     }
     .flex-align-center-#{$key}-max {
-        @include MaxMQ($key) {
-          align-items: center;
-        }
+      @include MaxMQ($key) {
+        align-items: center;
       }
+    }
+    .flex-justify-center-#{$key}-max {
+      @include MaxMQ($key) {
+        justify-content: center;
+      }
+    }
     .flex-align-items-start-#{$key}-max {
       @include MaxMQ($key) {
         align-items: flex-start;

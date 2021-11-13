@@ -6,7 +6,7 @@
   bottom: 0;
   background-color: white;
   box-shadow: 5px 5px 50px white;
-  @include MaxMQ(md) {
+  @include MaxMQ(sm) {
     height: 95%;
     left: -400px;
     background-color: white;
@@ -20,7 +20,7 @@
 }
 
 .menu-bar-item {
-  @include MQ(md) {
+  @include MQ(sm) {
     display: none;
   }
   padding-left: 20px;

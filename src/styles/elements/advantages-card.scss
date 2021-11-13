@@ -1,5 +1,20 @@
 @import '../configuration/config';
 
 .advantages-card {
-    
+  width: 450px;
+  height: 350px;
+  .advantages-icon {
+    width: 80px;
+    height: 80px;
+  }
+  .advantages-description {
+    overflow: auto;
+    p {
+      font-family: $primary-heading-font-family;
+      line-height: 1.5;
+    }
+    span {
+        color: green;
+    }
+  }
 }

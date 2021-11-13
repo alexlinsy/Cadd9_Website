@@ -2,6 +2,7 @@ import React from 'react';
 import Slider from 'react-slick';
 import prevArrow from '../../assets/icons/pre-arrow.svg';
 import nextArrow from '../../assets/icons/next-arrow.svg';
+import {motion} from 'framer-motion';
 import {LazyLoadImage} from 'react-lazy-load-image-component';
 import '../../styles/elements/cases-card-carousel.scss';
 import 'react-lazy-load-image-component/src/effects/blur.css';
@@ -37,15 +38,15 @@ const CasesCardCarousel = ({cases}) => {
       <NextArrow newClassName="custom-slick-arrow custom-next-slick-arrow" />
     ),
     responsive: [
-        {
-            breakpoint: 880,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2,
-              infinite: true,
-              dots: false,
-            },
-          },
+      {
+        breakpoint: 880,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: false,
+        },
+      },
       {
         breakpoint: 1180,
         settings: {
@@ -77,10 +78,15 @@ const CasesCardCarousel = ({cases}) => {
   };
 
   return (
-    <div>
+    <motion.div
+      initial={{opacity: 0}}
+      animate={{opacity: 1}}
+      transition={{duration: 2}}
+      className="slider-case-container"
+    >
       <Slider {...settings}>
         {cases.map((item, index) => (
-          <div className="slider-case-container" key={index}>
+          <div key={index}>
             <LazyLoadImage
               className="slider-case-image"
               alt="slider-offer"
@@ -90,7 +96,7 @@ const CasesCardCarousel = ({cases}) => {
           </div>
         ))}
       </Slider>
-    </div>
+    </motion.div>
   );
 };
 

@@ -9,7 +9,12 @@ const CasesContainer = () => {
   return (
     <div className="flex flex-column px-10">
       <div className="mt-10 py-12 border-top border-bottom">
-        <p className="font-heading text-center f-32 m-0" style={{fontSize: '65px'}}>{header}</p>
+        <p
+          className="font-heading text-center f-32 m-0"
+          style={{fontSize: '65px'}}
+        >
+          {header}
+        </p>
       </div>
       <div className="py-10 px-15 flex flex-space-between flex-column-lg-max">
         <CasesExample caseImage={casesExample[0]} offerInfo={caseInfo[0]} />

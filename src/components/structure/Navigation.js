@@ -7,11 +7,17 @@ import '../../styles/structure/navigation.scss';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0, 
+      behavior: 'smooth'
+    });
+  }
   return (
     <>
-      <nav className={`nav-bar ${isOpen ? 'open-nav-bar' : ''} pt-2 full-width flex flex-space-around flex-column-md-max flex-align-center-md-max`}>
+      <nav className={`nav-bar ${isOpen ? 'open-nav-bar' : ''} pt-2 full-width flex flex-space-around flex-column-sm-max flex-align-center-sm-max`}>
         {steps.map((item, index) => (
-          <Link className="nav-item" key={index} to={item.value}>
+          <Link className="nav-item" key={index} to={item.value} onClick={() => scrollToTop()}>
             <motion.p
               className="font-heading"
               whileHover={{letterSpacing: '15px'}}
