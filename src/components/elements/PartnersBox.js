@@ -2,7 +2,6 @@ import React from 'react';
 import {motion} from 'framer-motion';
 import {LazyLoadImage} from 'react-lazy-load-image-component';
 import '../../styles/elements/partner-box.scss';
-import ScrollAnimation from 'react-animate-on-scroll';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const PartnerBox = ({partner}) => {

@@ -1,10 +1,60 @@
 import React from 'react';
+import ScrollAnimation from 'react-animate-on-scroll';
+import {LazyLoadImage} from 'react-lazy-load-image-component';
+import {contactData} from '../../data/contact-data';
 
+import 'react-lazy-load-image-component/src/effects/blur.css';
 import '../../styles/views/contact.scss';
-const ContactContainer = () => (
-    <div>
-      Contact
+import MapContainer from '../../components/elements/MapContainer';
+
+const AddressSection = ({addressData}) => {
+  const {name, address, image, addressLineTwo} = addressData;
+
+  return (
+    <div className="flex flex-column address-section">
+      <div className="pb-2">
+        <LazyLoadImage src={image} alt="contacts-photo" effect="blur" />
+      </div>
+      <p className="mt-2 f-20 mb-1">{name}</p>
+      <p className="font-heading mb-1">{address}</p>
+      <p className="font-heading mb-0">{addressLineTwo}</p>
     </div>
-)
+  );
+};
+
+const ContactContainer = () => {
+  const {header, addresses, tel, email} = contactData;
+  return (
+    <div className="px-10">
+      <div className="mt-10 py-12 border-top border-bottom">
+        <p
+          className="font-heading text-center f-32 m-0"
+          style={{fontSize: '65px'}}
+        >
+          {header}
+        </p>
+      </div>
+      <ScrollAnimation animateIn="fadeIn" duration={3}>
+        <div className="mt-5 flex flex-space-between flex-column-md full-width address-detail">
+          <div className="divide-line full-width border-bottom" />
+          {addresses.map((address, index) => (
+            <AddressSection addressData={address} key={index} />
+          ))}
+        </div>
+      </ScrollAnimation>
+      <ScrollAnimation
+        animateIn="fadeIn"
+        duration={3}
+        className="flex flex-column mt-2 py-2 border-top"
+      >
+        <p className="f-20 font-heading mb-1">{tel}</p>
+        <p className="f-20 font-heading-english mb-0">{email}</p>
+      </ScrollAnimation>
+      <ScrollAnimation animateIn="fadeIn" duration={3} className="mt-5">
+        <MapContainer />
+      </ScrollAnimation>
+    </div>
+  );
+};
 
 export default ContactContainer;

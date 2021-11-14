@@ -1,0 +1,14 @@
+@import '../configuration/config';
+
+.address-detail {
+  position: relative;
+}
+.divide-line {
+  position: absolute;
+  height: 1px;
+  top: 470px;
+  z-index: 11;
+  @include MaxMQ(sm) {
+    display: none;
+  }
+}
