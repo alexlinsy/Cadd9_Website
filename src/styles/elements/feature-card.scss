@@ -1,0 +1,19 @@
+@import '../configuration/config';
+
+.feature-card {
+  width: 45%;
+  max-height: 360px;
+  @include MaxMQ(md) {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .feature-card-content {
+    @include MaxMQ(lgr) {
+      font-size: 16px;
+    }
+    @include MaxMQ(md-lg) {
+      font-size: 15px;
+    }
+  }
+}

@@ -67,6 +67,11 @@
       @media only screen and ($bp-max-md) {
         @content;
       }
+    }  @else if $canvas == md-lg {
+      //md-lg
+      @media only screen and ($bp-max-md-lg) {
+        @content;
+      }
     } @else if $canvas == lg {
       //lg
       @media only screen and ($bp-max-lg) {
