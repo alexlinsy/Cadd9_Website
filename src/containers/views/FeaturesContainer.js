@@ -3,17 +3,19 @@ import FeatureCard from '../../components/elements/FeatureCard';
 import {featuresData} from '../../data/features-data';
 import ScrollAnimation from 'react-animate-on-scroll';
 import {LazyLoadImage} from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 import '../../styles/views/features.scss';
+import FeatureCategory from '../../components/elements/FeaturesCategory';
 
 const FeaturesContainer = () => {
   const {header1, header2, feature1, feature2, feature3, feature4} =
     featuresData;
   return (
     <div className="feature-container px-10">
-      <div className="mt-10 mb-5 py-12 border-top border-bottom">
+      <div className="mt-10 mb-5 py-8 border-top border-bottom">
         <p
           className="font-heading text-center f-32 m-0"
-          style={{fontSize: '65px'}}
+          style={{fontSize: '46px'}}
         >
           {header1}
         </p>
@@ -25,22 +27,28 @@ const FeaturesContainer = () => {
           duration={3}
         >
           <FeatureCard features={feature1} />
-          <LazyLoadImage
-            src={feature1.image}
-            alt="feature-photo"
-            className="feature-card-image"
-          />
+          <div className="feature-image-container">
+            <LazyLoadImage
+              src={feature1.image}
+              alt="feature-photo"
+              className="full-width"
+              effect="blur"
+            />
+          </div>
         </ScrollAnimation>
         <ScrollAnimation
           className="flex flex-column-md-max flex-space-between full-width mt-5 flex-align-center"
           animateIn="fadeIn"
           duration={3}
         >
-          <LazyLoadImage
-            src={feature2.image}
-            alt="feature-photo"
-            className="feature-card-image"
-          />
+          <div className="feature-image-container">
+            <LazyLoadImage
+              src={feature2.image}
+              alt="feature-photo"
+              className="full-width"
+              effect="blur"
+            />
+          </div>
           <FeatureCard features={feature2} />
         </ScrollAnimation>
         <ScrollAnimation
@@ -49,36 +57,43 @@ const FeaturesContainer = () => {
           duration={3}
         >
           <FeatureCard features={feature3} />
-          <LazyLoadImage
-            src={feature3.image}
-            alt="feature-photo"
-            className="feature-card-image"
-          />
+          <div className="feature-image-container">
+            <LazyLoadImage
+              src={feature3.image}
+              alt="feature-photo"
+              className="full-width"
+              effect="blur"
+            />
+          </div>
         </ScrollAnimation>
         <ScrollAnimation
           className="flex flex-column-md-max flex-space-between full-width mt-5 flex-align-center"
           animateIn="fadeIn"
           duration={3}
         >
-          <LazyLoadImage
-            src={feature4.image}
-            alt="feature-photo"
-            className="feature-card-image"
-          />
+          <div className="feature-image-container">
+            <LazyLoadImage
+              src={feature4.image}
+              alt="feature-photo"
+              className="full-width"
+              effect="blur"
+            />
+          </div>
           <FeatureCard features={feature4} />
         </ScrollAnimation>
         <ScrollAnimation
-          className="mt-10 py-12 border-top border-bottom"
+          className="mt-10 py-8 border-top border-bottom"
           animateIn="fadeIn"
           duration={3}
         >
           <p
             className="font-heading text-center f-32 m-0"
-            style={{fontSize: '65px'}}
+            style={{fontSize: '46px'}}
           >
             {header2}
           </p>
         </ScrollAnimation>
+        <FeatureCategory />
       </div>
     </div>
   );

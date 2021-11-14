@@ -1,0 +1,29 @@
+@import '../configuration/config';
+
+.feature-category {
+  position: relative;
+  height: 750px;
+
+  .feature-text {
+    font-size: 65px;
+    letter-spacing: 0.15em;
+    line-height: 1;
+  }
+  .feature-text-title {
+    letter-spacing: 1em;
+  }
+  .feature-text-study {
+    text-align: right;
+    margin-right: 1em;
+  }
+  .feature-piano {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  .feature-notes {
+      position: absolute;
+      bottom: 30px;
+  }
+}

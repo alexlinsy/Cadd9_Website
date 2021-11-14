@@ -8,10 +8,10 @@ const CasesContainer = () => {
   const {header, casesExample, caseInfo} = casesData;
   return (
     <div className="flex flex-column px-10 cases-container">
-      <div className="mt-10 py-12 border-top border-bottom">
+      <div className="mt-10 py-8 border-top border-bottom">
         <p
           className="font-heading text-center f-32 m-0"
-          style={{fontSize: '65px'}}
+          style={{fontSize: '46px'}}
         >
           {header}
         </p>

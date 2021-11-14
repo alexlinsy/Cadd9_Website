@@ -2,7 +2,7 @@
 
 .feature-container {
   max-width: $app-max-width;
-  .feature-card-image {
+  .feature-image-container {
     width: 45%;
     @include MaxMQ(md) {
       width: 100%;

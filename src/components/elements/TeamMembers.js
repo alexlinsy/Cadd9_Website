@@ -7,8 +7,8 @@ const TeamMembers = ({teams}) => {
   const {members} = teams;
   return (
     <ScrollAnimation animateIn="fadeIn" duration={3} className="pt-2">
-      <div className="py-12 border-bottom">
-        <p className="bold text-center font-heading" style={{fontSize: '65px'}}>{header}</p>
+      <div className="py-8 border-bottom">
+        <p className="bold text-center font-heading" style={{fontSize: '46px'}}>{header}</p>
       </div>
       <ScrollAnimation
         animateIn="fadeIn"
