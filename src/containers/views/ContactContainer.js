@@ -12,8 +12,8 @@ const AddressSection = ({addressData}) => {
 
   return (
     <div className="flex flex-column address-section">
-      <div className="pb-2">
-        <LazyLoadImage src={image} alt="contacts-photo" effect="blur" />
+      <div className="pb-2 address-photo-container">
+        <LazyLoadImage src={image} alt="contacts-photo" effect="blur" className="address-photo"/>
       </div>
       <p className="mt-2 f-20 mb-1">{name}</p>
       <p className="font-heading mb-1">{address}</p>
@@ -35,8 +35,8 @@ const ContactContainer = () => {
         </p>
       </div>
       <ScrollAnimation animateIn="fadeIn" duration={3}>
-        <div className="mt-5 flex flex-space-between flex-column-md full-width address-detail">
-          <div className="divide-line full-width border-bottom" />
+        <div className="mt-5 flex flex-space-between flex-column-md-max full-width address-detail">
+          {/* <div className="divide-line full-width border-bottom" /> */}
           {addresses.map((address, index) => (
             <AddressSection addressData={address} key={index} />
           ))}

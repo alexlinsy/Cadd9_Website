@@ -35,7 +35,6 @@ const PartnersContainer = () => {
           <PartnerBox partner={item} key={index} />
         ))}
       </div>
-      <div className="partners-footer full-width"/>
     </div>
   );
 };

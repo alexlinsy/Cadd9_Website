@@ -3,12 +3,28 @@
 .address-detail {
   position: relative;
 }
+.address-section {
+  width: 45%;
+  @include MaxMQ(md) {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+}
+.address-photo-container {
+  width: 100%;
+  > span {
+    width: 100%;
+  }
+}
+.address-photo {
+  width: 100%;
+}
 .divide-line {
   position: absolute;
   height: 1px;
-  top: 470px;
+  top: 86%;
   z-index: 11;
-  @include MaxMQ(sm) {
+  @include MaxMQ(md) {
     display: none;
   }
 }
