@@ -25,7 +25,7 @@ const AddressSection = ({addressData}) => {
 const ContactContainer = () => {
   const {header, addresses, tel, email} = contactData;
   return (
-    <div className="px-10">
+    <div className="px-10 contact-container">
       <div className="mt-10 py-12 border-top border-bottom">
         <p
           className="font-heading text-center f-32 m-0"

@@ -3,7 +3,7 @@ import React from 'react';
 import '../../styles/views/features.scss';
 
 const FeaturesContainer = () => (
-    <div>
+    <div className="feature-container">
       Features
     </div>
 )

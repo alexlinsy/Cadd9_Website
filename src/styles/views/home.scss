@@ -1,6 +1,7 @@
 @import '../configuration/config';
 
 .home {
+  max-width: $app-max-width;
   height: 100%;
   display: flex;
   justify-content: center;

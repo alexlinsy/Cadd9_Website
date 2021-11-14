@@ -3,7 +3,7 @@ import React from 'react';
 import '../../styles/views/news.scss';
 
 const NewsContainer = () => (
-    <div>
+    <div className="news-container">
       News
     </div>
 )

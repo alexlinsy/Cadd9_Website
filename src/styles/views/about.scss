@@ -1,6 +1,7 @@
 @import '../configuration/config';
 
 .about-container {
+  max-width: $app-max-width;
   .intro-section {
     margin-top: 40px;
     border-bottom: 1px solid black;

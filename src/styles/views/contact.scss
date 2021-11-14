@@ -1,5 +1,9 @@
 @import '../configuration/config';
 
+.contact-container {
+  max-width: $app-max-width;
+}
+
 .address-detail {
   position: relative;
 }

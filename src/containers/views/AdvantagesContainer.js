@@ -7,7 +7,7 @@ import '../../styles/views/advantages.scss';
 const AdvantagesContainer = () => {
   const {header, content} = advantagesData;
   return (
-    <div className="px-10">
+    <div className="px-10 advantages-container">
       <div className="mt-10 py-12 border-top border-bottom">
         <p
           className="font-heading text-center f-32 m-0"

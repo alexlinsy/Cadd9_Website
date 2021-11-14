@@ -1,6 +1,9 @@
 @import '../configuration/config';
 
-.partners-icons {
-  max-width: 1600px;
-  height: auto;
+.partners-container {
+  max-width: $app-max-width;
+  .partners-icons {
+    max-width: 1600px;
+    height: auto;
+  }
 }
