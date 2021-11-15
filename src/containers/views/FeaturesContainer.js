@@ -8,7 +8,7 @@ import '../../styles/views/features.scss';
 import FeatureCategory from '../../components/elements/FeaturesCategory';
 
 const FeaturesContainer = () => {
-  const {header1, header2, feature1, feature2, feature3, feature4} =
+  const {header1, header2, feature1, feature2, feature3, feature4, coursesFeatures} =
     featuresData;
   return (
     <div className="feature-container px-10">
@@ -93,7 +93,11 @@ const FeaturesContainer = () => {
             {header2}
           </p>
         </ScrollAnimation>
-        <FeatureCategory />
+        {
+          coursesFeatures.map((course, index) => (
+            <FeatureCategory courseFeatures={course} key={index}/>
+          ))
+        }
       </div>
     </div>
   );

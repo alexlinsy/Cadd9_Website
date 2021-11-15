@@ -7,10 +7,10 @@ import '../../styles/elements/map-container.scss';
 const Marker = ({show}) => {
   return (
     <>
-    <motion.div whileHover={{y: -10, scale: 1.5}} transiation={{duration: 5}}>
-      <i className="fas fa-map-marker fa-3x map-marker"></i>
-    </motion.div>
-    {show && <p className="font-heading-english map-popup">Cadd9 北京校区</p>}
+      <motion.div whileHover={{y: -10, scale: 1.5}} transiation={{duration: 5}}>
+        <i className="fas fa-map-marker fa-3x map-marker"></i>
+      </motion.div>
+      {show && <p className="font-heading-english map-popup">Cadd9 北京校区</p>}
     </>
   );
 };
@@ -30,9 +30,11 @@ const MapContainer = () => {
         options={{
           styles: [{stylers: [{saturation: -100}, {gamma: 0.5}]}],
         }}
-        onChildClick= {() => setShow(!show)}
+        onChildClick={() => setShow(!show)}
+        onChildMouseEnter={() => setShow(true)}
+        onChildMouseLeave={() => setShow(false)}
       >
-        <Marker lng={center.lng} lat={center.lat} show={show}/>
+        <Marker lng={center.lng} lat={center.lat} show={show} />
       </GoogleMapReact>
     </div>
   );

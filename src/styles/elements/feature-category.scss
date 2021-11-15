@@ -8,6 +8,9 @@
     font-size: 65px;
     letter-spacing: 0.15em;
     line-height: 1;
+    > span {
+        z-index: 11;
+    }
   }
   .feature-text-title {
     letter-spacing: 1em;
