@@ -40,7 +40,7 @@ export const teamMembers = {
       title: ' ',
       image: avatar4,
       intro:
-        '钢琴专业，Cadd9古典部负责人，现就读于美国新英格兰音乐学院。被CBC音乐电视台评为“加拿大十大Piano Hero”，并获“2020全美施坦威最佳钢琴老师”称号。Crescendo 国际比赛、Golden Classical Awards、Launuadiere钢琴比赛中获第一名及最高奖项以及曾先后与卡普林斯基，邓泰山，Ronan O’hora, Jeffery Cohen， Benjamin Pasternak等顶级大师演奏⼤师班，拥有多年教学经验。',
+        '钢琴专业，Cadd9古典部负责人，毕业于美国新英格兰音乐学院。被CBC音乐电视台评为“加拿大十大Piano Hero”，并获“2020全美施坦威最佳钢琴老师”称号。Crescendo 国际比赛、Golden Classical Awards、Launuadiere钢琴比赛中获第一名及最高奖项以及曾先后与卡普林斯基，邓泰山，Ronan O’hora, Jeffery Cohen， Benjamin Pasternak等顶级大师演奏⼤师班，拥有多年教学经验。',
     },
     {
       name: 'JZ',
