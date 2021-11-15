@@ -32,8 +32,8 @@ const MemberCard = ({memberInfo}) => {
         {isOpen && (
           <motion.div
             className="member-intro"
-            exit={{opacity: 0}}
-            transition={{duration: 1}}
+            exit={{height: 0}}
+            transition={{duration: 1.5}}
           >
             <motion.p
               className="leading-normal font-heading"
