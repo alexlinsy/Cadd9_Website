@@ -9,7 +9,7 @@ const MemberCard = ({memberInfo}) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div
+    <motion.div
       className="flex flex-column member-card"
       onMouseEnter={() => setIsOpen(true)}
       onMouseLeave={() => setIsOpen(false)}
@@ -31,6 +31,8 @@ const MemberCard = ({memberInfo}) => {
           <motion.div
             className="member-intro"
             exit={{height: 0}}
+            initial={{height: 0}}
+            animate={{height: 250}}
             transition={{duration: 1.5}}
           >
             <motion.p
@@ -44,7 +46,7 @@ const MemberCard = ({memberInfo}) => {
           </motion.div>
         )}
       </AnimatePresence>
-    </div>
+    </motion.div>
   );
 };
 

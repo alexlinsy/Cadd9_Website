@@ -13,8 +13,8 @@ const TeamMembers = ({teams}) => {
       <ScrollAnimation
         animateIn="fadeIn"
         duration={3}
-        className="py-5 flex flex-wrap flex-justify-center flex-align-center flex-space-between"
-        style={{maxWidth: '1600px'}}
+        className="py-5 flex flex-wrap flex-space-between"
+        style={{maxWidth: '1590px'}}
       >
         {members.map((member, index) => (
           <MemberCard memberInfo={member} key={index} />
