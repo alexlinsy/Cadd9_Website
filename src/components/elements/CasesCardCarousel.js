@@ -28,9 +28,12 @@ const CasesCardCarousel = ({cases}) => {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 500,
+    autoplay: true,
+    speed: 5000,
+    autoplaySpeed: 5000,
     slidesToShow: 5,
     slidesToScroll: 5,
+    cssEase: "linear",
     prevArrow: (
       <PrevArrow newClassName="custom-slick-arrow custom-prev-slick-arrow" />
     ),

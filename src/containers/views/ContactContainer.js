@@ -6,6 +6,7 @@ import {contactData} from '../../data/contact-data';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import '../../styles/views/contact.scss';
 import MapContainer from '../../components/elements/MapContainer';
+import { motion } from 'framer-motion';
 
 const AddressSection = ({addressData}) => {
   const {name, address, image, addressLineTwo} = addressData;
@@ -23,25 +24,25 @@ const AddressSection = ({addressData}) => {
 };
 
 const ContactContainer = () => {
-  const {header, addresses, tel, email} = contactData;
+  const {/*header,*/ addresses, tel, email} = contactData;
   return (
     <div className="px-10 contact-container">
-      <div className="mt-10 py-8 border-top border-bottom">
+      {/* <div className="mt-10 py-8 border-top border-bottom">
         <p
           className="font-heading text-center f-32 m-0"
           style={{fontSize: '46px'}}
         >
           {header}
         </p>
-      </div>
-      <ScrollAnimation animateIn="fadeIn" duration={3}>
+      </div> */}
+      <motion.div initial={{opacity: 0}} animate={{opacity: 1}} transiation={{duration: 2}}>
         <div className="mt-5 flex flex-space-between flex-column-md-max full-width address-detail">
           {/* <div className="divide-line full-width border-bottom" /> */}
           {addresses.map((address, index) => (
             <AddressSection addressData={address} key={index} />
           ))}
         </div>
-      </ScrollAnimation>
+      </motion.div>
       <ScrollAnimation
         animateIn="fadeIn"
         duration={3}

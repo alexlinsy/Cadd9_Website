@@ -9,12 +9,10 @@ const MemberCard = ({memberInfo}) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <motion.div
+    <div
       className="flex flex-column member-card"
       onMouseEnter={() => setIsOpen(true)}
       onMouseLeave={() => setIsOpen(false)}
-      whileHover={{y: -10}}
-      transition={{duration: 1}}
     >
       <div>
         <p className="f-24 bold mb-1 font-heading-english card-name">{name}</p>
@@ -46,7 +44,7 @@ const MemberCard = ({memberInfo}) => {
           </motion.div>
         )}
       </AnimatePresence>
-    </motion.div>
+    </div>
   );
 };
 
