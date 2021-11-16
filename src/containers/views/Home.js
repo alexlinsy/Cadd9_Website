@@ -1,10 +1,14 @@
 import React from 'react';
-import '../../styles/views/home.scss';
 import {motion} from 'framer-motion';
+import {LazyLoadImage} from 'react-lazy-load-image-component';
 import HomeC from '../../assets/icons/homeC.svg';
 import HomeA from '../../assets/icons/homeA.svg';
 import HomeD from '../../assets/icons/homeD.svg';
 import Home9 from '../../assets/icons/home9.svg';
+import HomeMobile from '../../assets/images/home-mobile-image.png';
+
+import 'react-lazy-load-image-component/src/effects/blur.css';
+import '../../styles/views/home.scss';
 
 const Home = () => (
   <div className="home">
@@ -79,6 +83,11 @@ const Home = () => (
           transition={{duration: 0.5}}
         />
       </motion.div>
+    </motion.div>
+    <motion.div   initial={{opacity: 0}}
+      animate={{opacity: 1}}
+      transition={{duration: 1}} className="home-header-mobile full-width">
+      <LazyLoadImage src={HomeMobile} alt="mobile-home-image" className="full-width"/>
     </motion.div>
   </div>
 );

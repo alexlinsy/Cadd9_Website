@@ -40,5 +40,14 @@
       bottom: 75%;
       left: 90%;
     }
+    @include MaxMQ(sm) {
+      display: none;
+    }
+  }
+  .home-header-mobile {
+    display: none;
+    @include MaxMQ(sm) {
+      display: flex;
+    }
   }
 }

@@ -8,7 +8,9 @@
     .intro {
       font-size: 24px;
       line-height: 2;
-      font-family: $primary-body-font-family-light;
+      @include MaxMQ(sm) {
+        font-size: 18px !important;
+      }
     }
   }
 }

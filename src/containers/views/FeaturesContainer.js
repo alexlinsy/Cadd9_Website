@@ -3,6 +3,7 @@ import FeatureCard from '../../components/elements/FeatureCard';
 import {featuresData} from '../../data/features-data';
 import ScrollAnimation from 'react-animate-on-scroll';
 import {LazyLoadImage} from 'react-lazy-load-image-component';
+
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import '../../styles/views/features.scss';
 import FeatureCategory from '../../components/elements/FeaturesCategory';

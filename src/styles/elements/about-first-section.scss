@@ -1,0 +1,32 @@
+@import '../configuration/config';
+
+.about-first-section-image-container {
+  width: 50%;
+  @include MaxMQ(lg) {
+    width: 100%;
+  }
+}
+
+.about-first-section-text-container {
+  width: 50%;
+  @include MaxMQ(lg) {
+    width: 100%;
+  }
+}
+
+.about-first-section-desktop-container {
+  @include MaxMQ(lg) {
+    display: none !important;
+  }
+}
+
+.about-first-section-container {
+  @include MQ(lg) {
+    display: none !important;
+  }
+  @include MaxMQ(sm) {
+    .about-first-content-text {
+      font-size: 18px !important;
+    }
+  }
+}
