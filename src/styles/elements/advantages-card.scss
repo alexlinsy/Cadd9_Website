@@ -3,6 +3,10 @@
 .advantages-card {
   width: 450px;
   height: 350px;
+  @include MaxMQ(md) {
+    width: 100%;
+    height: auto;
+  }
   .advantages-icon {
     width: 80px;
     height: 80px;

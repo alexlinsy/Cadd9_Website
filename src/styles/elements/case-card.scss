@@ -3,17 +3,49 @@
 .case-card {
   max-width: 700px;
   max-height: 410px;
+  @include MaxMQ(sm) {
+    border-bottom: $border-main;
+    margin-top: 0px !important;
+    padding-bottom: 20px;
+  }
+  .case-card-image {
+    @include MaxMQ(sm) {
+      width: 120px;
+    }
+  }
+  .case-card-text {
+    @include MaxMQ(sm) {
+      max-height: 180px;
+    }
+  }
   .case-intro {
     max-height: 260px;
     overflow: auto;
+    @include MaxMQ(sm) {
+      margin-top: 20px;
+    }
+    .case-intro-text {
+      @include MaxMQ(sm) {
+        font-size: 16px;
+      }
+    }
   }
   .case-card-name {
     letter-spacing: 0.15em;
+    @include MaxMQ(sm) {
+      font-size: 20px !important;
+    }
   }
 }
 
 .case-card:nth-child(2) {
   @include MaxMQ(lg) {
     margin-top: 40px;
+  }
+  @include MaxMQ(sm) {
+    padding-top: 20px;
+  }
+  @media only screen and(width: 1024px) {
+    padding-top: 40px;
   }
 }

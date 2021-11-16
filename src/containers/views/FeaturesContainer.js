@@ -7,20 +7,14 @@ import {LazyLoadImage} from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import '../../styles/views/features.scss';
 import FeatureCategory from '../../components/elements/FeaturesCategory';
+import HeaderSection from '../../components/elements/HeaderSection';
 
 const FeaturesContainer = () => {
   const {header1, header2, feature1, feature2, feature3, feature4, coursesFeatures} =
     featuresData;
   return (
     <div className="feature-container px-10">
-      <div className="mt-10 mb-5 py-8 border-top border-bottom">
-        <p
-          className="font-heading text-center f-32 m-0"
-          style={{fontSize: '46px'}}
-        >
-          {header1}
-        </p>
-      </div>
+      <HeaderSection title={header1} borderRequired />
       <div className="flex flex-column">
         <ScrollAnimation
           className="flex flex-column-md-max flex-space-between full-width mt-5 flex-align-center"

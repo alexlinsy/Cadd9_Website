@@ -2,4 +2,17 @@
 
 .cases-container {
   max-width: $app-max-width;
+  .cases-example {
+    flex-direction: column;
+    @include MQ(lg) {
+      flex-direction: row;
+    }
+    @media only screen and(width: 1024px) {
+      flex-direction: column;
+    }
+    @include MaxMQ(md) {
+      padding-left: 0px !important;
+      padding-right: 0px !important;
+    }
+  }
 }

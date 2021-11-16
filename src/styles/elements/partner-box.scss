@@ -7,6 +7,17 @@
   @include MaxMQ(lg) {
     filter: grayscale(0);
   }
+  @include MaxMQ(sm) {
+    border: 0 !important;
+    border-bottom: $border-main !important;
+    justify-content: start !important;
+    width: 95px;
+    height: 90px;
+    margin-bottom: 60px !important;
+    .partner-box-image {
+      width: 75%;
+    }
+  }
 }
 .partner-box:nth-child(n + 2) {
   margin-left: -1px;
@@ -14,4 +25,16 @@
 }
 .partner-box:nth-child(-n + 5) {
   margin-bottom: -1px;
+}
+.partner-box:nth-last-child(1) {
+  @include MaxMQ(sm) {
+    margin-bottom: 0 !important;
+    border-bottom: 0 !important;
+  }
+}
+.partner-box:nth-child(n + 19) {
+  @include MaxMQ(sm) {
+    border-bottom: 0 !important;
+    margin-bottom: 0 !important;
+  }
 }

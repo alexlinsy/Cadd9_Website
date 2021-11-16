@@ -18,16 +18,16 @@ const CasesExample = ({caseImage, offerInfo}) => {
         src={caseImage}
         alt="offer"
         effect="blur"
-        className="border"
+        className="border case-card-image"
       />
-      <div className="ml-5 flex flex-column flex-space-between">
+      <div className="ml-5 flex flex-column flex-space-between case-card-text">
         <div>
           <p className="f-28 bold mb-0 font-heading-english case-card-name">
             {name}
           </p>
         </div>
         <div className="case-intro">
-          <p className="font-heading leading-normal mb-0">{intro}</p>
+          <p className="font-heading leading-normal mb-0 case-intro-text">{intro}</p>
         </div>
       </div>
     </motion.div>
