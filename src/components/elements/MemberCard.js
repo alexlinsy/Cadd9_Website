@@ -7,13 +7,15 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 const MemberCard = ({memberInfo}) => {
   const {name, title, image, intro} = memberInfo;
   const [isOpen, setIsOpen] = useState(false);
+  const [isShown, setIsShown] = useState(false);
+  const screenSize = window.innerWidth;
 
   return (
     <motion.div
       className="flex flex-column member-card"
       onMouseEnter={() => setIsOpen(true)}
       onMouseLeave={() => setIsOpen(false)}
-      onClick={() => setIsOpen(!isOpen)}
+      onClick={() => setIsShown(!isShown)}
       whileHover={{y: -10}}
       transition={{duration: 1}}
     >
@@ -30,7 +32,7 @@ const MemberCard = ({memberInfo}) => {
         />
       </div>
       <AnimatePresence>
-        {isOpen && (
+        {isOpen && screenSize > 1024 ? (
           <motion.div
             className="member-intro"
             exit={{height: 0}}
@@ -47,7 +49,24 @@ const MemberCard = ({memberInfo}) => {
               {intro}
             </motion.p>
           </motion.div>
-        )}
+        ) : isShown && screenSize < 1024 ? (
+          <motion.div
+            className="member-intro"
+            exit={{height: 0}}
+            initial={{height: 0}}
+            animate={{height: 250}}
+            transition={{duration: 1}}
+          >
+            <motion.p
+              className="leading-normal font-heading"
+              initial={{opacity: 0}}
+              animate={{opacity: 1}}
+              transition={{duration: 1}}
+            >
+              {intro}
+            </motion.p>
+          </motion.div>
+        ) : null}
       </AnimatePresence>
     </motion.div>
   );
