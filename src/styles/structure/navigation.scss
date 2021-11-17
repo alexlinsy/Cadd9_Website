@@ -5,7 +5,7 @@
   overflow: hidden;
   bottom: 0;
   background-color: white;
-  box-shadow: 5px 5px 50px white;
+  box-shadow: 5px 5px 20px rgba(255,255,255,0.6);
   @include MaxMQ(sm) {
     overflow: auto;
     height: 100%;

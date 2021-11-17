@@ -18,5 +18,5 @@ export const contactData = {
     },
   ],
   tel: 17813206997,
-  email: 'yehanmusic@163.com',
+  email: 'Cadd9music@163.com',
 };

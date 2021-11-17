@@ -2,6 +2,7 @@ import React from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
 import {LazyLoadImage} from 'react-lazy-load-image-component';
 import {contactData} from '../../data/contact-data';
+import WeChatQRCode from '../../assets/images/weChat-qr-code.png'; 
 
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import '../../styles/views/contact.scss';
@@ -27,14 +28,6 @@ const ContactContainer = () => {
   const {/*header,*/ addresses, tel, email} = contactData;
   return (
     <div className="px-10 contact-container">
-      {/* <div className="mt-10 py-8 border-top border-bottom">
-        <p
-          className="font-heading text-center f-32 m-0"
-          style={{fontSize: '46px'}}
-        >
-          {header}
-        </p>
-      </div> */}
       <motion.div initial={{opacity: 0}} animate={{opacity: 1}} transiation={{duration: 2}}>
         <div className="mt-5 flex flex-space-between flex-column-md-max full-width address-detail">
           {/* <div className="divide-line full-width border-bottom" /> */}
@@ -48,8 +41,9 @@ const ContactContainer = () => {
         duration={3}
         className="flex flex-column mt-2 py-2 border-top"
       >
-        <p className="f-20 font-heading mb-1">{tel}</p>
-        <p className="f-20 font-heading-english mb-0">{email}</p>
+        <LazyLoadImage src={WeChatQRCode} alt="QRCode" className="qr-code-image mt-5"/>
+        <a href="tel:+8617813206997" className="f-20 font-heading mb-1 contact-tel mt-2">Tel: {tel}</a>
+        <a href="mailto:Cadd9music@163.com" className="f-20 font-heading-english mb-0 contact-email">{email}</a>
       </ScrollAnimation>
       <ScrollAnimation animateIn="fadeIn" duration={3} className="mt-5">
         <MapContainer />

@@ -7,9 +7,9 @@ const Footer = () => {
     return (
     <div className="footer mt-10 flex flex-justify-center flex-align-center flex-column">
       <p className="font-heading-english f-24">
-        &copy; {`Cadd9 Branding ${currentYear}`}
+        &copy; {`Cadd9 艺术音乐中心 ${currentYear}`}
       </p>
-      <p className="web-id-number">京ICP备2021035395</p>
+      <a href="http://beian.miit.gov.cn" className="web-id-number">京ICP备2021035395</a>
     </div>
 )}
 

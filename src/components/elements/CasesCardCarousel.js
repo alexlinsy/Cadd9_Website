@@ -2,8 +2,6 @@ import React from 'react';
 import Slider from 'react-slick';
 import prevArrow from '../../assets/icons/pre-arrow.svg';
 import nextArrow from '../../assets/icons/next-arrow.svg';
-import {motion} from 'framer-motion';
-import {LazyLoadImage} from 'react-lazy-load-image-component';
 import '../../styles/elements/cases-card-carousel.scss';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import 'slick-carousel/slick/slick.css';
@@ -33,7 +31,7 @@ const CasesCardCarousel = ({cases}) => {
     autoplaySpeed: 6000,
     slidesToShow: 5,
     slidesToScroll: 1,
-    cssEase: "linear",
+    cssEase: 'linear',
     prevArrow: (
       <PrevArrow newClassName="custom-slick-arrow custom-prev-slick-arrow" />
     ),
@@ -81,22 +79,16 @@ const CasesCardCarousel = ({cases}) => {
   };
 
   return (
-    <div
-      className="slider-case-container"
-    >
+    <div className="slider-case-container">
       <Slider {...settings}>
         {cases.map((item, index) => (
           <div key={index}>
-            {/* <LazyLoadImage
-              className="slider-case-image"
+            <img
+              lassName="slider-case-image"
               alt="slider-offer"
               src={item}
               effect="blur"
-            /> */}
-            <img lassName="slider-case-image"
-              alt="slider-offer"
-              src={item}
-              effect="blur"/>
+            />
           </div>
         ))}
       </Slider>

@@ -6,8 +6,18 @@
     padding-left: 20px;
     padding-right: 20px;
   }
+  .contact-tel {
+    text-decoration: none;
+    color: black;
+  }
+  .contact-email {
+    text-decoration: none;
+    color: black;
+  }
+  .qr-code-image {
+    width: 100px;
+  }
 }
-
 .address-detail {
   position: relative;
 }
