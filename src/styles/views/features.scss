@@ -17,4 +17,15 @@
       font-size: 32px !important;
     }
   }
+  .feature-image-two {
+    @include MaxMQ(sm) {
+      display: none;
+    }
+  }
+  .feature-image-two-mobile {
+    display: none;
+    @include MaxMQ(sm) {
+      display: block;
+    }
+  }
 }

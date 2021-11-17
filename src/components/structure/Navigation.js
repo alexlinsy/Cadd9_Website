@@ -40,20 +40,12 @@ const Navigation = () => {
       </nav>
       <div className="nav-bar-mobile flex flex-space-between px-5 flex-align-center">
         <div className="flex flex-align-center">
-          {isOpen ? (
-            <div
-              className="nav-close-button font-body"
-              style={{fontSize: '70px'}}
-              onClick={() => setIsOpen(!isOpen)}
-            >
-              +
-            </div>
-          ) : (
-            <i
-              className="fas fa-bars fa-2x"
-              onClick={() => setIsOpen(!isOpen)}
-            ></i>
-          )}
+          <div className={`${isOpen ? 'open' : ''} nav-mobile-button`} onClick={() => setIsOpen(!isOpen)}>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
           <Link
             className="nav-item"
             to={routes.home}
@@ -61,10 +53,10 @@ const Navigation = () => {
           >
             <p className="font-heading-english ml-5 mb-0 f-20">Cadd9</p>
           </Link>
-          <p className="font-body ml-5 mb-0 f-20">音乐</p>
+          <p className="font-heading ml-5 mb-0 f-20">音乐</p>
         </div>
         <div>
-          <p className="font-body mb-0 f-20" style={{textAlign: 'left'}}>
+          <p className="font-heading mb-0 f-20" style={{textAlign: 'left'}}>
             艺术中心
           </p>
         </div>

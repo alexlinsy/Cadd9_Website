@@ -1,0 +1,43 @@
+@import '../configuration/config';
+
+.contact-form {
+  max-width: 800px;
+  input {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 0px;
+    border: 2px solid black;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
+  textarea {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 0px;
+    border: 2px solid black;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
+  input[type='submit'],
+  .button {
+    position: relative;
+    background: white;
+    font-family: $primary-heading-font-family;
+    color: black;
+    border: 2px solid black;
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 4px;
+    display: block;
+    appearance: none;
+    border-radius: 0px;
+    width: 50%;
+    transition: 0.3s all;
+  }
+}

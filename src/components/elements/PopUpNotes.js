@@ -8,18 +8,25 @@ import '../../styles/elements/pop-up-notes.scss';
 const PopUpNotes = () => {
   const history = useHistory();
   const location = useLocation();
-  console.log(location.pathname)
+  function handleIconClicked() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+    history.push(routes.contact)
+  }
+  console.log(location.pathname);
   return (
     <>
-      {location.pathname !== '/contact' && (
+      {location.pathname !== '/'&&(
         <motion.div
           className="flex flex-column pop-up-container py-2 px-2"
           whileHover={{y: -20}}
           transition={{duration: 0.5}}
-          onClick={() => history.push(routes.contact)}
+          onClick={() => handleIconClicked()}
         >
-          <i className="fas fa-music fa-2x ml-3"></i>
-          <p className="f-16 font-heading mb-0 mt-1">点我咨询</p>
+          <i className="fas fa-music fa ml-3"></i>
+          <p className="f-12 font-heading mb-0 mt-1">点我咨询</p>
         </motion.div>
       )}
     </>

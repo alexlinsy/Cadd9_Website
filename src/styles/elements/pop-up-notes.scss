@@ -1,15 +1,13 @@
 @import '../configuration/config';
 
 .pop-up-container {
-  background-color:rgba(255,255,255,0.8);
-  box-shadow: 5px 5px 20px rgba(255,255,255,0.6);
   border-radius: 2px;
   z-index: 11;
   position: fixed;
-  left: 40px;
-  top: 40px;
+  right: 40px;
+  bottom: 40px;
   @include MaxMQ(sm) {
-    left: 20px;
-    top: 20px;
+    right: 20px;
+    bottom: 50px;
   }
 }

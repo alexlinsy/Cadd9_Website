@@ -1,6 +1,7 @@
 @import '../configuration/config';
 
 .home {
+  padding-top: 4%;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -10,7 +11,7 @@
   }
   @include MQ(xxl) {
     width: 100%;
-    max-width: 2900px;
+    max-width: 3400px;
   }
   .home_header {
     position: relative;
@@ -33,7 +34,7 @@
     }
     .home_c {
       @media only screen and (max-width: 1024px) {
-        bottom: 10% !important;
+        bottom: 30% !important;
       }
       @include MQ(sm) {
         bottom: 14%;
@@ -49,7 +50,7 @@
     }
     .home_a {
       @media only screen and (max-width: 1024px) {
-        bottom: 31% !important;
+        bottom: 40% !important;
       }
       @include MQ(sm) {
         bottom: 33%;
@@ -65,7 +66,7 @@
     }
     .home_d {
       @media only screen and (max-width: 1024px) {
-        bottom: 52% !important;
+        bottom: 50% !important;
       }
       @include MQ(sm) {
         bottom: 52%;
@@ -81,7 +82,7 @@
     }
     .home_dd {
       @media only screen and (max-width: 1024px) {
-        bottom: 73% !important;
+        bottom: 60% !important;
       }
       @include MQ(sm) {
         bottom: 71%;
@@ -97,10 +98,10 @@
     }
     .home_9 {
       @media only screen and (max-width: 1024px) {
-        bottom: 70% !important;
+        bottom: 57% !important;
       }
       @include MQ(sm) {
-        bottom: 69%;
+        bottom: 55%;
         left: 84%;
       }
       @include MQ(lgr) {

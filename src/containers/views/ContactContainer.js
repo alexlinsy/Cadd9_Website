@@ -3,11 +3,12 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import {LazyLoadImage} from 'react-lazy-load-image-component';
 import {contactData} from '../../data/contact-data';
 import WeChatQRCode from '../../assets/images/weChat-qr-code.png'; 
+import MapContainer from '../../components/elements/MapContainer';
+import { motion } from 'framer-motion';
+import ContactForm from '../../components/elements/ContactForm';
 
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import '../../styles/views/contact.scss';
-import MapContainer from '../../components/elements/MapContainer';
-import { motion } from 'framer-motion';
 
 const AddressSection = ({addressData}) => {
   const {name, address, image, addressLineTwo} = addressData;
@@ -44,6 +45,9 @@ const ContactContainer = () => {
         <LazyLoadImage src={WeChatQRCode} alt="QRCode" className="qr-code-image mt-5"/>
         <a href="tel:+8617813206997" className="f-20 font-heading mb-1 contact-tel mt-2">Tel: {tel}</a>
         <a href="mailto:Cadd9music@163.com" className="f-20 font-heading-english mb-0 contact-email">{email}</a>
+      </ScrollAnimation>
+      <ScrollAnimation animateIn="fadeIn" duration={3} className="mt-5">
+        <ContactForm />
       </ScrollAnimation>
       <ScrollAnimation animateIn="fadeIn" duration={3} className="mt-5">
         <MapContainer />
