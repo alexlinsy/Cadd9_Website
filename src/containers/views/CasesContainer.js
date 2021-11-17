@@ -12,7 +12,7 @@ const CasesContainer = () => {
       <HeaderSection title={header} borderRequired />
       <div className="py-10 px-15 flex flex-space-between flex-column-lg-max cases-example">
         <CasesExample caseImage={casesExample[0]} offerInfo={caseInfo[0]} />
-        <CasesExample caseImage={casesExample[1]} offerInfo={caseInfo[1]} />
+        <CasesExample caseImage={casesExample[3]} offerInfo={caseInfo[1]} />
       </div>
       <div className="case-card-carousel-container">
         <CasesCardCarousel cases={casesExample} />

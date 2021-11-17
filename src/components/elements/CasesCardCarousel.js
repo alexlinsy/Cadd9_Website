@@ -29,10 +29,10 @@ const CasesCardCarousel = ({cases}) => {
     dots: false,
     infinite: true,
     autoplay: true,
-    speed: 5000,
-    autoplaySpeed: 5000,
+    speed: 6000,
+    autoplaySpeed: 6000,
     slidesToShow: 5,
-    slidesToScroll: 5,
+    slidesToScroll: 1,
     cssEase: "linear",
     prevArrow: (
       <PrevArrow newClassName="custom-slick-arrow custom-prev-slick-arrow" />
@@ -81,25 +81,26 @@ const CasesCardCarousel = ({cases}) => {
   };
 
   return (
-    <motion.div
-      initial={{opacity: 0}}
-      animate={{opacity: 1}}
-      transition={{duration: 2}}
+    <div
       className="slider-case-container"
     >
       <Slider {...settings}>
         {cases.map((item, index) => (
           <div key={index}>
-            <LazyLoadImage
+            {/* <LazyLoadImage
               className="slider-case-image"
               alt="slider-offer"
               src={item}
               effect="blur"
-            />
+            /> */}
+            <img lassName="slider-case-image"
+              alt="slider-offer"
+              src={item}
+              effect="blur"/>
           </div>
         ))}
       </Slider>
-    </motion.div>
+    </div>
   );
 };
 
