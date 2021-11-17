@@ -6,7 +6,7 @@
   flex-direction: column;
   align-items: center;
   .partners-icons {
-    max-width: 1600px;
+    max-width: 1400px;
     height: auto;
     @include MaxMQ(sm) {
       align-items: center;

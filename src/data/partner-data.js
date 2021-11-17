@@ -8,6 +8,8 @@ import partnerIcon7 from '../assets/partners/partner-icon-7.png';
 import partnerIcon8 from '../assets/partners/partner-icon-8.png';
 import partnerIcon9 from '../assets/partners/partner-icon-9.png';
 import partnerIcon10 from '../assets/partners/partner-icon-10.png';
+import partnerIcon11 from '../assets/partners/partner-icon-11.png';
+import partnerIcon12 from '../assets/partners/partner-icon-12.png';
 import partnerEdu1 from '../assets/partners/partner-edu-1.png';
 import partnerEdu2 from '../assets/partners/partner-edu-2.png';
 import partnerEdu3 from '../assets/partners/partner-edu-3.png';
@@ -28,6 +30,7 @@ import partnerEdu17 from '../assets/partners/partner-edu-17.png';
 import partnerEdu18 from '../assets/partners/partner-edu-18.png';
 import partnerEdu19 from '../assets/partners/partner-edu-19.png';
 import partnerEdu20 from '../assets/partners/partner-edu-20.png';
+import partnerEdu21 from '../assets/partners/partner-edu-21.png';
 
 export const partnerData = {
   headerBusiness: '商业合作伙伴',
@@ -43,6 +46,8 @@ export const partnerData = {
     partnerIcon8,
     partnerIcon9,
     partnerIcon10,
+    partnerIcon11,
+    partnerIcon12,
   ],
   partnersEdu: [
     partnerEdu1,
@@ -65,5 +70,6 @@ export const partnerData = {
     partnerEdu18,
     partnerEdu19,
     partnerEdu20,
+    partnerEdu21,
   ],
 };

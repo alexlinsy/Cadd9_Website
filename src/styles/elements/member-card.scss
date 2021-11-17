@@ -17,6 +17,14 @@
     opacity: 0.8;
   }
 }
+@include MaxMQ(md) {
+  .member-card {
+    width: 150px;
+  }
+  .member-card:nth-child(2) {
+    padding-top: 22px !important;
+  }
+}
 @media only screen and (min-width: 1370px) {
   .member-card:nth-child(2n) {
     margin-top: 200px;

@@ -4,10 +4,11 @@
   @include MaxMQ(sm) {
     max-width: 576px;
     height: 500px;
+    margin-bottom: 0px !important;
   }
   position: relative;
   height: 750px;
-
+  margin-bottom: 200px;
   .feature-text {
     font-size: 65px;
     letter-spacing: 0.15em;

@@ -37,15 +37,3 @@
 .partner-box:nth-child(-n + 5) {
   margin-bottom: -1px;
 }
-.partner-box:nth-last-child(1) {
-  @include MaxMQ(sm) {
-    margin-bottom: 0 !important;
-    border-bottom: 0 !important;
-  }
-}
-.partner-box:nth-child(n + 19) {
-  @include MaxMQ(sm) {
-    border-bottom: 0 !important;
-    margin-bottom: 0 !important;
-  }
-}

@@ -119,7 +119,7 @@
     display: none;
     @include MaxMQ(sm) {
       display: flex;
-      padding-bottom: 30px;
+      padding-bottom: 150px;
       padding-top: 150px;
     }
   }
