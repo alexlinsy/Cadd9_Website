@@ -10,9 +10,10 @@ import avatar9 from '../assets/avatars/avatar9.png';
 import avatar10 from '../assets/avatars/avatar10.png';
 import avatar11 from '../assets/avatars/avatar11.png';
 import avatar12 from '../assets/avatars/avatar12.png';
-//import avatar13 from '../assets/avatars/avatar13.png';
+import avatar13 from '../assets/avatars/avatar13.png';
 import avatar14 from '../assets/avatars/avatar14.png';
 import avatar15 from '../assets/avatars/avatar15.png';
+import avatar16 from '../assets/avatars/avatar16.png';
 
 export const teamMembers = {
   header: '我们的团队',
@@ -104,7 +105,7 @@ export const teamMembers = {
     {
       name: 'JH',
       title: ' ',
-      image: avatar8,
+      image: avatar13,
       intro:
         '美韩籍作曲家，编曲人，影视配乐家。美国伯克利音乐学院电影配乐专业毕业生，主修乐器吉他，擅⻓几乎所有类型音乐，为许多影视进行过配乐，发表过自己的个人专辑，多年教学经验，同时也是多个乐队的主吉他手，指导过多位不同国籍的学生考入伯克利音乐学院。',
     },
@@ -122,5 +123,11 @@ export const teamMembers = {
       intro:
         '男中音歌唱家，博士毕业于德国科隆音乐与舞蹈学院声乐专业，精通美声演唱技巧、舞台表演，声乐艺术，多种语言演唱指导。签约于德国亚琛歌剧院、德国波恩歌剧院、法兰克福Cantate音乐厅、卢森堡音乐厅等。曾获德国瓦格纳奖学金、世界华人声乐大赛首奖及最佳歌剧角色诠释奖等奖项。也是17年德国科隆国际声乐大赛中唯一入围决赛的中国选手。',
     },
+    {
+      name: 'YZ',
+      title: '',
+      image: avatar16,
+      intro: 'YZ，制作人，毕业于伯克利音乐学院，电子音乐制作与设计专业，主修乐器大提琴。在音乐制作及音效设计领域均有丰富经验，精通，为独立电影《Departure of Light》配乐及音效制作，参与电子音乐人Terry Zhong《8PM》专辑制作。曾在奥地利维也纳第四届“至高荣耀”国际音乐节等大提琴演奏比赛中获金奖。在范玮琪个人专辑发布会、理查德·克莱德曼的全球巡演中担任大提琴首席。'
+    }
   ],
 };
