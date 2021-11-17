@@ -28,7 +28,7 @@ const CasesCardCarousel = ({cases}) => {
     infinite: true,
     autoplay: true,
     speed: 6000,
-    autoplaySpeed: 6000,
+    autoplaySpeed: true,
     slidesToShow: 5,
     slidesToScroll: 1,
     cssEase: 'linear',
