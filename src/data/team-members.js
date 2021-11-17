@@ -40,14 +40,14 @@ export const teamMembers = {
         '美国伯克利音乐学院爵士钢琴表演专业。致力于探索流行乐、爵士乐、 city pop、与电子⻛格音乐的融合。师从爵士乐大师Yoko Miwa、Doug Johnson、等。结合自由的风格去帮助所有热爱音乐的学生。',
     },
     {
-      name: 'Tanni',
+      name: 'JZ',
       title: ' ',
       image: avatar4,
       intro:
         '毕业于美国伯克利音乐学院，Cadd9教学副主管，电影配乐与现代音乐制作双专业，主修乐器钢琴。Artist Creativity奖学金获得者，其作品做为伯克利年度专业代表作品在毕业典礼播放。在游戏、电影电视剧，纪录片的配乐、音效设计、录音、制作上具有丰富经验。参与作品包括游戏音乐《Astry》、《Project Origin》、《Karisvale》，纪录片《A Doctor’s Journey》、《LionFamily》等。长期辅导多名学生乐理，钢琴，制作，电影配乐。',
     },
     {
-      name: 'JZ',
+      name: 'Tanni',
       title: ' ',
       image: avatar5,
       intro:

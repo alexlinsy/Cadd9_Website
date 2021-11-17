@@ -82,7 +82,7 @@ const FeaturesContainer = () => {
           duration={3}
         >
           <p
-            className="font-heading text-center m-0"
+            className="font-heading text-center m-0 feature-header-two"
             style={{fontSize: '46px'}}
           >
             {header2}

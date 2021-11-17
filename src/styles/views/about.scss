@@ -17,6 +17,11 @@
       }
     }
   }
+  .team-mebers {
+    @include MaxMQ(sm) {
+      justify-content: center !important;
+    }
+  }
   .team-members-container {
     margin-bottom: 100px;
   }

@@ -22,22 +22,25 @@
     .home_letter {
       position: absolute;
       @include MQ(sm) {
-        width: 20%;
+        width: 15%;
+      }
+      @media only screen and (max-width: 1024px) {
+        width: 18%;
       }
       @include MQ(lgr) {
-        width: 15%;
+        width: 13%;
       }
     }
     .home_c {
+      @media only screen and (max-width: 1024px) {
+        bottom: 10% !important;
+      }
       @include MQ(sm) {
         bottom: 14%;
         left: -4%;
       }
       @include MQ(lgr) {
         left: -3%;
-        bottom: 10%;
-      }
-      @include MQ(xxl) {
         bottom: 12%;
       }
       @media only screen and (min-width: 2083px) {
@@ -45,64 +48,64 @@
       }
     }
     .home_a {
+      @media only screen and (max-width: 1024px) {
+        bottom: 31% !important;
+      }
       @include MQ(sm) {
-        bottom: 28%;
+        bottom: 33%;
         left: 18.5%;
       }
       @include MQ(lgr) {
         left: 19.5%;
-        bottom: 20%;
-      }
-      @include MQ(xxl) {
-        bottom: 24%;
+        bottom: 27%;
       }
       @media only screen and (min-width: 2083px) {
-        bottom: 20%
+        bottom: 25%
       }
     }
     .home_d {
+      @media only screen and (max-width: 1024px) {
+        bottom: 52% !important;
+      }
       @include MQ(sm) {
-        bottom: 42%;
+        bottom: 52%;
         left: 41%;
       }
       @include MQ(lgr) {
         left: 42%;
-        bottom: 30%;
-      }
-      @include MQ(xxl) {
-        bottom: 36%;
-      }
-      @media only screen and (min-width: 2083px) {
-        bottom: 30%
-      }
-    }
-    .home_dd {
-      @include MQ(sm) {
-        bottom: 56%;
-        left: 63.5%;
-      }
-      @include MQ(lgr) {
-        left: 64.5%;
-        bottom: 40%;
-      }
-      @include MQ(xxl) {
-        bottom: 48%;
+        bottom: 42%;
       }
       @media only screen and (min-width: 2083px) {
         bottom: 40%
       }
     }
-    .home_9 {
+    .home_dd {
+      @media only screen and (max-width: 1024px) {
+        bottom: 73% !important;
+      }
       @include MQ(sm) {
-        bottom: 70%;
+        bottom: 71%;
+        left: 63.5%;
+      }
+      @include MQ(lgr) {
+        left: 64.5%;
+        bottom: 57%;
+      }
+      @media only screen and (min-width: 2083px) {
+        bottom: 55%
+      }
+    }
+    .home_9 {
+      @media only screen and (max-width: 1024px) {
+        bottom: 70% !important;
+      }
+      @include MQ(sm) {
+        bottom: 69%;
         left: 84%;
       }
       @include MQ(lgr) {
         left: 87%;
-        bottom: 50%;
-      }
-      @include MQ(xxl) {
-        bottom: 60%;
+        bottom: 54%;
       }
       @media only screen and (min-width: 2083px) {
         bottom: 50%

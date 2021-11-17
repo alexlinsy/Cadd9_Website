@@ -12,4 +12,9 @@
       width: 100%;
     }
   }
+  .feature-header-two {
+    @include MaxMQ(sm) {
+      font-size: 32px !important;
+    }
+  }
 }
