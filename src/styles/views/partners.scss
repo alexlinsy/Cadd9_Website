@@ -9,8 +9,6 @@
     max-width: 1600px;
     height: auto;
     @include MaxMQ(sm) {
-      justify-content: start !important;
-      border-bottom: $border-main !important;
       align-items: center;
     }
   }
