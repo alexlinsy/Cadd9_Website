@@ -49,8 +49,8 @@ export const featuresData = {
             <p className="font-heading feature-text-title feature-text mb-0">
               一对一
             </p>
-            <p className="font-heading-english feature-text">Instrument</p>
-            <p className="f-32 font-heading mb-0">(声乐/钢琴/吉他/贝斯/等)</p>
+            <p className="font-heading-english feature-text feature-text-insturment">Instrument</p>
+            <p className="f-32 font-heading mb-0 feature-text-one">(声乐/钢琴/吉他/贝斯/等)</p>
           </div>
           <div className="flex-column">
             <p className="font-heading feature-text feature-text-title mb-0">
@@ -67,7 +67,7 @@ export const featuresData = {
         <ul>
           <li className="f-16 font-heading leading-normal">
             根据不同学生适合的音乐风格分配适合的老师进行
-            <span className="ml-20">一对一甚至二对一辅导</span>
+            <span className="ml-20 feature-text-green" style={{color: '#5ecc04'}}>一对一甚至二对一辅导</span>
           </li>
           <li className="f-16 font-heading leading-normal">
             乐器种类多 选择范围广
@@ -106,12 +106,12 @@ export const featuresData = {
       title: (
         <div className="flex-column full-width">
           <p className="font-heading feature-text mb-0 full-width flex flex-space-between">
-            <span>音乐制作/分析课</span>
-            <span className="font-heading-english">Song Decon-</span>
+            <span className="text-song-decon">音乐制作/分析课</span>
+            <span className="font-heading-english text-song-decon">Song Decon-</span>
           </p>
           <p className="font-heading-english feature-text flex flex-space-between">
-            <span>struction/</span>{' '}
-            <span className="font-heading-english">Production analysis</span>
+            <span className="text-song-decon">struction/</span>{' '}
+            <span className="font-heading-english text-song-decon">Production analysis</span>
           </p>
         </div>
       ),
@@ -135,21 +135,21 @@ export const featuresData = {
               className="font-heading feature-text mb-0"
               style={{letterSpacing: '.5em'}}
             >
-              视唱练耳课
+              <span className="text-song-decon">视唱练耳课</span>
             </p>
-            <p className="font-heading-english feature-text mb-0">
+            <p className="font-heading-english feature-text mb-0 text-song-decon">
               Improvisation
             </p>
           </div>
           <div className="flex flex-column">
             <p
-              className="font-heading-english feature-text mb-0"
+              className="font-heading-english feature-text mb-0 text-song-decon"
               style={{textAlign: 'end'}}
             >
               /即<span style={{marginLeft: '100px'}}>兴</span>
             </p>
-            <p className="font-heading-english feature-text mb-0">
-              <span style={{marginRight: '140px'}}>/</span>sight sing
+            <p className="font-heading-english feature-text mb-0 text-song-decon">
+              <span className="feature-text-sight-sing" style={{marginRight: '140px'}}>/</span>sight sing
             </p>
           </div>
         </>
@@ -164,7 +164,7 @@ export const featuresData = {
             训练耳朵对于音符/和声/节奏/旋律的敏锐程度各种风格即兴学习与开拓
           </li>
           <p
-            className="f-16 font-heading-english leading-normal mb-0"
+            className="f-16 font-heading-english leading-normal mb-0 feature-text-blues"
             style={{marginLeft: '20px'}}
           >
             (blues/jazz/-·funk/r&b/smooth jazz/pop/etc.)
@@ -182,7 +182,7 @@ export const featuresData = {
             </span>{' '}
             <span className="font-heading-english">Creative</span>
           </p>
-          <p className="font-heading-english feature-text flex flex-space-between">
+          <p className="font-heading-english feature-text flex flex-space-between feature-keyboard">
             <span>songwriting</span>{' '}
             <span style={{textAlign: 'end'}}>class</span>
           </p>

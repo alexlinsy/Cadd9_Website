@@ -3,6 +3,9 @@
 .footer {
   width: 100%;
   height: 150px;
+  .web-id-number {
+    font-size: 11px;
+  }
   @include MQ(xxl) {
     flex-shrink: 0;
   }

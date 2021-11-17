@@ -9,6 +9,9 @@
     margin-bottom: 20px;
   }
   .feature-card-content {
+    @include MaxMQ(sm) {
+      font-size: 14px !important;
+    }
     @include MaxMQ(lgr) {
       font-size: 16px;
     }

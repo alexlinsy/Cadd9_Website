@@ -18,6 +18,10 @@
       width: 75%;
     }
   }
+  @media only screen and(max-width: 360px) {
+    width: 90px;
+    height: 90px;
+  }
 }
 .partner-box:nth-child(n + 2) {
   margin-left: -1px;

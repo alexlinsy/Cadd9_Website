@@ -13,7 +13,7 @@ const FeatureCard = ({features}) => {
       animate={{opacity: 1}}
       transations={{duration: 2}}
     >
-      <LazyLoadImage src={title} alt="feature-header" effect="blur" className="full-width"/>
+      <LazyLoadImage src={title} alt="feature-header" effect="blur" className="full-width feature-image-text"/>
       <p className="font-heading leading-normal mb-0 mt-2 feature-card-content">{content}</p>
     </motion.div>
   );

@@ -1,6 +1,10 @@
 @import '../configuration/config';
 
 .feature-category {
+  @include MaxMQ(sm) {
+    max-width: 576px;
+    height: 500px;
+  }
   position: relative;
   height: 750px;
 
@@ -9,7 +13,25 @@
     letter-spacing: 0.15em;
     line-height: 1;
     > span {
-        z-index: 11;
+      z-index: 11;
+    }
+    @media only screen and(max-width: 768px) {
+      font-size: 32px;
+      letter-spacing: 0.15em;
+    }
+    @include MaxMQ(sm) {
+      font-size: 20px;
+      letter-spacing: normal !important;
+    }
+  }
+  .feature-text-insturment {
+    @include MaxMQ(sm) {
+      margin-bottom: 0px !important;
+    }
+  }
+  .feature-text-one {
+    @include MaxMQ(sm) {
+      font-size: 12px !important;
     }
   }
   .feature-text-title {
@@ -18,15 +40,67 @@
   .feature-text-study {
     text-align: right;
     margin-right: 1em;
+    @include MaxMQ(sm) {
+      margin-right: 0;
+    }
   }
   .feature-piano {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
+    @include MQ(xs) {
+    }
   }
   .feature-notes {
-      position: absolute;
-      bottom: 30px;
+    position: absolute;
+    bottom: 30px;
+    @include MaxMQ(sm) {
+      list-style: none;
+      top: 13%;
+    }
   }
+  .feature-notes > ul > li {
+    @include MaxMQ(sm) {
+      font-size: 12px !important;
+      padding-left: 0;
+    }
+  }
+  .feature-notes > ul > li::before {
+    @include MaxMQ(sm) {
+      content: none;
+    }
+  }
+  .feature-notes > ul {
+    @include MaxMQ(sm) {
+      padding: 0;
+    }
+  }
+  .feature-text-green {
+    @include MaxMQ(sm) {
+      margin-left: 0px !important;
+      display: block;
+    }
+  }
+  .feature-text-sight-sing {
+    @include MaxMQ(sm) {
+      margin-right: 60px !important;
+    }
+  }
+  .feature-text-blues {
+    @include MaxMQ(sm) {
+      margin-left: 0px !important;
+      font-size: 12px !important;
+    }
+  }
+  .text-song-decon {
+    @include MaxMQ(xl) {
+      letter-spacing: normal;
+    }
+  }
+}
+
+.feature-category:nth-child(5) {
+  
 }

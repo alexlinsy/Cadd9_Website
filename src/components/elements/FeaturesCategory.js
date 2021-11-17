@@ -12,7 +12,7 @@ const FeatureCategory = ({courseFeatures}) => {
     <ScrollAnimation
       className="mt-10 feature-category"
       animateIn="fadeIn"
-      duration={3}
+      duration={2}
     >
       <motion.div
         className="flex flex-space-between"
@@ -37,7 +37,7 @@ const FeatureCategory = ({courseFeatures}) => {
       <ScrollAnimation
         className="feature-notes"
         animateIn="fadeIn"
-        duration={3}
+        duration={2}
       >
         {notes}
       </ScrollAnimation>

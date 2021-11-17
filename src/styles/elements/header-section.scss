@@ -1,0 +1,8 @@
+@import '../configuration/config';
+
+.header-text {
+  font-size: 46px;
+  @include MaxMQ(sm) {
+    font-size: 32px;
+  }
+}

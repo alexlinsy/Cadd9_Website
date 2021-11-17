@@ -10,7 +10,7 @@
   }
   @include MQ(xxl) {
     width: 100%;
-    max-width: 3485px;
+    max-width: 2900px;
   }
   .home_header {
     position: relative;
@@ -116,6 +116,7 @@
     display: none;
     @include MaxMQ(sm) {
       display: flex;
+      margin-bottom: 25px;
     }
   }
 }
