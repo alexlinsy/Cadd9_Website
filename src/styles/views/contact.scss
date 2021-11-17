@@ -2,6 +2,10 @@
 
 .contact-container {
   max-width: $app-max-width;
+  @include MaxMQ(sm) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .address-detail {

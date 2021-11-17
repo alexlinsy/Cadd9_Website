@@ -2,6 +2,10 @@
 
 .about-container {
   max-width: $app-max-width;
+  @include MaxMQ(sm) {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
   .intro-section {
     margin-top: 40px;
     border-bottom: 1px solid black;

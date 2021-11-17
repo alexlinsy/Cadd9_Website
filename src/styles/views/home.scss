@@ -1,13 +1,16 @@
 @import '../configuration/config';
 
 .home {
-  max-width: $app-max-width;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   @include MaxMQ(md) {
     height: 96%;
+  }
+  @include MQ(xxl) {
+    width: 100%;
+    max-width: 3485px;
   }
   .home_header {
     position: relative;
@@ -17,27 +20,93 @@
     justify-content: space-between;
     align-items: flex-end;
     .home_letter {
-      width: 7.5%;
       position: absolute;
+      @include MQ(sm) {
+        width: 20%;
+      }
+      @include MQ(lgr) {
+        width: 15%;
+      }
     }
     .home_c {
-      bottom: 15%;
+      @include MQ(sm) {
+        bottom: 14%;
+        left: -4%;
+      }
+      @include MQ(lgr) {
+        left: -3%;
+        bottom: 10%;
+      }
+      @include MQ(xxl) {
+        bottom: 12%;
+      }
+      @media only screen and (min-width: 2083px) {
+        bottom: 10%
+      }
     }
     .home_a {
-      bottom: 30%;
-      left: 22.5%;
+      @include MQ(sm) {
+        bottom: 28%;
+        left: 18.5%;
+      }
+      @include MQ(lgr) {
+        left: 19.5%;
+        bottom: 20%;
+      }
+      @include MQ(xxl) {
+        bottom: 24%;
+      }
+      @media only screen and (min-width: 2083px) {
+        bottom: 20%
+      }
     }
     .home_d {
-      bottom: 45%;
-      left: 45%;
+      @include MQ(sm) {
+        bottom: 42%;
+        left: 41%;
+      }
+      @include MQ(lgr) {
+        left: 42%;
+        bottom: 30%;
+      }
+      @include MQ(xxl) {
+        bottom: 36%;
+      }
+      @media only screen and (min-width: 2083px) {
+        bottom: 30%
+      }
     }
     .home_dd {
-      bottom: 60%;
-      left: 67.5%;
+      @include MQ(sm) {
+        bottom: 56%;
+        left: 63.5%;
+      }
+      @include MQ(lgr) {
+        left: 64.5%;
+        bottom: 40%;
+      }
+      @include MQ(xxl) {
+        bottom: 48%;
+      }
+      @media only screen and (min-width: 2083px) {
+        bottom: 40%
+      }
     }
     .home_9 {
-      bottom: 75%;
-      left: 90%;
+      @include MQ(sm) {
+        bottom: 70%;
+        left: 84%;
+      }
+      @include MQ(lgr) {
+        left: 87%;
+        bottom: 50%;
+      }
+      @include MQ(xxl) {
+        bottom: 60%;
+      }
+      @media only screen and (min-width: 2083px) {
+        bottom: 50%
+      }
     }
     @include MaxMQ(sm) {
       display: none;

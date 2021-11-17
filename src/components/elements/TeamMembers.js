@@ -6,14 +6,14 @@ const TeamMembers = ({teams}) => {
   const {header} = teams;
   const {members} = teams;
   return (
-    <ScrollAnimation animateIn="fadeIn" duration={3} className="pt-2">
-      <div className="py-8 border-bottom">
+    <ScrollAnimation animateIn="fadeIn" duration={3} className="pt-2 flex flex-column flex-align-center">
+      <div className="py-8 border-bottom full-width">
         <p className="bold text-center font-heading" style={{fontSize: '46px'}}>{header}</p>
       </div>
       <ScrollAnimation
         animateIn="fadeIn"
         duration={3}
-        className="py-5 flex flex-wrap flex-space-between team-members"
+        className="py-5 flex flex-wrap flex-space-between team-members mt-10"
         style={{maxWidth: '1590px'}}
       >
         {members.map((member, index) => (

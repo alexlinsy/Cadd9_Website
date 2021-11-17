@@ -2,6 +2,10 @@
 
 .cases-container {
   max-width: $app-max-width;
+  @include MaxMQ(sm) {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
   .cases-example {
     flex-direction: column;
     @include MQ(lg) {

@@ -40,8 +40,8 @@ export const steps = [
     title: '联系我们',
     value: routes.contact,
   },
-  {
-    title: '新闻',
-    value: routes.news,
-  }
+  // {
+  //   title: '新闻',
+  //   value: routes.news,
+  // }
 ];

@@ -1,5 +1,9 @@
 @import '../configuration/config';
 
 .footer {
-  height: 200px;
+  width: 100%;
+  height: 150px;
+  @include MQ(xxl) {
+    flex-shrink: 0;
+  }
 }

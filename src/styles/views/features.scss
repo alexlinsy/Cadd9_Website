@@ -2,6 +2,10 @@
 
 .feature-container {
   max-width: $app-max-width;
+  @include MaxMQ(sm) {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
   .feature-image-container {
     width: 45%;
     @include MaxMQ(md) {
