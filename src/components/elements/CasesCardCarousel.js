@@ -84,7 +84,7 @@ const CasesCardCarousel = ({cases}) => {
         {cases.map((item, index) => (
           <div key={index}>
             <img
-              lassName="slider-case-image"
+              className="slider-case-image"
               alt="slider-offer"
               src={item}
               effect="blur"

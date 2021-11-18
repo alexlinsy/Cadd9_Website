@@ -15,7 +15,7 @@ const PopUpNotes = () => {
     });
     history.push(routes.contact)
   }
-  console.log(location.pathname);
+
   return (
     <>
       {location.pathname !== '/'&&(
