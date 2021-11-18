@@ -20,9 +20,9 @@ const ContactForm = () => {
   //initial LeanCould Object
   const AV = require('leancloud-storage');
   AV.init({
-    appId: 'XlWJyFeVJ8e7bGybJlcsflxY-gzGzoHsz',
-    appKey: 'MgbD2Nhoa4jMCPW98vFoKHwV',
-    serverURL: 'https://xlwjyfev.lc-cn-n1-shared.com',
+    appId: process.env.REACT_APP_LEANCLOUD_APP_ID,
+    appKey: process.env.REACT_APP_LEANCLOUD_API_KEY,
+    serverURL: process.env.REACT_APP_LEANCLOUD_API_URL,
   });
   localStorage.setItem('debug', 'leancloud*');
 
