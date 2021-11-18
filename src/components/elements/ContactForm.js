@@ -24,7 +24,6 @@ const ContactForm = () => {
     appKey: process.env.REACT_APP_LEANCLOUD_API_KEY,
     serverURL: process.env.REACT_APP_LEANCLOUD_API_URL,
   });
-  localStorage.setItem('debug', 'leancloud*');
 
   const FormResult = AV.Object.extend('FormResult');
   const formResult = new FormResult();
