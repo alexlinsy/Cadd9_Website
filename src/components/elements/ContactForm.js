@@ -14,6 +14,8 @@ const ContactForm = () => {
   const [info, setInfo] = useState('');
   const [showSpinner, setShowSpinner] = useState(false);
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
+  const [errorMessage, setErrorMessage] = useState('');
+  const [showErrorMessage, setShowErrorMessage] = useState(false);
 
   //initial LeanCould Object
   const AV = require('leancloud-storage');
@@ -40,7 +42,8 @@ const ContactForm = () => {
         console.log(`保存成功。objectId：${result.id}`);
       },
       error => {
-        console.log(error);
+        setShowErrorMessage(true);
+        setErrorMessage(error);
       }
     );
   };
@@ -49,16 +52,19 @@ const ContactForm = () => {
     e.preventDefault();
     setName(e.target.value);
     setShowSuccessMessage(false);
+    setShowErrorMessage(false);
   }
   function handlePhoneChange(e) {
     e.preventDefault();
     setPhone(e.target.value);
     setShowSuccessMessage(false);
+    setShowErrorMessage(false);
   }
   function handleInfoChange(e) {
     e.preventDefault();
     setInfo(e.target.value);
     setShowSuccessMessage(false);
+    setShowErrorMessage(false);
   }
 
   return (
@@ -159,6 +165,11 @@ const ContactForm = () => {
       {showSuccessMessage && (
         <p className="font-heading f-20 mt-2 mb-0 leading-normal">
           感谢您的咨询！我们将尽快回复您的留言
+        </p>
+      )}
+       {showErrorMessage && (
+        <p className="font-heading f-20 mt-2 mb-0 leading-normal">
+          非常抱歉 我们的系统出现了一些故障 请稍后重试提交 {errorMessage}
         </p>
       )}
     </form>
