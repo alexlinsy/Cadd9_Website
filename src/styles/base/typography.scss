@@ -1,15 +1,5 @@
 @import '../configuration/config';
 
-@font-face {
-  font-family: 'SourceHanSans-bold';
-  src: url('../../assets/fonts/SourceHanSansCN-Bold.otf') format('opentype');
-}
-
-@font-face {
-  font-family: 'HelveticaNeue-bold';
-  src: url('../../assets/fonts/HelveticaNeue-Bold.otf') format('opentype');
-}
-
 p {
   font: $font-base;
   margin: 0 0 $mb-base 0;
