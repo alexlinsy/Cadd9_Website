@@ -5,6 +5,9 @@
   max-width: 320px;
   .card-name {
     letter-spacing: .15rem;
+    @include MaxMQ(sm) {
+      font-size: 20px !important;
+    }
   }
   .avatar {
     max-height: 323px;

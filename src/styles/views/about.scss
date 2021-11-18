@@ -24,5 +24,13 @@
   }
   .team-members-container {
     margin-bottom: 100px;
+    .team-member-header {
+      font-size: 46px;
+      @include MaxMQ(sm) {
+        font-size: 32px;
+        padding-top: 20px !important;
+        padding-bottom: 20px !important;
+      }
+    }
   }
 }
