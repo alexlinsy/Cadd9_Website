@@ -1,20 +1,6 @@
 @import '../configuration/config';
 
 @font-face {
-  font-family: 'SourceHanSans-light';
-  font-style: normal;
-  font-weight: 300;
-  src: url('../../assets/fonts/SourceHanSansSC-VF.otf.woff2') format('woff2');
-}
-
-@font-face {
-  font-family: 'SourceHanSans-regular';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../../assets/fonts/SourceHanSansSC-VF.otf.woff2') format('woff2');
-}
-
-@font-face {
   font-family: 'SourceHanSans-bold';
   src: url('../../assets/fonts/SourceHanSansHWSC-Bold.otf') format('opentype');
 }
