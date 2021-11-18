@@ -67,7 +67,7 @@ export const featuresData = {
         <ul>
           <li className="f-16 font-heading leading-normal">
             根据不同学生适合的音乐风格分配适合的老师进行
-            <span className="ml-20 feature-text-green" style={{color: '#5ecc04'}}>一对一甚至二对一辅导</span>
+            <span className="ml-20 feature-text-note-section-one feature-text-green">一对一甚至二对一辅导</span>
           </li>
           <li className="f-16 font-heading leading-normal">
             乐器种类多 选择范围广
@@ -97,7 +97,7 @@ export const featuresData = {
             乐理课 Music Theory(和声/基础键盘技巧)
           </li>
           <li className="f-16 font-heading leading-normal">
-            我们独创总结的教材,爵士/流行和声,音乐人必备乐理知识，国际化教学标准
+            <span className="feature-text-green">我们独创总结的教材</span>,爵士/流行和声,音乐人必备乐理知识，国际化教学标准
           </li>
         </ul>
       ),
@@ -203,8 +203,8 @@ export const featuresData = {
           <li className="f-16 font-heading leading-normal">
             每个人的天赋将在歌曲创作中得到释放
           </li>
-          <li className="f-16 font-heading leading-normal">
-            创造自己独一无二的声音和世界
+          <li className="f-16 font-heading leading-normal feature-text-green">
+            创造拥有自己独一无二的声音和世界
           </li>
         </ul>
       ),
@@ -228,7 +228,7 @@ export const featuresData = {
       notes: (
         <ul>
           <li className="f-16 font-heading leading-normal">
-            鉴赏与刨析不同音乐类型，一对一带学生熟悉未了解的音乐领域,开拓音乐思维
+            鉴赏与刨析不同音乐类型，一对一带学生熟悉未<span className="feature-text-green">了解的音乐领域,开拓音乐思维</span>
           </li>
           <li className="f-16 font-heading leading-normal">
             混音练耳课{' '}

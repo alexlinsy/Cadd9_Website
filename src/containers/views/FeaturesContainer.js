@@ -74,7 +74,7 @@ const FeaturesContainer = () => {
           animateIn="fadeIn"
           duration={3}
         >
-          <div className="feature-image-container">
+          <div className="feature-image-container feature-image-two">
             <LazyLoadImage
               src={feature4.image}
               alt="feature-photo"
@@ -83,6 +83,14 @@ const FeaturesContainer = () => {
             />
           </div>
           <FeatureCard features={feature4} />
+          <div className="feature-image-container feature-image-two-mobile">
+            <LazyLoadImage
+              src={feature4.image}
+              alt="feature-photo"
+              className="full-width"
+              effect="blur"
+            />
+          </div>
         </ScrollAnimation>
         <ScrollAnimation
           className="mt-10 py-8 border-top border-bottom"

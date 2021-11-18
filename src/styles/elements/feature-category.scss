@@ -78,11 +78,14 @@
       padding: 0;
     }
   }
-  .feature-text-green {
+  .feature-text-note-section-one {
     @include MaxMQ(sm) {
       margin-left: 0px !important;
       display: block;
     }
+  }
+  .feature-text-green {
+    color: #5ecc04;
   }
   .feature-text-sight-sing {
     @include MaxMQ(sm) {
@@ -100,8 +103,4 @@
       letter-spacing: normal;
     }
   }
-}
-
-.feature-category:nth-child(5) {
-  
 }
