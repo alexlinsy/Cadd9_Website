@@ -51,7 +51,7 @@
   .nav-mobile-button span {
     display: block;
     position: absolute;
-    height: 4px;
+    height: 5px;
     width: 100%;
     background: black;
     border-radius: 0px;
@@ -71,7 +71,7 @@
     top: 16px;
   }
   .nav-mobile-button.open span:nth-child(1) {
-    top: 24px;
+    top: 8px;
     width: 0%;
     left: 50%;
   }
@@ -82,7 +82,7 @@
     transform: rotate(-45deg);
   }
   .nav-mobile-button.open span:nth-child(4) {
-    top: 10px;
+    top: 8px;
     width: 0%;
     left: 50%;
   }
