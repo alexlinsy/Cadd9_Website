@@ -29,7 +29,7 @@ const Navigation = () => {
             onClick={() => handleNavItemClicked()}
           >
             <motion.p
-              className="font-heading"
+              className="font-heading f-24"
               whileHover={{letterSpacing: '15px'}}
               transition={{duration: 0.5}}
             >
@@ -51,7 +51,7 @@ const Navigation = () => {
             to={routes.home}
             onClick={() => handleNavItemClicked()}
           >
-            <p className="font-heading-english ml-5 mb-0 f-20">Cadd9</p>
+            <p className="font-heading-english ml-5 mb-0 f-20 mt-1">Cadd9</p>
           </Link>
           <p className="font-heading ml-5 mb-0 f-20">音乐</p>
         </div>

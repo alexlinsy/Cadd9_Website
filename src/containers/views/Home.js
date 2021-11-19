@@ -27,7 +27,7 @@ const Home = () => (
         <motion.img
           src={HomeC}
           alt="cadd9_letter_c"
-          whileHover={{y: -40}}
+          whileHover={{y: -100}}
           transition={{duration: 0.5}}
         />
       </motion.div>
@@ -40,7 +40,7 @@ const Home = () => (
         <motion.img
           src={HomeA}
           alt="cadd9_letter_a"
-          whileHover={{y: 40}}
+          whileHover={{y: 100}}
           transition={{duration: 0.5}}
         />
       </motion.div>
@@ -53,7 +53,7 @@ const Home = () => (
         <motion.img
           src={HomeD}
           alt="cadd9_letter_d"
-          whileHover={{y: -40}}
+          whileHover={{y: -100}}
           transition={{duration: 0.5}}
         />
       </motion.div>
@@ -66,7 +66,7 @@ const Home = () => (
         <motion.img
           src={HomeD}
           alt="cadd9_letter_d"
-          whileHover={{y: 40}}
+          whileHover={{y: 100}}
           transition={{duration: 0.5}}
         />
       </motion.div>
@@ -79,7 +79,7 @@ const Home = () => (
         <motion.img
           src={Home9}
           alt="cadd9_letter_9"
-          whileHover={{y: 40}}
+          whileHover={{y: 100}}
           transition={{duration: 0.5}}
         />
       </motion.div>

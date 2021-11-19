@@ -26,6 +26,7 @@
   }
   @include MaxMQ(sm) {
     .about-first-content-text {
+      line-height: 2.4 !important;
       font-size: 18px !important;
     }
   }
