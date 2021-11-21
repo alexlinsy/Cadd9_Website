@@ -32,6 +32,7 @@ const FeatureCategory = ({courseFeatures}) => {
           src={image}
           alt="feature-course-image"
           className="full-width"
+          effect="blur"
         />
       </motion.div>
       <ScrollAnimation
