@@ -7,7 +7,7 @@ import advIcon5 from '../assets/advantages/advIcon5.svg';
 import advIcon6 from '../assets/advantages/advIcon6.svg';
 import advIntro1 from '../assets/advantages/advIntro1.png';
 import advIntro2 from '../assets/advantages/advIntro2.png';
-import advIntro3 from '../assets/advantages/advIntro4.png';
+import advIntro3 from '../assets/advantages/advIntro3.png';
 import advIntro4 from '../assets/advantages/advIntro4.png';
 import advIntro5 from '../assets/advantages/advIntro5.png';
 import advIntro6 from '../assets/advantages/advIntro6.png';
