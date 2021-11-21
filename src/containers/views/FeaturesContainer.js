@@ -8,6 +8,7 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 import '../../styles/views/features.scss';
 import FeatureCategory from '../../components/elements/FeaturesCategory';
 import HeaderSection from '../../components/elements/HeaderSection';
+import FeaturesCategoryCardCarousel from '../../components/elements/FeaturesCategoryCardCarousel';
 
 const FeaturesContainer = () => {
   const {header1, header2, feature1, feature2, feature3, feature4, coursesFeatures} =
@@ -104,11 +105,12 @@ const FeaturesContainer = () => {
             {header2}
           </p>
         </ScrollAnimation>
-        {
+        {/* {
           coursesFeatures.map((course, index) => (
             <FeatureCategory courseFeatures={course} key={index}/>
           ))
-        }
+        } */}
+        <FeaturesCategoryCardCarousel />
       </div>
     </div>
   );

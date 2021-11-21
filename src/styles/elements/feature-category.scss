@@ -103,4 +103,13 @@
       letter-spacing: normal;
     }
   }
+  .business-text {
+    margin-left: 300px;
+    @include MaxMQ(lgr) {
+      margin-left: 120px;
+    }
+    @include MaxMQ(sm) {
+      margin-left: 60px;
+    }
+  }
 }

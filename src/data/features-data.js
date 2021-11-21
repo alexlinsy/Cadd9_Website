@@ -13,6 +13,7 @@ import featureImage7 from '../assets/features/features-image-7.png';
 import featureImage8 from '../assets/features/features-image-8.png';
 import featureImage9 from '../assets/features/features-image-9.png';
 import featureImage10 from '../assets/features/features-image-10.png';
+import featureImage11 from '../assets/features/features-image-11.png';
 
 export const featuresData = {
   header1: '服务特色',
@@ -49,8 +50,12 @@ export const featuresData = {
             <p className="font-heading feature-text-title feature-text mb-0">
               一对一
             </p>
-            <p className="font-heading-english feature-text feature-text-insturment">Instrument</p>
-            <p className="f-32 font-heading mb-0 feature-text-one">(声乐/钢琴/吉他/贝斯/等)</p>
+            <p className="font-heading-english feature-text feature-text-insturment">
+              Instrument
+            </p>
+            <p className="f-32 font-heading mb-0 feature-text-one">
+              (声乐/钢琴/吉他/贝斯/等)
+            </p>
           </div>
           <div className="flex-column">
             <p className="font-heading feature-text feature-text-title mb-0">
@@ -67,7 +72,9 @@ export const featuresData = {
         <ul>
           <li className="f-16 font-heading leading-normal">
             根据不同学生适合的音乐风格分配适合的老师进行
-            <span className="ml-20 feature-text-note-section-one feature-text-green">一对一甚至二对一辅导</span>
+            <span className="ml-20 feature-text-note-section-one feature-text-green">
+              一对一甚至二对一辅导
+            </span>
           </li>
           <li className="f-16 font-heading leading-normal">
             乐器种类多 选择范围广
@@ -97,7 +104,8 @@ export const featuresData = {
             乐理课 Music Theory(和声/基础键盘技巧)
           </li>
           <li className="f-16 font-heading leading-normal">
-            <span className="feature-text-green">我们独创总结的教材</span>,爵士/流行和声,音乐人必备乐理知识，国际化教学标准
+            <span className="feature-text-green">我们独创总结的教材</span>
+            ,爵士/流行和声,音乐人必备乐理知识，国际化教学标准
           </li>
         </ul>
       ),
@@ -107,11 +115,15 @@ export const featuresData = {
         <div className="flex-column full-width">
           <p className="font-heading feature-text mb-0 full-width flex flex-space-between">
             <span className="text-song-decon">音乐制作/分析课</span>
-            <span className="font-heading-english text-song-decon">Song Decon-</span>
+            <span className="font-heading-english text-song-decon">
+              Song Decon-
+            </span>
           </p>
           <p className="font-heading-english feature-text flex flex-space-between">
             <span className="text-song-decon">struction/</span>{' '}
-            <span className="font-heading-english text-song-decon">Production analysis</span>
+            <span className="font-heading-english text-song-decon">
+              Production analysis
+            </span>
           </p>
         </div>
       ),
@@ -149,7 +161,13 @@ export const featuresData = {
               /即<span style={{marginLeft: '100px'}}>兴</span>
             </p>
             <p className="font-heading-english feature-text mb-0 text-song-decon">
-              <span className="feature-text-sight-sing" style={{marginRight: '140px'}}>/</span>sight sing
+              <span
+                className="feature-text-sight-sing"
+                style={{marginRight: '140px'}}
+              >
+                /
+              </span>
+              sight sing
             </p>
           </div>
         </>
@@ -228,7 +246,10 @@ export const featuresData = {
       notes: (
         <ul>
           <li className="f-16 font-heading leading-normal">
-            鉴赏与刨析不同音乐类型，一对一带学生熟悉未<span className="feature-text-green">了解的音乐领域,开拓音乐思维</span>
+            鉴赏与刨析不同音乐类型，一对一带学生熟悉未
+            <span className="feature-text-green">
+              了解的音乐领域,开拓音乐思维
+            </span>
           </li>
           <li className="f-16 font-heading leading-normal">
             混音练耳课{' '}
@@ -238,6 +259,32 @@ export const featuresData = {
           </li>
           <li className="f-16 font-heading leading-normal">
             声学基本知识，锻炼耳朵对于声音的敏感度的手把手混音教学
+          </li>
+        </ul>
+      ),
+    },
+    {
+      title: (
+        <div className="full-width">
+          <p className="font-heading feature-text mb-0 full-width flex flex-space-between">
+            <span>
+              <span>音乐</span>
+              <span className="business-text">商业管理</span>
+            </span>{' '}
+            <span className="font-heading-english">领导力</span>
+          </p>
+          <p className="font-heading-english feature-text flex flex-space-between">
+            Music <span>business</span>
+          </p>
+        </div>
+      ),
+      image: featureImage11,
+      notes: (
+        <ul>
+          <li className="f-16 font-heading leading-normal">版权，合约</li>
+          <li className="f-16 font-heading leading-normal">厂牌，艺人经纪</li>
+          <li className="f-16 font-heading leading-normal">
+            创业孵化，creative idea
           </li>
         </ul>
       ),
