@@ -16,9 +16,9 @@
     > span {
       z-index: 11;
     }
-    @media only screen and(max-width: 768px) {
+    @media only screen and(max-width: 1024px) {
       font-size: 32px;
-      letter-spacing: 0.15em;
+      letter-spacing: normal !important;
     }
     @include MaxMQ(sm) {
       font-size: 20px;
@@ -37,6 +37,9 @@
   }
   .feature-text-title {
     letter-spacing: 1em;
+    @media only screen and(max-width: 1024px) {
+      letter-spacing: normal !important;
+    }
   }
   .feature-text-study {
     text-align: right;
@@ -110,6 +113,12 @@
     }
     @include MaxMQ(sm) {
       margin-left: 60px;
+    }
+  }
+  .feature-creative-text {
+    margin-left: 120px;
+    @media only screen and(max-width: 360px) {
+      margin-left: 80px;
     }
   }
 }

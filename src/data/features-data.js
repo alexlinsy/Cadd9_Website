@@ -196,7 +196,7 @@ export const featuresData = {
           <p className="font-heading feature-text mb-0 full-width flex flex-space-between">
             <span>
               <span>职业</span>
-              <span style={{marginLeft: '120px'}}>创作写歌</span>
+              <span className="feature-creative-text">创作写歌</span>
             </span>{' '}
             <span className="font-heading-english">Creative</span>
           </p>
