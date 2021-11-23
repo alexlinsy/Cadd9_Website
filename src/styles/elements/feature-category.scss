@@ -3,7 +3,7 @@
 .feature-category {
   @include MaxMQ(sm) {
     max-width: 576px;
-    height: 500px;
+    height: 600px;
     margin-bottom: 0px !important;
   }
   position: relative;
@@ -54,7 +54,52 @@
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     z-index: -1;
-    @include MQ(xs) {
+    @include MaxMQ(sm) {
+      top: 50%;
+      width: 100%;
+    }
+  }
+  .feature-piano-0 {
+    @include MaxMQ(sm) {
+      top: 60%;
+    }
+  }
+  .feature-piano-1 {
+    @include MaxMQ(sm) {
+      top: 60%;
+    }
+  }
+  .feature-piano-2 {
+    @include MaxMQ(sm) {
+      top: 55%;
+    }
+  }
+  .feature-piano-3 {
+    @include MaxMQ(sm) {
+      top: 62%;
+    }
+  }
+  .feature-piano-4 {
+    @include MaxMQ(sm) {
+      top: 70%;
+    }
+  }
+  .feature-piano-5 {
+    @include MaxMQ(sm) {
+      top: 65%;
+      left: 30%;
+      > span > img {
+        width: 150% !important;
+      }
+    }
+  }
+  .feature-piano-6 {
+    @include MaxMQ(sm) {
+      top: 60%;
+      left: 12%;
+      > span > img {
+        width: 180% !important;
+      }
     }
   }
   .feature-notes {

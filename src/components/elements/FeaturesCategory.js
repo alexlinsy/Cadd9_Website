@@ -6,7 +6,7 @@ import {LazyLoadImage} from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import '../../styles/elements/feature-category.scss';
 
-const FeatureCategory = ({courseFeatures}) => {
+const FeatureCategory = ({courseFeatures, index}) => {
   const {title, image, notes} = courseFeatures
   return (
     <ScrollAnimation
@@ -23,7 +23,7 @@ const FeatureCategory = ({courseFeatures}) => {
         {title}
       </motion.div>
       <motion.div
-        className="feature-piano"
+        className={`feature-piano feature-piano-${index}`}
         initial={{opacity: 0}}
         animate={{opacity: 1}}
         transition={{duration: 2}}

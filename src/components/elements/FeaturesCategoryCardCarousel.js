@@ -52,9 +52,9 @@ const FeaturesCategoryCardCarousel = () => {
   return (
     <div className="slider-case-container">
       <Slider {...settings}>
-        {coursesFeatures.map((course, index) => (
-          <FeatureCategory courseFeatures={course} key={index} />
-        ))}
+        {coursesFeatures.map((course, index) => {
+          return (<FeatureCategory courseFeatures={course} index={index} key={index} />);
+        })}
       </Slider>
     </div>
   );

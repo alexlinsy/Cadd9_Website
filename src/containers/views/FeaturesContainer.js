@@ -6,12 +6,11 @@ import {LazyLoadImage} from 'react-lazy-load-image-component';
 
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import '../../styles/views/features.scss';
-import FeatureCategory from '../../components/elements/FeaturesCategory';
 import HeaderSection from '../../components/elements/HeaderSection';
 import FeaturesCategoryCardCarousel from '../../components/elements/FeaturesCategoryCardCarousel';
 
 const FeaturesContainer = () => {
-  const {header1, header2, feature1, feature2, feature3, feature4, coursesFeatures} =
+  const {header1, header2, feature1, feature2, feature3, feature4} =
     featuresData;
   return (
     <div className="feature-container px-10">
