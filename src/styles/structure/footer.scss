@@ -10,4 +10,7 @@
   @include MQ(xxl) {
     flex-shrink: 0;
   }
+  @include MaxMQ(sm) {
+    margin-top: 0px !important;
+  }
 }

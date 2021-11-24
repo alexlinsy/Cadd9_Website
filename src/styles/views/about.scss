@@ -24,6 +24,9 @@
   }
   .team-members-container {
     margin-bottom: 100px;
+    @include MaxMQ(sm) {
+      margin-bottom: 0px;
+    }
     .team-member-header {
       @include MaxMQ(sm) {
         padding-top: 20px !important;

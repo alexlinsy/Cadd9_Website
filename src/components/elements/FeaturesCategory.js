@@ -9,10 +9,8 @@ import '../../styles/elements/feature-category.scss';
 const FeatureCategory = ({courseFeatures, index}) => {
   const {title, image, notes} = courseFeatures
   return (
-    <ScrollAnimation
+    <div
       className="mt-10 feature-category"
-      animateIn="fadeIn"
-      duration={2}
     >
       <motion.div
         className="flex flex-space-between"
@@ -26,7 +24,7 @@ const FeatureCategory = ({courseFeatures, index}) => {
         className={`feature-piano feature-piano-${index}`}
         initial={{opacity: 0}}
         animate={{opacity: 1}}
-        transition={{duration: 2}}
+        transition={{duration: 4}}
       >
         <LazyLoadImage
           src={image}
@@ -42,7 +40,7 @@ const FeatureCategory = ({courseFeatures, index}) => {
       >
         {notes}
       </ScrollAnimation>
-    </ScrollAnimation>
+    </div>
   );
 };
 

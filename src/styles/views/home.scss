@@ -121,8 +121,8 @@
     @include MaxMQ(sm) {
       z-index: -1;
       display: flex;
-      padding-bottom: 150px;
-      padding-top: 150px;
+      height: 100%;
+      padding-bottom: 40px;
     }
   }
 }

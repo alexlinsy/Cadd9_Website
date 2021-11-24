@@ -16,6 +16,9 @@
     > span {
       z-index: 11;
     }
+    @include MaxMQ(xlr) {
+      letter-spacing: normal;
+    }
     @media only screen and(max-width: 1024px) {
       font-size: 32px;
       letter-spacing: normal !important;

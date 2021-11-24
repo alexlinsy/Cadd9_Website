@@ -30,7 +30,7 @@ const AboutContainer = () => {
       <ScrollAnimation
         animateIn="fadeIn"
         duration={3}
-        className="py-10 flex flex-column border-bottom"
+        className="py-10 flex flex-column"
       >
         <LazyLoadImage
           src={aboutImageThree}
@@ -43,7 +43,7 @@ const AboutContainer = () => {
           className="full-width"
         />
       </ScrollAnimation>
-      <TeamMembers teams={teamMembers} />
+      <TeamMembers teams={teamMembers}/>
     </div>
   );
 };

@@ -10,6 +10,7 @@ import ContactContainer from './ContactContainer';
 import FeaturesContainer from './FeaturesContainer';
 import NewsContainer from './NewsContainer';
 import PartnersContainer from './PartnersContainer';
+import TeamsContainer from './TeamsContainer';
 import Footer from '../../components/structure/Footer';
 
 const Views = () => (
@@ -43,6 +44,10 @@ const Views = () => (
     </Route>
     <Route exact path={routes.news}>
       <NewsContainer />
+      <Footer/>
+    </Route>
+    <Route exact path={routes.teams}>
+      <TeamsContainer />
       <Footer/>
     </Route>
   </Switch>

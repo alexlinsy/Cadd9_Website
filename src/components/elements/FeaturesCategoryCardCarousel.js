@@ -29,6 +29,7 @@ const FeaturesCategoryCardCarousel = () => {
   const settings = {
     dots: false,
     infinite: true,
+    fade: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,

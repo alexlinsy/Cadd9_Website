@@ -6,6 +6,7 @@ const routes = {
   features: '/features',
   partners: '/partners',
   contact: '/contact',
+  teams:'/teams',
   news: '/news',
 };
 
@@ -31,6 +32,10 @@ export const steps = [
   {
     title: '课程特色',
     value: routes.features,
+  },
+  {
+    title: 'Cadd9 Team',
+    value: routes.teams,
   },
   {
     title: '合作伙伴',
