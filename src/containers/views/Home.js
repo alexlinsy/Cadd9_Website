@@ -1,6 +1,5 @@
 import React from 'react';
 import {motion} from 'framer-motion';
-import {LazyLoadImage} from 'react-lazy-load-image-component';
 import HomeC from '../../assets/icons/homeC.svg';
 import HomeA from '../../assets/icons/homeA.svg';
 import HomeD from '../../assets/icons/homeD.svg';
