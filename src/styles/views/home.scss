@@ -122,6 +122,7 @@
       z-index: -1;
       display: flex;
       height: 100%;
+      overflow: auto;
       .letter-section-one {
         position: relative;
         height: 20%;
