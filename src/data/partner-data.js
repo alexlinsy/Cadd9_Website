@@ -52,7 +52,7 @@ export const partnerData = {
   partnersEdu: [
     partnerEdu1,
     partnerEdu2,
-    partnerEdu3,
+    partnerEdu21,
     partnerEdu4,
     partnerEdu5,
     partnerEdu6,
@@ -70,6 +70,6 @@ export const partnerData = {
     partnerEdu18,
     partnerEdu19,
     partnerEdu20,
-    partnerEdu21,
+    partnerEdu3,
   ],
 };

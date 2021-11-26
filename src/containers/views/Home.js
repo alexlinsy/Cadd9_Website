@@ -86,7 +86,7 @@ const Home = () => (
       initial={{opacity: 0}}
       animate={{opacity: 1}}
       transition={{duration: 1}}
-      className="home-header-mobile full-width flex-column flex-space-between"
+      className="home-header-mobile full-width flex-column"
     >
       <div className="flex letter-section-one">
         <img
