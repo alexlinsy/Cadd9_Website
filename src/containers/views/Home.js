@@ -115,7 +115,7 @@ const Home = () => (
           className="letter-section-one-9"
         />
       </div>
-      <div className="flex flex-space-between pt-10">
+      <div className="flex flex-space-between pt-10 mobile-text-content-one">
         <p className="font-heading-english mb-0 home-mobile-text f-25">MUSIC</p>
         <p className="font-heading-english mb-0 home-mobile-text f-25">
           <span className="font-heading-english mb-0 mr-10">EDU</span>CATION

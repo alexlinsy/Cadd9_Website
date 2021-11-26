@@ -127,18 +127,18 @@
         position: relative;
         .letter-section-one-c {
           left: 0;
-          top: 110px;
+          top: 90px;
         }
         .letter-section-one-a {
           left: 20%;
         }
         .letter-section-one-d {
           left: 40%;
-          top: 55px;
+          top: 35px;
         }
         .letter-section-one-dd {
           left: 60%;
-          top: 55px;
+          top: 35px;
         }
         .letter-section-one-9 {
           left: 80%;
@@ -146,7 +146,7 @@
       }
       .letter-section-two {
         position: relative;
-        bottom: 20px;
+        bottom: 50px;
         .letter-section-two-c {
           left: 0;
           bottom: -30px;
@@ -196,7 +196,11 @@
       }
       .mobile-home-text {
         position: relative;
-        bottom: 45px;  
+        bottom: 70px;  
+      }
+      .mobile-text-content-one {
+        position: relative;
+        bottom: 35px;
       }
     }
   }
