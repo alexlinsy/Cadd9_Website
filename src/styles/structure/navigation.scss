@@ -16,6 +16,14 @@
     margin-bottom: 40px;
     box-shadow: none;
   }
+  .nav-item-text {
+    @include MQ(xs) {
+      font-size: 20px;
+    }
+    @include MQ(md-lg) {
+      font-size: 24px;
+    }
+  }
 }
 
 .open-nav-bar {
