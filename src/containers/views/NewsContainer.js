@@ -7,13 +7,12 @@ import NewsCard from '../../components/elements/NewsCard';
 
 
 const NewsContainer = () => {
-  const momentDate = moment("2021-11-29T13:57:25-04:00").format("MM.DD.YY");
-  console.log(momentDate);
+  console.log(process.env.REACT_APP_WORDPRESS_API_URL);
   const [posts, setPosts] = useState(null);
 
   useEffect(() => {
     fetch(
-      'https://public-api.wordpress.com/rest/v1.1/sites/cadd9music.wordpress.com/posts'
+      process.env.REACT_APP_WORDPRESS_API_URL
     )
       .then(res => res.json())
       .then(res => setPosts(res.posts));
