@@ -1,0 +1,15 @@
+@import '../configuration/config';
+
+.news-card {
+  width: 32%;
+  height: auto;
+  > span > img {
+    height: auto;
+  }
+  .news-content {
+    text-align: justify;
+  }
+  @include MaxMQ(md) {
+    width: 100%;
+  }
+}
