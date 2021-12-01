@@ -1,9 +1,7 @@
 import React from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
 import {motion} from 'framer-motion';
-import {LazyLoadImage} from 'react-lazy-load-image-component';
 
-import 'react-lazy-load-image-component/src/effects/blur.css';
 import '../../styles/elements/feature-category.scss';
 
 const FeatureCategory = ({courseFeatures, index}) => {
@@ -24,13 +22,15 @@ const FeatureCategory = ({courseFeatures, index}) => {
         className={`feature-piano feature-piano-${index}`}
         initial={{opacity: 0}}
         animate={{opacity: 1}}
-        transition={{duration: 4}}
+        transition={{duration: 2}}
       >
-        <LazyLoadImage
+        <motion.img
+          initial={{scale: 0.5, opacity: 0, rotate: 45}}
+          animate={{scale: 1, opacity: 1, rotate: 0}}
+          transition={{duration: 2}}
           src={image}
           alt="cadd9 课程特色"
           className="full-width"
-          effect="blur"
         />
       </motion.div>
       <ScrollAnimation

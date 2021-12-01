@@ -2,7 +2,7 @@ import React from 'react';
 import AdvantagesCard from '../../components/elements/AdvantagesCard';
 import HeaderSection from '../../components/elements/HeaderSection';
 import {advantagesData} from '../../data/advantages-data';
-import {Helmet} from 'react-helmet';
+import {Helmet} from 'react-helmet-async';
 
 import '../../styles/views/advantages.scss';
 

@@ -2,7 +2,7 @@ import React from 'react';
 import HeaderSection from '../../components/elements/HeaderSection';
 import PartnerBox from '../../components/elements/PartnersBox';
 import {partnerData} from '../../data/partner-data';
-import {Helmet} from 'react-helmet';
+import {Helmet} from 'react-helmet-async';
 
 import '../../styles/views/partners.scss';
 

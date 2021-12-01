@@ -4,7 +4,7 @@ import HomeC from '../../assets/icons/homeC.svg';
 import HomeA from '../../assets/icons/homeA.svg';
 import HomeD from '../../assets/icons/homeD.svg';
 import Home9 from '../../assets/icons/home9.svg';
-import {Helmet} from 'react-helmet';
+import {Helmet} from 'react-helmet-async';
 
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import '../../styles/views/home.scss';

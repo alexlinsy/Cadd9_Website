@@ -7,7 +7,7 @@ import WeChatQRCode2 from '../../assets/images/weChat-qr-code2.png';
 import MapContainer from '../../components/elements/MapContainer';
 import {motion} from 'framer-motion';
 import ContactForm from '../../components/elements/ContactForm';
-import {Helmet} from 'react-helmet';
+import {Helmet} from 'react-helmet-async';
 
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import '../../styles/views/contact.scss';

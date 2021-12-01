@@ -7,7 +7,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import {LazyLoadImage} from 'react-lazy-load-image-component';
 import {aboutContent} from '../../data/about-content';
 import {teamMembers} from '../../data/team-members';
-import {Helmet} from 'react-helmet';
+import {Helmet} from 'react-helmet-async';
 
 import '../../styles/views/about.scss';
 import 'react-lazy-load-image-component/src/effects/blur.css';

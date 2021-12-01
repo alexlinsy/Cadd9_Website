@@ -3,7 +3,7 @@ import CasesExample from '../../components/elements/CasesExample';
 import CasesCardCarousel from '../../components/elements/CasesCardCarousel';
 import {casesData} from '../../data/cases-data';
 import HeaderSection from '../../components/elements/HeaderSection';
-import {Helmet} from 'react-helmet';
+import {Helmet} from 'react-helmet-async';
 
 import '../../styles/views/cases.scss';
 

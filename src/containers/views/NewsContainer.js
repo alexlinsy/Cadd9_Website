@@ -4,7 +4,7 @@ import HeaderSection from '../../components/elements/HeaderSection';
 import NewsCard from '../../components/elements/NewsCard';
 import {LazyLoadComponent} from 'react-lazy-load-image-component';
 import InfiniteScroll from 'react-infinite-scroll-component';
-import {Helmet} from 'react-helmet';
+import {Helmet} from 'react-helmet-async';
 
 import '../../styles/views/news.scss';
 

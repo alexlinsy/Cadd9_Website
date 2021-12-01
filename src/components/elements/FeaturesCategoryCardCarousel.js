@@ -31,6 +31,7 @@ const FeaturesCategoryCardCarousel = () => {
     infinite: true,
     fade: true,
     speed: 500,
+    lazyLoad: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     cssEase: 'linear',

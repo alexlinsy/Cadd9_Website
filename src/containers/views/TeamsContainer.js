@@ -1,7 +1,7 @@
 import React from 'react';
 import TeamMembers from '../../components/elements/TeamMembers';
 import {teamMembers} from '../../data/team-members';
-import {Helmet} from 'react-helmet';
+import {Helmet} from 'react-helmet-async';
 
 import '../../styles/views/about.scss';
 

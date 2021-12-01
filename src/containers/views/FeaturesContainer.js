@@ -5,7 +5,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import {LazyLoadImage} from 'react-lazy-load-image-component';
 import HeaderSection from '../../components/elements/HeaderSection';
 import FeaturesCategoryCardCarousel from '../../components/elements/FeaturesCategoryCardCarousel';
-import {Helmet} from 'react-helmet';
+import {Helmet} from 'react-helmet-async';
 
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import '../../styles/views/features.scss';

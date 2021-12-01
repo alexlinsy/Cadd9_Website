@@ -91,7 +91,7 @@
     @include MaxMQ(sm) {
       top: 65%;
       left: 30%;
-      > span > img {
+      > img {
         width: 150% !important;
       }
     }
@@ -100,7 +100,7 @@
     @include MaxMQ(sm) {
       top: 60%;
       left: 12%;
-      > span > img {
+      > img {
         width: 180% !important;
       }
     }
