@@ -7,6 +7,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import {LazyLoadImage} from 'react-lazy-load-image-component';
 import {aboutContent} from '../../data/about-content';
 import {teamMembers} from '../../data/team-members';
+import {Helmet} from 'react-helmet';
 
 import '../../styles/views/about.scss';
 import 'react-lazy-load-image-component/src/effects/blur.css';
@@ -15,6 +16,11 @@ const AboutContainer = () => {
   const {intro, aboutImageThree, aboutImageFour} = aboutContent;
   return (
     <div className="about-container px-10">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Cadd9 关于我们</title>
+        <meta name="description" content="Cadd9 公司介绍 团队介绍" />
+      </Helmet>
       <ImageCarousel />
       <div className="intro-section">
         <motion.p
@@ -43,7 +49,7 @@ const AboutContainer = () => {
           className="full-width"
         />
       </ScrollAnimation>
-      <TeamMembers teams={teamMembers}/>
+      <TeamMembers teams={teamMembers} />
     </div>
   );
 };

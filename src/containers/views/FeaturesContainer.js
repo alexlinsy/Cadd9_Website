@@ -3,17 +3,23 @@ import FeatureCard from '../../components/elements/FeatureCard';
 import {featuresData} from '../../data/features-data';
 import ScrollAnimation from 'react-animate-on-scroll';
 import {LazyLoadImage} from 'react-lazy-load-image-component';
+import HeaderSection from '../../components/elements/HeaderSection';
+import FeaturesCategoryCardCarousel from '../../components/elements/FeaturesCategoryCardCarousel';
+import {Helmet} from 'react-helmet';
 
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import '../../styles/views/features.scss';
-import HeaderSection from '../../components/elements/HeaderSection';
-import FeaturesCategoryCardCarousel from '../../components/elements/FeaturesCategoryCardCarousel';
 
 const FeaturesContainer = () => {
   const {header1, header2, feature1, feature2, feature3, feature4} =
     featuresData;
   return (
     <div className="feature-container px-10">
+       <Helmet>
+        <meta charSet="utf-8" />
+        <title>Cadd9 课程特色</title>
+        <meta name="description" content="Cadd9 课程介绍 课程设计" />
+      </Helmet>
       <HeaderSection title={header1} borderRequired />
       <div className="flex flex-column">
         <ScrollAnimation

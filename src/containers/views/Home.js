@@ -4,12 +4,18 @@ import HomeC from '../../assets/icons/homeC.svg';
 import HomeA from '../../assets/icons/homeA.svg';
 import HomeD from '../../assets/icons/homeD.svg';
 import Home9 from '../../assets/icons/home9.svg';
+import {Helmet} from 'react-helmet';
 
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import '../../styles/views/home.scss';
 
 const Home = () => (
   <div className="home">
+    <Helmet>
+      <meta charSet="utf-8" />
+      <title>Cadd9 主页</title>
+      <meta name="description" content="Cadd9 主页展示" />
+    </Helmet>
     <motion.div
       className="home_header"
       initial={{opacity: 0}}
@@ -89,31 +95,11 @@ const Home = () => (
       className="home-header-mobile full-width flex-column"
     >
       <div className="flex letter-section-one">
-        <img
-          src={HomeC}
-          alt="cadd9 字母 c"
-          className="letter-section-one-c"
-        />
-        <img
-          src={HomeA}
-          alt="cadd9 字母 a"
-          className="letter-section-one-a"
-        />
-        <img
-          src={HomeD}
-          alt="cadd9 字母 d"
-          className="letter-section-one-d"
-        />
-        <img
-          src={HomeD}
-          alt="cadd9 字母 d"
-          className="letter-section-one-dd"
-        />
-        <img
-          src={Home9}
-          alt="cadd9 字母 9"
-          className="letter-section-one-9"
-        />
+        <img src={HomeC} alt="cadd9 字母 c" className="letter-section-one-c" />
+        <img src={HomeA} alt="cadd9 字母 a" className="letter-section-one-a" />
+        <img src={HomeD} alt="cadd9 字母 d" className="letter-section-one-d" />
+        <img src={HomeD} alt="cadd9 字母 d" className="letter-section-one-dd" />
+        <img src={Home9} alt="cadd9 字母 9" className="letter-section-one-9" />
       </div>
       <div className="flex flex-space-between pt-10 mobile-text-content-one">
         <p className="font-heading-english mb-0 home-mobile-text f-25">MUSIC</p>
@@ -122,31 +108,11 @@ const Home = () => (
         </p>
       </div>
       <div className="flex letter-section-two">
-        <img
-          src={HomeC}
-          alt="cadd9 字母 c"
-          className="letter-section-two-c"
-        />
-        <img
-          src={HomeA}
-          alt="cadd9 字母 a"
-          className="letter-section-two-a"
-        />
-        <img
-          src={HomeD}
-          alt="cadd9 字母 d"
-          className="letter-section-two-d"
-        />
-        <img
-          src={HomeD}
-          alt="cadd9 字母 d"
-          className="letter-section-two-dd"
-        />
-        <img
-          src={Home9}
-          alt="cadd9 字母 9"
-          className="letter-section-two-9"
-        />
+        <img src={HomeC} alt="cadd9 字母 c" className="letter-section-two-c" />
+        <img src={HomeA} alt="cadd9 字母 a" className="letter-section-two-a" />
+        <img src={HomeD} alt="cadd9 字母 d" className="letter-section-two-d" />
+        <img src={HomeD} alt="cadd9 字母 d" className="letter-section-two-dd" />
+        <img src={Home9} alt="cadd9 字母 9" className="letter-section-two-9" />
       </div>
       <div className="flex flex-space-between mobile-home-text">
         <p className="font-heading mb-0 f-25">

@@ -2,6 +2,8 @@ import React from 'react';
 import HeaderSection from '../../components/elements/HeaderSection';
 import PartnerBox from '../../components/elements/PartnersBox';
 import {partnerData} from '../../data/partner-data';
+import {Helmet} from 'react-helmet';
+
 import '../../styles/views/partners.scss';
 
 const PartnersContainer = () => {
@@ -10,6 +12,11 @@ const PartnersContainer = () => {
 
   return (
     <div className="px-10 partners-container">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Cadd9 合作伙伴</title>
+        <meta name="description" content="Cadd9 合作伙伴展示" />
+      </Helmet>
       <HeaderSection title={headerBusiness} borderRequired />
       <p className="mt-5 mb-0 partner-intro-text leading-normal flex flex-column flex-justify-center text-center">
         <span>创始人与其余Cadd9导师从未停止过在音乐产业的征途，</span>

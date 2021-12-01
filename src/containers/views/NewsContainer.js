@@ -4,6 +4,7 @@ import HeaderSection from '../../components/elements/HeaderSection';
 import NewsCard from '../../components/elements/NewsCard';
 import {LazyLoadComponent} from 'react-lazy-load-image-component';
 import InfiniteScroll from 'react-infinite-scroll-component';
+import {Helmet} from 'react-helmet';
 
 import '../../styles/views/news.scss';
 
@@ -21,7 +22,7 @@ const NewsContainer = () => {
         setPostNumber(postNumber + 5);
         setHasMore(false);
       });
-  }
+  };
 
   useEffect(() => {
     FetchPosts.current();
@@ -29,6 +30,11 @@ const NewsContainer = () => {
 
   return (
     <div className="news-container px-10">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Cadd9 新闻</title>
+        <meta name="description" content="Cadd9 公司动态 新闻 媒体" />
+      </Helmet>
       <HeaderSection title="新闻" borderRequired />
       <div className="news-section mt-8">
         {posts && (
@@ -57,9 +63,7 @@ const NewsContainer = () => {
         {hasMore ? (
           <p className="news-loading-text mb-0">加载中...</p>
         ) : (
-          <p className="news-loading-text mb-0">
-            已经是最底了
-          </p>
+          <p className="news-loading-text mb-0">已经是最底了</p>
         )}
       </div>
     </div>
