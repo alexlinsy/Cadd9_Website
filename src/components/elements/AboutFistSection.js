@@ -24,7 +24,7 @@ const AboutFirstSection = ({content}) => {
           >
             <LazyLoadImage
               src={aboutImageOne}
-              alt="about"
+              alt="cadd9 关于我们"
               effect="black-and-white"
               className="full-width"
             />
@@ -37,7 +37,7 @@ const AboutFirstSection = ({content}) => {
           >
             <LazyLoadImage
               src={aboutImageTwo}
-              alt="about"
+              alt="cadd9 关于我们"
               effect="black-and-white"
               className="full-width"
             />
@@ -78,7 +78,7 @@ const AboutFirstSection = ({content}) => {
           >
             <LazyLoadImage
               src={aboutImageOne}
-              alt="about"
+              alt="cadd9 关于我们"
               effect="black-and-white"
               className="full-width"
             />
@@ -100,7 +100,7 @@ const AboutFirstSection = ({content}) => {
           >
             <LazyLoadImage
               src={aboutImageTwo}
-              alt="about"
+              alt="cadd9 关于我们"
               effect="black-and-white"
               className="full-width"
             />

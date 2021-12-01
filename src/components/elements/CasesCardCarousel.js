@@ -85,7 +85,7 @@ const CasesCardCarousel = ({cases}) => {
           <div key={index}>
             <img
               className="slider-case-image"
-              alt="slider-offer"
+              alt="cadd9 录取 offer"
               src={item}
               effect="blur"
             />

@@ -18,7 +18,7 @@ const PartnerBox = ({partner}) => {
       animate="show"
       whileHover="hover"
     >
-      <LazyLoadImage src={partner} alt="partner-icon" effect="blur" className="partner-box-image" />
+      <LazyLoadImage src={partner} alt="cadd9 合作伙伴" effect="blur" className="partner-box-image" />
     </motion.div>
   );
 };

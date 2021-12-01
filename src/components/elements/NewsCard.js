@@ -18,7 +18,7 @@ const NewsCard = ({image, date, title, content, url, scrollPosition}) => {
     >
       <LazyLoadImage
         src={image}
-        alt="news"
+        alt="cadd9 新闻 news"
         className="full-width"
         effect="blur"
         scrollPosition={scrollPosition}

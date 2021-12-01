@@ -24,7 +24,7 @@ const Home = () => (
       >
         <motion.img
           src={HomeC}
-          alt="cadd9_letter_c"
+          alt="cadd9 字母 c"
           whileHover={{y: -100}}
           transition={{duration: 0.5}}
         />
@@ -37,7 +37,7 @@ const Home = () => (
       >
         <motion.img
           src={HomeA}
-          alt="cadd9_letter_a"
+          alt="cadd9 字母 a"
           whileHover={{y: 100}}
           transition={{duration: 0.5}}
         />
@@ -50,7 +50,7 @@ const Home = () => (
       >
         <motion.img
           src={HomeD}
-          alt="cadd9_letter_d"
+          alt="cadd9 字母 d"
           whileHover={{y: -100}}
           transition={{duration: 0.5}}
         />
@@ -63,7 +63,7 @@ const Home = () => (
       >
         <motion.img
           src={HomeD}
-          alt="cadd9_letter_d"
+          alt="cadd9 字母 d"
           whileHover={{y: 100}}
           transition={{duration: 0.5}}
         />
@@ -76,7 +76,7 @@ const Home = () => (
       >
         <motion.img
           src={Home9}
-          alt="cadd9_letter_9"
+          alt="cadd9 字母 9"
           whileHover={{y: 100}}
           transition={{duration: 0.5}}
         />
@@ -91,27 +91,27 @@ const Home = () => (
       <div className="flex letter-section-one">
         <img
           src={HomeC}
-          alt="cadd9_letter_c"
+          alt="cadd9 字母 c"
           className="letter-section-one-c"
         />
         <img
           src={HomeA}
-          alt="cadd9_letter_a"
+          alt="cadd9 字母 a"
           className="letter-section-one-a"
         />
         <img
           src={HomeD}
-          alt="cadd9_letter_d"
+          alt="cadd9 字母 d"
           className="letter-section-one-d"
         />
         <img
           src={HomeD}
-          alt="cadd9_letter_d"
+          alt="cadd9 字母 d"
           className="letter-section-one-dd"
         />
         <img
           src={Home9}
-          alt="cadd9_letter_9"
+          alt="cadd9 字母 9"
           className="letter-section-one-9"
         />
       </div>
@@ -124,27 +124,27 @@ const Home = () => (
       <div className="flex letter-section-two">
         <img
           src={HomeC}
-          alt="cadd9_letter_c"
+          alt="cadd9 字母 c"
           className="letter-section-two-c"
         />
         <img
           src={HomeA}
-          alt="cadd9_letter_a"
+          alt="cadd9 字母 a"
           className="letter-section-two-a"
         />
         <img
           src={HomeD}
-          alt="cadd9_letter_d"
+          alt="cadd9 字母 d"
           className="letter-section-two-d"
         />
         <img
           src={HomeD}
-          alt="cadd9_letter_d"
+          alt="cadd9 字母 d"
           className="letter-section-two-dd"
         />
         <img
           src={Home9}
-          alt="cadd9_letter_9"
+          alt="cadd9 字母 9"
           className="letter-section-two-9"
         />
       </div>
@@ -160,27 +160,27 @@ const Home = () => (
       <div className="flex letter-section-three">
         <img
           src={HomeC}
-          alt="cadd9_letter_c"
+          alt="cadd9 字母 c"
           className="letter-section-three-c"
         />
         <img
           src={HomeA}
-          alt="cadd9_letter_a"
+          alt="cadd9 字母 a"
           className="letter-section-three-a"
         />
         <img
           src={HomeD}
-          alt="cadd9_letter_d"
+          alt="cadd9 字母 d"
           className="letter-section-three-d"
         />
         <img
           src={HomeD}
-          alt="cadd9_letter_d"
+          alt="cadd9 字母 d"
           className="letter-section-three-dd"
         />
         <img
           src={Home9}
-          alt="cadd9_letter_9"
+          alt="cadd9 字母 9"
           className="letter-section-three-9"
         />
       </div>

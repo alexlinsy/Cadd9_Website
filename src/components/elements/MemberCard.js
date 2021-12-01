@@ -26,7 +26,7 @@ const MemberCard = ({memberInfo}) => {
       <div>
         <LazyLoadImage
           src={image}
-          alt="avatar"
+          alt="cadd9 教师 avatar"
           className="full-width avatar"
           effect="blur"
         />

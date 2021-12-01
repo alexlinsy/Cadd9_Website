@@ -17,13 +17,13 @@ const AdvantagesCard = ({advantagesData}) => {
     >
       <LazyLoadImage
         src={icon}
-        alt="number-icon"
+        alt="cadd9 图标"
         className="advantages-icon"
         effect="blur"
       />
       <LazyLoadImage
         src={intro}
-        alt="intro"
+        alt="cadd9 介绍"
         className="full-width"
         effect="blur"
       />

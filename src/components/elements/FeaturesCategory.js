@@ -28,7 +28,7 @@ const FeatureCategory = ({courseFeatures, index}) => {
       >
         <LazyLoadImage
           src={image}
-          alt="feature-course-image"
+          alt="cadd9 课程特色"
           className="full-width"
           effect="blur"
         />

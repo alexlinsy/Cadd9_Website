@@ -25,7 +25,7 @@ const FeaturesContainer = () => {
           <div className="feature-image-container">
             <LazyLoadImage
               src={feature1.image}
-              alt="feature-photo"
+              alt="cadd9 课程特色"
               className="full-width"
               effect="blur"
             />
@@ -39,7 +39,7 @@ const FeaturesContainer = () => {
           <div className="feature-image-container feature-image-two">
             <LazyLoadImage
               src={feature2.image}
-              alt="feature-photo"
+              alt="cadd9 课程特色"
               className="full-width"
               effect="blur"
             />
@@ -48,7 +48,7 @@ const FeaturesContainer = () => {
           <div className="feature-image-container feature-image-two-mobile">
             <LazyLoadImage
               src={feature2.image}
-              alt="feature-photo"
+              alt="cadd9 课程特色"
               className="full-width"
               effect="blur"
             />
@@ -63,7 +63,7 @@ const FeaturesContainer = () => {
           <div className="feature-image-container">
             <LazyLoadImage
               src={feature3.image}
-              alt="feature-photo"
+              alt="cadd9 课程特色"
               className="full-width"
               effect="blur"
             />
@@ -77,7 +77,7 @@ const FeaturesContainer = () => {
           <div className="feature-image-container feature-image-two">
             <LazyLoadImage
               src={feature4.image}
-              alt="feature-photo"
+              alt="cadd9 课程特色"
               className="full-width"
               effect="blur"
             />
@@ -86,7 +86,7 @@ const FeaturesContainer = () => {
           <div className="feature-image-container feature-image-two-mobile">
             <LazyLoadImage
               src={feature4.image}
-              alt="feature-photo"
+              alt="cadd9 课程特色"
               className="full-width"
               effect="blur"
             />
@@ -104,11 +104,6 @@ const FeaturesContainer = () => {
             {header2}
           </p>
         </ScrollAnimation>
-        {/* {
-          coursesFeatures.map((course, index) => (
-            <FeatureCategory courseFeatures={course} key={index}/>
-          ))
-        } */}
         <FeaturesCategoryCardCarousel />
       </div>
     </div>

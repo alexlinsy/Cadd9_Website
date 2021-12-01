@@ -14,14 +14,14 @@ const FeaturesCategoryCardCarousel = () => {
   function PrevArrow({newClassName, onClick}) {
     return (
       <div className={newClassName} onClick={onClick}>
-        <img className="left-arrow" src={prevArrow} alt="left-arrow" />
+        <img className="left-arrow" src={prevArrow} alt="cadd9 left-arrow" />
       </div>
     );
   }
   function NextArrow({newClassName, onClick}) {
     return (
       <div className={newClassName} onClick={onClick}>
-        <img className="right-arrow" src={nextArrow} alt="right-arrow" />
+        <img className="right-arrow" src={nextArrow} alt="cadd9 right-arrow" />
       </div>
     );
   }

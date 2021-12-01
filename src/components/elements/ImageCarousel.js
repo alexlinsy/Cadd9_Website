@@ -26,7 +26,7 @@ const ImageCarousel = () => {
         <div className="slider-image-container">
           <LazyLoadImage
             className="slider-image"
-            alt="slider-one"
+            alt="cadd9 图片 slider-one"
             src={SliderImageOne}
             effect="blur"
           />

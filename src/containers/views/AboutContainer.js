@@ -34,12 +34,12 @@ const AboutContainer = () => {
       >
         <LazyLoadImage
           src={aboutImageThree}
-          alt="banner"
+          alt="cadd9 导语 banner"
           className="full-width"
         />
         <LazyLoadImage
           src={aboutImageFour}
-          alt="banner"
+          alt="cadd9 导语 banner"
           className="full-width"
         />
       </ScrollAnimation>

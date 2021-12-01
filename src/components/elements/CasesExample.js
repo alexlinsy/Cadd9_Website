@@ -16,7 +16,7 @@ const CasesExample = ({caseImage, offerInfo}) => {
     >
       <LazyLoadImage
         src={caseImage}
-        alt="offer"
+        alt="cadd9 录取 offer"
         effect="blur"
         className="border case-card-image"
       />
