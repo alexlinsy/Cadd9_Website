@@ -29,7 +29,7 @@ const Navigation = () => {
             onClick={() => handleNavItemClicked()}
           >
             <motion.p
-              className="font-heading nav-item-text"
+              className={`font-heading nav-item-text nav-item-text-${index}`}
               whileHover={{letterSpacing: '15px'}}
               transition={{duration: 0.5}}
             >

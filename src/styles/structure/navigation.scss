@@ -16,6 +16,10 @@
     margin-bottom: 40px;
     box-shadow: none;
   }
+  .nav-item {
+    text-decoration: none;
+    color: black;
+  }
   .nav-item-text {
     @include MQ(xs) {
       font-size: 20px;
@@ -24,16 +28,17 @@
       font-size: 24px;
     }
   }
+  .nav-item-text-5 {
+    transition: letter-spacing 0.5s !important;
+  }
+  .nav-item-text-5:hover {
+    letter-spacing: 6px !important;
+  }
 }
 
 .open-nav-bar {
   left: 0;
   transition: left 0.5s;
-}
-
-.nav-item {
-  text-decoration: none;
-  color: black;
 }
 
 .nav-bar-mobile {

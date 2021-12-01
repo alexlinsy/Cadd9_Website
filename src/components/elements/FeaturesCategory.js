@@ -25,7 +25,7 @@ const FeatureCategory = ({courseFeatures, index}) => {
         transition={{duration: 2}}
       >
         <motion.img
-          initial={{scale: 0.5, opacity: 0, rotate: 45}}
+          initial={{scale: 0.5, opacity: 0, rotate: 20}}
           animate={{scale: 1, opacity: 1, rotate: 0}}
           transition={{duration: 2}}
           src={image}
@@ -33,13 +33,11 @@ const FeatureCategory = ({courseFeatures, index}) => {
           className="full-width"
         />
       </motion.div>
-      <ScrollAnimation
+      <div
         className="feature-notes"
-        animateIn="fadeIn"
-        duration={2}
       >
         {notes}
-      </ScrollAnimation>
+      </div>
     </div>
   );
 };
