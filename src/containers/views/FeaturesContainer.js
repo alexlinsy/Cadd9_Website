@@ -2,7 +2,7 @@ import React from 'react';
 import FeatureCard from '../../components/elements/FeatureCard';
 import {featuresData} from '../../data/features-data';
 import ScrollAnimation from 'react-animate-on-scroll';
-import {LazyLoadImage} from 'react-lazy-load-image-component';
+import {LazyLoadImage, LazyLoadComponent} from 'react-lazy-load-image-component';
 import HeaderSection from '../../components/elements/HeaderSection';
 import FeaturesCategoryCardCarousel from '../../components/elements/FeaturesCategoryCardCarousel';
 import {Helmet} from 'react-helmet-async';
@@ -110,7 +110,9 @@ const FeaturesContainer = () => {
             {header2}
           </p>
         </ScrollAnimation>
-        <FeaturesCategoryCardCarousel />
+        <LazyLoadComponent>
+          <FeaturesCategoryCardCarousel />
+        </LazyLoadComponent>
       </div>
     </div>
   );
