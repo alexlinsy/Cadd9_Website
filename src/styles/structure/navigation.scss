@@ -16,10 +16,6 @@
     margin-bottom: 40px;
     box-shadow: none;
   }
-  .nav-item {
-    text-decoration: none;
-    color: black;
-  }
   .nav-item-text {
     @include MQ(xs) {
       font-size: 20px;
@@ -39,6 +35,11 @@
 .open-nav-bar {
   left: 0;
   transition: left 0.5s;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: black;
 }
 
 .nav-bar-mobile {
