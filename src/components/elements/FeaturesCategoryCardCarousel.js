@@ -11,6 +11,7 @@ import 'slick-carousel/slick/slick-theme.css';
 
 const FeaturesCategoryCardCarousel = () => {
   const {coursesFeatures} = featuresData;
+
   function PrevArrow({newClassName, onClick}) {
     return (
       <div className={newClassName} onClick={onClick}>
@@ -55,7 +56,13 @@ const FeaturesCategoryCardCarousel = () => {
     <div className="slider-case-container">
       <Slider {...settings}>
         {coursesFeatures.map((course, index) => {
-          return (<FeatureCategory courseFeatures={course} index={index} key={index} />);
+          return (
+            <FeatureCategory
+              courseFeatures={course}
+              index={index}
+              key={index}
+            />
+          );
         })}
       </Slider>
     </div>
