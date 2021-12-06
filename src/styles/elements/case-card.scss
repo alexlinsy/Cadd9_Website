@@ -21,6 +21,7 @@
   .case-intro {
     max-height: 260px;
     overflow: auto;
+    width: 90%;
     @include MaxMQ(sm) {
       margin-top: 20px;
     }
