@@ -1,24 +1,25 @@
-import case1 from '../assets/cases/case1.png';
 import case2 from '../assets/cases/case2.png';
 import case3 from '../assets/cases/case3.png';
 import case4 from '../assets/cases/case4.png';
 import case5 from '../assets/cases/case5.png';
 import case6 from '../assets/cases/case6.png';
 import case7 from '../assets/cases/case7.png';
+import case8 from '../assets/cases/case8.png';
+import case9 from '../assets/cases/case9.png';
 
 export const casesData = {
   header: '录取案例',
   caseInfo: [
     {
-      name: 'Grey同学',
+      name: 'zc同学',
       intro:
-        'Grey 刚开始来找我们的时候几乎是0基础，也没有学过声乐，但是我们对他进行了长达接近一年的全方位的音乐素养培养，加上对面试内容的集训让他变得越来越符合学校录取的要求水平。Grey特别喜欢音乐治疗，最后面试唱了never enough并且申请了音乐治疗专业。',
+        'zc同学是Cadd9深圳的学员，也是Cadd9唯一一位全程线上教学与辅导的同学，他从一开始完全不会弹爵士到半年的时间内通过高强度网课和Cadd9 老师学习，掌握了钢琴爵士演奏及音乐制作的知识和技巧考入伯克利音乐学院MPNE专业。并获得3w2美金奖学金。'
     },
     {
-      name: 'Z 同学',
+      name: 'Gu同学',
       intro:
-        'Z同学当时在一家国内很大的艺术培训机构学习过一年，当时那个机构给她申请错了专业，导致她后面面试很不理想，最后没有考上，后来通过朋友介绍认识创始人后经过接近三四个月的重新定位和训练最后考上拿到了伯克利的offer',
+        'Gu同学是在之前国内一个规模较大的艺术机构学习一年，发现毫无成果和进步之后重新找寻到了Cadd9，声乐基础一开始相对来说还比较薄弱，但是通过了自身与老师的不懈努力9个月后，最终在面试后第八天就拿到了2021伯克利音乐学院伯克利最早offer',
     },
   ],
-  casesExample: [case1, case2, case3, case4, case5, case6, case7],
+  casesExample: [case8, case2, case3, case9, case4, case5, case6, case7],
 };
