@@ -17,6 +17,7 @@ import avatar17 from '../assets/avatars/avatar17.png';
 import avatar18 from '../assets/avatars/avatar18.png';
 import avatar19 from '../assets/avatars/avatar19.png';
 import avatar20 from '../assets/avatars/avatar20.png';
+import avatar21 from '../assets/avatars/avatar21.png';
 
 export const teamMembers = {
   header: '我们的团队',
@@ -148,6 +149,13 @@ export const teamMembers = {
       image: avatar3,
       intro:
         '美国伯克利音乐学院爵士钢琴表演专业。致力于探索流行乐、爵士乐、 city pop、与电子⻛格音乐的融合。师从爵士乐大师Yoko Miwa、Doug Johnson、等。结合自由的风格去帮助所有热爱音乐的学生。',
+    },
+    {
+      name: 'PIAO',
+      title: '',
+      image: avatar21,
+      intro:
+        'Shanghai born, Toronto transplant PIAO is the pop artist you’ve been waiting for. 伯克利全额奖学金声乐获得者（和创始人同届）伯克利所有大型演出的lead singer。With heartfelt lyrics and a vocal range that hits both ends of the spectrum, PIAO breaks the mold of the traditional pop artist and creates her own lane. Recent Berklee graduate and multi-instrumentalist, PIAO has had the opportunity to work with talented artists and producers like T-Pain and Don Cannon to help amplify her vision and build her musical repertoire. As she develops her sound and plans to release new music, prepare to know the name PIAO.'
     }
   ],
 };
