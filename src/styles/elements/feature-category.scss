@@ -19,7 +19,7 @@
     @include MaxMQ(xlr) {
       letter-spacing: normal;
     }
-    @media only screen and(max-width: 1024px) {
+    @media only screen and (max-width: 1024px) {
       font-size: 32px;
       letter-spacing: normal !important;
     }
@@ -40,7 +40,7 @@
   }
   .feature-text-title {
     letter-spacing: 1em;
-    @media only screen and(max-width: 1024px) {
+    @media only screen and (max-width: 1024px) {
       letter-spacing: normal !important;
     }
   }
@@ -165,7 +165,7 @@
   }
   .feature-creative-text {
     margin-left: 120px;
-    @media only screen and(max-width: 360px) {
+    @media only screen and (max-width: 360px) {
       margin-left: 80px;
     }
   }
