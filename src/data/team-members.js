@@ -1,8 +1,8 @@
 import avatar1 from "../assets/avatars/avatar1.png";
-import avatar3 from "../assets/avatars/avatar3.png";
+// import avatar3 from "../assets/avatars/avatar3.png";
 import avatar4 from "../assets/avatars/avatar4.png";
-import avatar5 from "../assets/avatars/avatar5.png";
-import avatar6 from "../assets/avatars/avatar6.png";
+// import avatar5 from "../assets/avatars/avatar5.png";
+// import avatar6 from "../assets/avatars/avatar6.png";
 import avatar7 from "../assets/avatars/avatar7.png";
 import avatar8 from "../assets/avatars/avatar8.png";
 import avatar9 from "../assets/avatars/avatar9.png";
@@ -12,8 +12,8 @@ import avatar13 from "../assets/avatars/avatar13.png";
 import avatar14 from "../assets/avatars/avatar14.png";
 import avatar15 from "../assets/avatars/avatar15.png";
 import avatar16 from "../assets/avatars/avatar16.png";
-import avatar17 from "../assets/avatars/avatar17.png";
-import avatar18 from "../assets/avatars/avatar18.png";
+// import avatar17 from "../assets/avatars/avatar17.png";
+// import avatar18 from "../assets/avatars/avatar18.png";
 import avatar19 from "../assets/avatars/avatar19.png";
 import avatar20 from "../assets/avatars/avatar20.png";
 import avatar21 from "../assets/avatars/avatar21.png";
@@ -63,13 +63,13 @@ export const teamMembers = {
       intro:
         '毕业于美国伯克利音乐学院，professional music 专业，专读CWP、MPE，与Performance三个专业。是一位职业键盘手，编曲人，制作人，作曲家。参演哈尔滨国际冰雪节，哈尔滨街头音乐节（乐队金奖），国际bass音乐节等多个音乐节活动。参与2012超级女声节目，2012“尤雅哈尔滨‘魅力一生’演唱会"，2014“为爱向前冲”节目录制。15年担任辽宁爱乐乐团键盘手，17年任全国打击乐比赛评委及键盘手。',
     },
-    {
-      name: "Ray",
-      title: "",
-      image: avatar6,
-      intro:
-        "YG娱乐、各大音乐厂牌，及电视节目资深声乐老师，具备多年声乐教学经验。英国金斯顿大学音乐表演硕士，北京大学艺术理论在读博士，本科毕业于韩国东亚媒体艺术学院音乐制作专业。在声乐、音乐史、乐队、音乐制作、音乐理论中均有丰富的实践与研究经验。",
-    },
+    // {
+    //   name: "Ray",
+    //   title: "",
+    //   image: avatar6,
+    //   intro:
+    //     "YG娱乐、各大音乐厂牌，及电视节目资深声乐老师，具备多年声乐教学经验。英国金斯顿大学音乐表演硕士，北京大学艺术理论在读博士，本科毕业于韩国东亚媒体艺术学院音乐制作专业。在声乐、音乐史、乐队、音乐制作、音乐理论中均有丰富的实践与研究经验。",
+    // },
     {
       name: "Daniel",
       title: "",
@@ -84,13 +84,13 @@ export const teamMembers = {
       intro:
         "于2015年加入美国新英格兰音乐学院，在美国大都会歌剧院中多次亮相。2012格莱美最佳歌剧录音奖，及多个国际歌剧比赛奖项获得者。本科毕业于伊士曼音乐学院学习歌剧表演专业，并获新英格兰音乐学院艺术家文凭。她的国际代表作品包括在意大利米兰斯卡拉大剧院的《意大利的伊莎⻉拉》中饰演的伊莎⻉拉；在都灵大剧院的 Il Trovatore 饰演的Azucena ，以及在罗⻢歌剧院的卡⻔⻆色等。",
     },
-    {
-      name: "Tanni",
-      title: "",
-      image: avatar5,
-      intro:
-        "钢琴专业，Cadd9古典部负责人，毕业于美国新英格兰音乐学院。被CBC音乐电视台评为“加拿大十大Piano Hero”，并获“2020全美施坦威最佳钢琴老师”称号。Crescendo 国际比赛、Golden Classical Awards、Launuadiere钢琴比赛中获第一名及最高奖项。以及曾先后与卡普林斯基，邓泰山，Ronan O’hora, Jeffery Cohen， Benjamin Pasternak等顶级大师演奏⼤师班，拥有多年教学经验。",
-    },
+    // {
+    //   name: "Tanni",
+    //   title: "",
+    //   image: avatar5,
+    //   intro:
+    //     "钢琴专业，Cadd9古典部负责人，毕业于美国新英格兰音乐学院。被CBC音乐电视台评为“加拿大十大Piano Hero”，并获“2020全美施坦威最佳钢琴老师”称号。Crescendo 国际比赛、Golden Classical Awards、Launuadiere钢琴比赛中获第一名及最高奖项。以及曾先后与卡普林斯基，邓泰山，Ronan O’hora, Jeffery Cohen， Benjamin Pasternak等顶级大师演奏⼤师班，拥有多年教学经验。",
+    // },
     {
       name: "XYW",
       title: "",
@@ -126,27 +126,27 @@ export const teamMembers = {
       intro:
         "YZ，制作人，毕业于伯克利音乐学院，电子音乐制作与设计专业，主修乐器大提琴。在音乐制作及音效设计领域均有丰富经验，为独立电影《Departure of Light》配乐及音效制作，参与电子音乐人Terry Zhong《8PM》专辑制作。曾在奥地利维也纳第四届“至高荣耀”国际音乐节等大提琴演奏比赛中获金奖。在范玮琪个人专辑发布会、理查德·克莱德曼的全球巡演中担任大提琴首席。",
     },
-    {
-      name: "Kevin",
-      title: "",
-      image: avatar17,
-      intro:
-        "Kevin, 中国青年鼓手。 高中随父母移居美国后，开始对爵士乐产生浓厚的兴趣。在2017年考入伯克利音乐学院，师从世界级的爵士鼓演奏家与教育家Bob Gullotti, Ralph Peterson, Billy Kilson和Francisco Mela。2019年考入伯克利音乐学院Global Jazz Insitute（全球爵士学院），并成为第一个考上此机构的中国本科生。毕业后移居北京，活跃于国内各大演出场所，与国内顶尖音乐家合作。2021年参加JZ爵士高手乐坛争霸，取得个人与乐队组双冠军。常年从事爵士鼓教学。",
-    },
-    {
-      name: "Yixin",
-      title: "",
-      image: avatar18,
-      intro:
-        "Yixin，吉他演奏家，本科伯克利音乐学院。擅长Jazz，Blues，Funk，R&B等多种音乐风格。央音全国青少年评委，奥林匹克青少年音乐展演评委。2020年为全运会北京花样游泳队录制音乐，2022年受邀参加电视台春晚演出。长期持续地在音乐教学领域输出。",
-    },
-    {
-      name: "Leng Leng",
-      title: "",
-      image: avatar3,
-      intro:
-        "美国伯克利音乐学院爵士钢琴表演专业。致力于探索流行乐、爵士乐、 city pop、与电子⻛格音乐的融合。师从爵士乐大师Yoko Miwa、Doug Johnson、等。结合自由的风格去帮助所有热爱音乐的学生。",
-    },
+    // {
+    //   name: "Kevin",
+    //   title: "",
+    //   image: avatar17,
+    //   intro:
+    //     "Kevin, 中国青年鼓手。 高中随父母移居美国后，开始对爵士乐产生浓厚的兴趣。在2017年考入伯克利音乐学院，师从世界级的爵士鼓演奏家与教育家Bob Gullotti, Ralph Peterson, Billy Kilson和Francisco Mela。2019年考入伯克利音乐学院Global Jazz Insitute（全球爵士学院），并成为第一个考上此机构的中国本科生。毕业后移居北京，活跃于国内各大演出场所，与国内顶尖音乐家合作。2021年参加JZ爵士高手乐坛争霸，取得个人与乐队组双冠军。常年从事爵士鼓教学。",
+    // },
+    // {
+    //   name: "Yixin",
+    //   title: "",
+    //   image: avatar18,
+    //   intro:
+    //     "Yixin，吉他演奏家，本科伯克利音乐学院。擅长Jazz，Blues，Funk，R&B等多种音乐风格。央音全国青少年评委，奥林匹克青少年音乐展演评委。2020年为全运会北京花样游泳队录制音乐，2022年受邀参加电视台春晚演出。长期持续地在音乐教学领域输出。",
+    // },
+    // {
+    //   name: "Leng Leng",
+    //   title: "",
+    //   image: avatar3,
+    //   intro:
+    //     "美国伯克利音乐学院爵士钢琴表演专业。致力于探索流行乐、爵士乐、 city pop、与电子⻛格音乐的融合。师从爵士乐大师Yoko Miwa、Doug Johnson、等。结合自由的风格去帮助所有热爱音乐的学生。",
+    // },
     {
       name: "PIAO",
       title: "",
