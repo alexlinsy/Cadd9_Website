@@ -1,11 +1,15 @@
 # CADD9_WEB
 
-NODE version: 16.20.x
+### Stucture:
+NODE version: 16.20.x\
 Recommand use nvm: https://github.com/nvm-sh/nvm
 
 目前内容层： https://wordpress.com/home/cadd9music.wordpress.com
+
 服务器： https://account.aliyun.com/login/login.htm?oauth_callback=https%3A%2F%2Fswasnext.console.aliyun.com%2Fwelcome%3Fspm%3D5176.161059.J_5253785160.3.3592a505I2eP7A&clearRedirectCookie=1&lang=zh
+
 Database: https://console.leancloud.cn/apps/XlWJyFeVJ8e7bGybJlcsflxY-gzGzoHsz/
+
 Test Env: You can use netlify for demo testing. (https://cadd9-test.netlify.app/)
 
 Once you updated the master branch, the test env should automatically runs the CI/CD and deployed latest changes to the env.
