@@ -1,6 +1,6 @@
 # CADD9_WEB
 
-### Stucture:
+### Structure:
 NODE version: 16.20.x\
 Recommand use nvm: https://github.com/nvm-sh/nvm
 
