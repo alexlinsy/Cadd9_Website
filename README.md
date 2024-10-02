@@ -18,6 +18,10 @@ Once you updated the master branch, the test env should automatically runs the C
 
 In the project directory, you can run:
 
+### `yarn intall`
+
+Yarn will then configure your project to use the most recent stable binary.
+
 ### `yarn start`
 
 Runs the app in the development mode.\
