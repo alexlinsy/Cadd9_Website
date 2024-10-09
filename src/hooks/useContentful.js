@@ -19,8 +19,8 @@ const useContentful = () => {
         image,
       };
     });
-    console.log(entries);
     console.log(sanitizedEntries);
+    return sanitizedEntries;
   };
   return { getNews };
 };

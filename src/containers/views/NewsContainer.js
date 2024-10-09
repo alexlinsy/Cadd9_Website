@@ -1,31 +1,30 @@
-import React, {useState, useEffect, useRef} from 'react';
-import moment from 'moment';
-import HeaderSection from '../../components/elements/HeaderSection';
-import NewsCard from '../../components/elements/NewsCard';
-import {LazyLoadComponent} from 'react-lazy-load-image-component';
-import InfiniteScroll from 'react-infinite-scroll-component';
-import {Helmet} from 'react-helmet-async';
+import React, { useState, useEffect } from "react";
+import moment from "moment";
+import HeaderSection from "../../components/elements/HeaderSection";
+import NewsCard from "../../components/elements/NewsCard";
+import { LazyLoadComponent } from "react-lazy-load-image-component";
+import InfiniteScroll from "react-infinite-scroll-component";
+import { Helmet } from "react-helmet-async";
+import useContentful from "../../hooks/useContentful";
 
-import '../../styles/views/news.scss';
+import "../../styles/views/news.scss";
 
 const NewsContainer = () => {
-  const [posts, setPosts] = useState(null);
-  const [postNumber, setPostNumber] = useState(20);
+  const [news, setNews] = useState(null);
   const [hasMore, setHasMore] = useState(true);
-
-  const FetchPosts = useRef(() => {});
-  FetchPosts.current = () => {
-    fetch(process.env.REACT_APP_WORDPRESS_API_URL + `/?number=${postNumber}`)
-      .then(res => res.json())
-      .then(res => {
-        setPosts(res.posts);
-        setPostNumber(postNumber + 5);
-        setHasMore(false);
-      });
-  };
+  const { getNews } = useContentful();
 
   useEffect(() => {
-    FetchPosts.current();
+    getNews().then((news) => {
+      if (news) {
+        // Sort news by publish date
+        news.sort(
+          (n1, n2) => new Date(n2.publishDate) - new Date(n1.publishDate)
+        );
+        setNews(news);
+      }
+      setHasMore(false);
+    });
   }, []);
 
   return (
@@ -37,27 +36,27 @@ const NewsContainer = () => {
       </Helmet>
       <HeaderSection title="新闻" borderRequired />
       <div className="news-section mt-8">
-        {posts && (
+        {news && (
           <InfiniteScroll
-            dataLength={posts.length}
-            next={() => FetchPosts.current()}
+            dataLength={news.length}
+            // next={() => FetchPosts.current()}
             hasMore={hasMore}
             className="flex flex-wrap flex-space-between flex-column-md-max"
           >
-            {posts.map((post, index) => {
-              const {featured_image, date, title, content, tags} = post;
+            {news.map((n, index) => {
+              const { title, subtitle, image, url, publishDate } = n;
               return (
                 <LazyLoadComponent key={index}>
                   <NewsCard
-                    image={featured_image}
-                    date={moment(date).format('MM.DD.YY')}
+                    image={image}
+                    date={moment(publishDate).format("MM.DD.YY")}
                     title={title}
-                    content={content}
-                    url={Object.keys(tags)[0]}
+                    content={subtitle}
+                    url={url}
                   />
                 </LazyLoadComponent>
               );
-            })}{' '}
+            })}
           </InfiniteScroll>
         )}
         {hasMore ? (
