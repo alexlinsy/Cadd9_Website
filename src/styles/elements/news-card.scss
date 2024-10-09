@@ -1,4 +1,4 @@
-@import '../configuration/config';
+@import "../configuration/config";
 
 .news-card {
   width: 32%;
@@ -12,4 +12,8 @@
   @include MaxMQ(md) {
     width: 100%;
   }
+}
+
+.news-card:hover {
+  cursor: pointer;
 }
