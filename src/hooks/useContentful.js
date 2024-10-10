@@ -41,7 +41,41 @@ const useContentful = () => {
     console.log(sanitizedEntries);
     return sanitizedEntries;
   };
-  return { getNews, getTeamMembers };
+
+  const getCases = async () => {
+    const caseEntries = await client.getEntries({
+      content_type: "detailedCases",
+      select: "fields",
+    });
+    console.log(caseEntries);
+    const sanitizedCaseEntries = caseEntries.items.map((item) => {
+      const offerImage = item.fields.offerImage.fields.file.url;
+      const description = item.fields.description.content[0].content[0].value;
+      return {
+        ...item.fields,
+        description,
+        offerImage,
+      };
+    });
+
+    const imageEntries = await client.getEntries({
+      content_type: "caseImages",
+      select: "fields",
+    });
+    console.log(caseEntries);
+    const sanitizedImageEntries = imageEntries.items.map((item) => {
+      const offerImage = item.fields.offerImage.fields.file.url;
+
+      return {
+        offerImage,
+      };
+    });
+    return {
+      detailedCases: sanitizedCaseEntries,
+      caseImages: sanitizedImageEntries,
+    };
+  };
+  return { getNews, getTeamMembers, getCases };
 };
 
 export default useContentful;
