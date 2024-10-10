@@ -47,7 +47,6 @@ const useContentful = () => {
       content_type: "detailedCases",
       select: "fields",
     });
-    console.log(caseEntries);
     const sanitizedCaseEntries = caseEntries.items.map((item) => {
       const offerImage = item.fields.offerImage.fields.file.url;
       const description = item.fields.description.content[0].content[0].value;
@@ -62,7 +61,7 @@ const useContentful = () => {
       content_type: "caseImages",
       select: "fields",
     });
-    console.log(caseEntries);
+
     const sanitizedImageEntries = imageEntries.items.map((item) => {
       const offerImage = item.fields.offerImage.fields.file.url;
 
@@ -75,7 +74,42 @@ const useContentful = () => {
       caseImages: sanitizedImageEntries,
     };
   };
-  return { getNews, getTeamMembers, getCases };
+
+  const getPartners = async () => {
+    //in contentful dashboard the the name of the content models have been changed to businessPartner and educationPartner
+    // but the api identifers remains "businessPartnerLogos" and "educationPartnerLogos"
+    const businessPartnerEntries = await client.getEntries({
+      content_type: "businessPartnerLogos",
+      select: "fields",
+    });
+    const sanitizedBusinessPartnerEntries = businessPartnerEntries.items.map(
+      (item) => {
+        const logo = item.fields.logo.fields.file.url;
+        return {
+          logo,
+        };
+      }
+    );
+    console.log(sanitizedBusinessPartnerEntries);
+
+    const eduPartnerEntries = await client.getEntries({
+      content_type: "educationPartnerLogos",
+      select: "fields",
+    });
+    const sanitizedEduPartnerEntries = eduPartnerEntries.items.map((item) => {
+      const logo = item.fields.logo.fields.file.url;
+      return {
+        logo,
+      };
+    });
+    console.log(sanitizedEduPartnerEntries);
+
+    return {
+      bussinessPartners: sanitizedBusinessPartnerEntries,
+      eduPartnerEntries: sanitizedEduPartnerEntries,
+    };
+  };
+  return { getNews, getTeamMembers, getCases, getPartners };
 };
 
 export default useContentful;
