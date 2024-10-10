@@ -28,27 +28,29 @@ const TeamMembers = () => {
     fetchData();
   }, []);
 
-  return loading ? ( // Display loading state
-    <p className="message">加载中...</p>
-  ) : error ? ( // Display error message
-    <p className="message">{error}</p>
-  ) : (
+  return (
     <ScrollAnimation
       animateIn="fadeIn"
       duration={3}
       className="pt-2 flex flex-column flex-align-center team-members-container"
     >
       <HeaderSection title={"我们的团队"} borderRequired />
-      <ScrollAnimation
-        animateIn="fadeIn"
-        duration={3}
-        className="py-5 flex flex-wrap flex-space-between team-members mt-10"
-        style={{ maxWidth: "1590px" }}
-      >
-        {members.map((member, index) => (
-          <MemberCard memberInfo={member} key={index} />
-        ))}
-      </ScrollAnimation>
+      {loading ? (
+        <p className="message">加载中...</p>
+      ) : error ? (
+        <p className="message">{error}</p>
+      ) : (
+        <ScrollAnimation
+          animateIn="fadeIn"
+          duration={3}
+          className="py-5 flex flex-wrap flex-space-between team-members mt-10"
+          style={{ maxWidth: "1590px" }}
+        >
+          {members.map((member, index) => (
+            <MemberCard memberInfo={member} key={index} />
+          ))}
+        </ScrollAnimation>
+      )}
     </ScrollAnimation>
   );
 };
