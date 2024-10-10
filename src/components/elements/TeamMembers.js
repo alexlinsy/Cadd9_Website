@@ -4,21 +4,35 @@ import ScrollAnimation from "react-animate-on-scroll";
 import HeaderSection from "./HeaderSection";
 
 import useContentful from "../../hooks/useContentful";
+import "../../styles/structure/message.scss";
 
 const TeamMembers = () => {
   const [members, setMembers] = useState([]);
   const { getTeamMembers } = useContentful();
+  const [error, setError] = useState("");
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    getTeamMembers().then((members) => {
-      if (members) {
+    const fetchData = async () => {
+      try {
+        const members = await getTeamMembers();
+        setLoading(false);
         members.sort((m1, m2) => m1.ordering - m2.ordering);
-        console.log(members);
         setMembers(members);
+      } catch (err) {
+        setLoading(false);
+        setError("加载数据失败");
       }
-    });
+    };
+
+    fetchData();
   }, []);
-  return (
+
+  return loading ? ( // Display loading state
+    <p className="message">加载中...</p>
+  ) : error ? ( // Display error message
+    <p className="message">{error}</p>
+  ) : (
     <ScrollAnimation
       animateIn="fadeIn"
       duration={3}
