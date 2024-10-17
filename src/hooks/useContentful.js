@@ -28,7 +28,6 @@ const useContentful = () => {
       content_type: "teamMembers",
       select: "fields",
     });
-    console.log(entries);
     const sanitizedEntries = entries.items.map((item) => {
       const image = item.fields.image.fields.file.url;
       const introduction = item.fields.introduction.content[0].content[0].value;
@@ -109,7 +108,42 @@ const useContentful = () => {
       eduPartnerEntries: sanitizedEduPartnerEntries,
     };
   };
-  return { getNews, getTeamMembers, getCases, getPartners };
+
+  const getAboutUsData = async () => {
+    const aboutEntry = await client.getEntry("4omtKhTXMjzflu3Tshhcay");
+    const introImage = aboutEntry.fields.introImage.fields.file.url;
+    const introText = aboutEntry.fields.introText.content[0].content[0].value;
+    const bodyImageOne = aboutEntry.fields.bodyImageOne.fields.file.url;
+    const bodyTextOne = aboutEntry.fields.bodyTextOne.content.map(
+      (c) => c.content[0].value
+    );
+    const bodyImageTwo = aboutEntry.fields.bodyImageTwo.fields.file.url;
+    const bodyTextTwo = aboutEntry.fields.bodyTextTwo.content.map(
+      (c) => c.content[0].value
+    );
+    const bannerImageOne = aboutEntry.fields.bannerImageOne.fields.file.url;
+    const bannerImageTwo = aboutEntry.fields.bannerImageTwo.fields.file.url;
+
+    const sanitizedData = {
+      introImage,
+      introText,
+      bodyImageOne,
+      bodyTextOne,
+      bodyImageTwo,
+      bodyTextTwo,
+      bannerImageOne,
+      bannerImageTwo,
+    };
+    console.log(sanitizedData);
+    return sanitizedData;
+  };
+  return {
+    getNews,
+    getTeamMembers,
+    getCases,
+    getPartners,
+    getAboutUsData,
+  };
 };
 
 export default useContentful;
