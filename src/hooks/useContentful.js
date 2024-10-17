@@ -137,12 +137,38 @@ const useContentful = () => {
     console.log(sanitizedData);
     return sanitizedData;
   };
+
+  const getAdvantages = async () => {
+    const entries = await client.getEntries({
+      content_type: "advantages",
+      select: "fields",
+    });
+
+    const sanitizedEntries = entries.items.map((item) => {
+      const id = item.fields.id;
+      const bannerImage = item.fields.bannerImage.fields.file.url;
+      const descriptionArr = item.fields.description.content[0].content.map(
+        (c) => {
+          return { value: c.value, isBold: c.marks.length !== 0 };
+        }
+      );
+
+      return {
+        id,
+        bannerImage,
+        descriptionArr,
+      };
+    });
+    console.log(sanitizedEntries);
+    return sanitizedEntries;
+  };
   return {
     getNews,
     getTeamMembers,
     getCases,
     getPartners,
     getAboutUsData,
+    getAdvantages,
   };
 };
 

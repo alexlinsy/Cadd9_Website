@@ -1,4 +1,4 @@
-@import '../configuration/config';
+@import "../configuration/config";
 
 .advantages-card {
   width: 450px;
@@ -17,8 +17,8 @@
       font-family: $primary-heading-font-family;
       line-height: 1.5;
     }
-    span {
-        color: #6fa72f;
-    }
+  }
+  .advantages-description-bold {
+    color: #6fa72f;
   }
 }
