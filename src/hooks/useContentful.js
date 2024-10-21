@@ -162,6 +162,38 @@ const useContentful = () => {
     console.log(sanitizedEntries);
     return sanitizedEntries;
   };
+
+  const getAddresses = async () => {
+    const entries = await client.getEntries({
+      content_type: "addresses",
+      select: "fields",
+    });
+
+    const sanitizedEntries = entries.items.map((item) => {
+      const image = item.fields.image.fields.file.url;
+      return {
+        ...item.fields,
+        image,
+      };
+    });
+    console.log(sanitizedEntries);
+    return sanitizedEntries;
+  };
+
+  const getContactInfo = async () => {
+    const contactInfo = await client.getEntry("6XT8ydNfme4tsDRqThI7kZ");
+
+    const QRCodes = contactInfo.fields.QRCodes.map(
+      (item) => item.fields.file.url
+    );
+    const sanitizedContactInfo = {
+      ...contactInfo.fields,
+      QRCodes,
+    };
+    console.log(sanitizedContactInfo);
+    return sanitizedContactInfo;
+  };
+
   return {
     getNews,
     getTeamMembers,
@@ -169,6 +201,8 @@ const useContentful = () => {
     getPartners,
     getAboutUsData,
     getAdvantages,
+    getAddresses,
+    getContactInfo,
   };
 };
 
