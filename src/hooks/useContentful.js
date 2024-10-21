@@ -194,6 +194,27 @@ const useContentful = () => {
     return sanitizedContactInfo;
   };
 
+  const getFeatures = async () => {
+    const entries = await client.getEntries({
+      content_type: "features",
+      select: "fields",
+    });
+
+    const sanitizedEntries = entries.items.map((item) => {
+      const description = item.fields.description.content[0].content[0].value;
+      const bannerImageTitle = item.fields.bannerImageTitle.fields.file.url;
+      const image = item.fields.image.fields.file.url;
+      return {
+        ...item.fields,
+        description,
+        bannerImageTitle,
+        image,
+      };
+    });
+    console.log(sanitizedEntries);
+    return sanitizedEntries;
+  };
+
   return {
     getNews,
     getTeamMembers,
@@ -203,6 +224,7 @@ const useContentful = () => {
     getAdvantages,
     getAddresses,
     getContactInfo,
+    getFeatures,
   };
 };
 
