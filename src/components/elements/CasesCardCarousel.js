@@ -1,21 +1,21 @@
-import React from 'react';
-import Slider from 'react-slick';
-import prevArrow from '../../assets/icons/pre-arrow.svg';
-import nextArrow from '../../assets/icons/next-arrow.svg';
-import '../../styles/elements/cases-card-carousel.scss';
-import 'react-lazy-load-image-component/src/effects/blur.css';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+import React from "react";
+import Slider from "react-slick";
+import prevArrow from "../../assets/icons/pre-arrow.svg";
+import nextArrow from "../../assets/icons/next-arrow.svg";
+import "../../styles/elements/cases-card-carousel.scss";
+import "react-lazy-load-image-component/src/effects/blur.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
-const CasesCardCarousel = ({cases}) => {
-  function PrevArrow({newClassName, onClick}) {
+const CasesCardCarousel = ({ cases }) => {
+  function PrevArrow({ newClassName, onClick }) {
     return (
       <div className={newClassName} onClick={onClick}>
         <img className="left-arrow" src={prevArrow} alt="left-arrow" />
       </div>
     );
   }
-  function NextArrow({newClassName, onClick}) {
+  function NextArrow({ newClassName, onClick }) {
     return (
       <div className={newClassName} onClick={onClick}>
         <img className="right-arrow" src={nextArrow} alt="right-arrow" />
@@ -31,7 +31,7 @@ const CasesCardCarousel = ({cases}) => {
     autoplaySpeed: true,
     slidesToShow: 5,
     slidesToScroll: 1,
-    cssEase: 'linear',
+    cssEase: "linear",
     prevArrow: (
       <PrevArrow newClassName="custom-slick-arrow custom-prev-slick-arrow" />
     ),
@@ -86,7 +86,7 @@ const CasesCardCarousel = ({cases}) => {
             <img
               className="slider-case-image"
               alt="cadd9 录取 offer"
-              src={item}
+              src={item.offerImage}
               effect="blur"
             />
           </div>

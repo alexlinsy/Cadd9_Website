@@ -1,9 +1,8 @@
-import React from 'react';
-import TeamMembers from '../../components/elements/TeamMembers';
-import {teamMembers} from '../../data/team-members';
-import {Helmet} from 'react-helmet-async';
+import React from "react";
+import TeamMembers from "../../components/elements/TeamMembers";
+import { Helmet } from "react-helmet-async";
 
-import '../../styles/views/about.scss';
+import "../../styles/views/about.scss";
 
 const TeamsContainer = () => {
   return (
@@ -13,7 +12,7 @@ const TeamsContainer = () => {
         <title>Cadd9 团队介绍</title>
         <meta name="description" content="Cadd9 团队介绍" />
       </Helmet>
-      <TeamMembers teams={teamMembers} />
+      <TeamMembers />
     </div>
   );
 };

@@ -1,21 +1,20 @@
-import React from 'react';
-import {motion} from 'framer-motion';
-import {LazyLoadImage} from 'react-lazy-load-image-component';
+import React from "react";
+import { motion } from "framer-motion";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
-import 'react-lazy-load-image-component/src/effects/blur.css';
-import '../../styles/elements/case-card.scss';
+import "react-lazy-load-image-component/src/effects/blur.css";
+import "../../styles/elements/case-card.scss";
 
-const CasesExample = ({caseImage, offerInfo}) => {
-  const {name, intro} = offerInfo;
+const CasesExample = ({ studentName, description, offerImage }) => {
   return (
     <motion.div
       className="flex case-card"
-      initial={{opacity: 0}}
-      animate={{opacity: 1}}
-      transition={{duration: 2}}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 2 }}
     >
       <LazyLoadImage
-        src={caseImage}
+        src={offerImage}
         alt="cadd9 录取 offer"
         effect="blur"
         className="border case-card-image"
@@ -23,11 +22,13 @@ const CasesExample = ({caseImage, offerInfo}) => {
       <div className="ml-5 flex flex-column flex-space-between case-card-text">
         <div>
           <p className="f-28 bold mb-0 font-heading-english case-card-name">
-            {name}
+            {studentName}
           </p>
         </div>
         <div className="case-intro">
-          <p className="font-heading leading-normal mb-0 case-intro-text">{intro}</p>
+          <p className="font-heading leading-normal mb-0 case-intro-text">
+            {description}
+          </p>
         </div>
       </div>
     </motion.div>
