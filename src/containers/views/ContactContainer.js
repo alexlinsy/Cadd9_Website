@@ -49,6 +49,8 @@ const ContactContainer = () => {
     const fetchData = async () => {
       try {
         const addr = await getAddresses();
+        // sort addr based on ordering
+        addr.sort((a, b) => a.ordering - b.ordering);
         setAddresses(addr);
         const contact = await getContactInfo();
         setContactInfo({ ...contact });
