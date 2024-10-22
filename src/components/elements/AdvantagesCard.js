@@ -30,15 +30,15 @@ const AdvantagesCard = ({ advantage }) => {
       />
       <div className="mt-5 advantages-description">
         <p>
-          {descriptionArr.map((item) => {
+          {descriptionArr.map((item, index) => {
             if (item.isBold) {
               return (
-                <spen className="advantages-description-bold">
+                <span className="advantages-description-bold" key={index}>
                   {item.value}
-                </spen>
+                </span>
               );
             } else {
-              return <span>{item.value}</span>;
+              return <span key={index}>{item.value}</span>;
             }
           })}
         </p>

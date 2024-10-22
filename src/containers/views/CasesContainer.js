@@ -34,8 +34,6 @@ const CasesContainer = () => {
 
     fetchData();
   }, []);
-  console.log(detailedCases);
-  console.log(caseImages);
   return (
     <div className="flex flex-column px-10 cases-container">
       <Helmet>

@@ -18,7 +18,6 @@ const useContentful = () => {
         image,
       };
     });
-    console.log(sanitizedEntries);
     return sanitizedEntries;
   };
 
@@ -36,7 +35,6 @@ const useContentful = () => {
         image,
       };
     });
-    console.log(sanitizedEntries);
     return sanitizedEntries;
   };
 
@@ -88,7 +86,6 @@ const useContentful = () => {
         };
       }
     );
-    console.log(sanitizedBusinessPartnerEntries);
 
     const eduPartnerEntries = await client.getEntries({
       content_type: "educationPartnerLogos",
@@ -100,7 +97,6 @@ const useContentful = () => {
         logo,
       };
     });
-    console.log(sanitizedEduPartnerEntries);
 
     return {
       bussinessPartners: sanitizedBusinessPartnerEntries,
@@ -133,7 +129,6 @@ const useContentful = () => {
       bannerImageOne,
       bannerImageTwo,
     };
-    console.log(sanitizedData);
     return sanitizedData;
   };
 
@@ -158,7 +153,6 @@ const useContentful = () => {
         descriptionArr,
       };
     });
-    console.log(sanitizedEntries);
     return sanitizedEntries;
   };
 
@@ -175,7 +169,6 @@ const useContentful = () => {
         image,
       };
     });
-    console.log(sanitizedEntries);
     return sanitizedEntries;
   };
 
@@ -189,7 +182,6 @@ const useContentful = () => {
       ...contactInfo.fields,
       QRCodes,
     };
-    console.log(sanitizedContactInfo);
     return sanitizedContactInfo;
   };
 
@@ -210,7 +202,6 @@ const useContentful = () => {
         image,
       };
     });
-    console.log(sanitizedEntries);
     return sanitizedEntries;
   };
 
