@@ -86,7 +86,7 @@ const AboutContainer = () => {
         </>
       )}
 
-      <TeamMembers />
+      {/* <TeamMembers /> */}
     </div>
   );
 };
