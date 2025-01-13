@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
-import CasesExample from "../../components/elements/CasesExample";
+// import CasesExample from "../../components/elements/CasesExample";
 import CasesCardCarousel from "../../components/elements/CasesCardCarousel";
+import CasesVideoCarousel from "../../components/elements/CasesVideoCarousel";
 import HeaderSection from "../../components/elements/HeaderSection";
 import { Helmet } from "react-helmet-async";
 import useContentful from "../../hooks/useContentful";
@@ -8,7 +9,8 @@ import useContentful from "../../hooks/useContentful";
 import "../../styles/views/cases.scss";
 
 const CasesContainer = () => {
-  const [detailedCases, setDetailedCases] = useState([]);
+  // const [detailedCases, setDetailedCases] = useState([]);
+  const [caseVideos, setCaseVideos] = useState([]);
   const [caseImages, setCaseImages] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
@@ -17,13 +19,15 @@ const CasesContainer = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const { detailedCases: cases, caseImages: images } = await getCases();
-        if (cases.length > 2) {
-          setDetailedCases(cases.slice(0, 3));
-        } else {
-          setDetailedCases(cases);
-        }
+        // const { detailedCases: cases, caseImages: images } = await getCases();
+        // if (cases.length > 2) {
+        //   setDetailedCases(cases.slice(0, 3));
+        // } else {
+        //   setDetailedCases(cases);
+        // }
 
+        const { caseVideos: videos, caseImages: images } = await getCases();
+        setCaseVideos(videos);
         setCaseImages(images);
         setLoading(false);
       } catch (err) {
@@ -49,7 +53,7 @@ const CasesContainer = () => {
         <p className="message">{error}</p>
       ) : (
         <>
-          <div className="py-10 px-15 flex flex-space-between flex-column-lg-max cases-example">
+          {/* <div className="py-10 px-15 flex flex-space-between flex-column-lg-max cases-example">
             {detailedCases.map((c, index) => (
               <CasesExample
                 key={index}
@@ -58,6 +62,9 @@ const CasesContainer = () => {
                 offerImage={c.offerImage}
               />
             ))}
+          </div> */}
+          <div className="case-card-carousel-container my-10">
+            <CasesVideoCarousel videos={caseVideos} />
           </div>
           <div className="case-card-carousel-container">
             <CasesCardCarousel cases={caseImages} />

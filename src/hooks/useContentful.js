@@ -39,17 +39,33 @@ const useContentful = () => {
   };
 
   const getCases = async () => {
-    const caseEntries = await client.getEntries({
-      content_type: "detailedCases",
+    // const caseEntries = await client.getEntries({
+    //   content_type: "detailedCases",
+    //   select: "fields",
+    // });
+    // const sanitizedCaseEntries = caseEntries.items.map((item) => {
+    //   const offerImage = item.fields.offerImage.fields.file.url;
+    //   const description = item.fields.description.content[0].content[0].value;
+    //   return {
+    //     ...item.fields,
+    //     description,
+    //     offerImage,
+    //   };
+    // });
+
+    const caseVideoEntries = await client.getEntries({
+      content_type: "caseVideos",
       select: "fields",
     });
-    const sanitizedCaseEntries = caseEntries.items.map((item) => {
-      const offerImage = item.fields.offerImage.fields.file.url;
-      const description = item.fields.description.content[0].content[0].value;
+    console.log(caseVideoEntries);
+
+    const sanitizedVideoEntries = caseVideoEntries.items.map((item) => {
+      const videoCover = item.fields.videoCover.fields.file.url;
+      const videoUrl = item.fields.url;
+
       return {
-        ...item.fields,
-        description,
-        offerImage,
+        videoCover,
+        videoUrl,
       };
     });
 
@@ -58,6 +74,7 @@ const useContentful = () => {
       select: "fields",
     });
 
+    console.log(sanitizedVideoEntries);
     const sanitizedImageEntries = imageEntries.items.map((item) => {
       const offerImage = item.fields.offerImage.fields.file.url;
 
@@ -66,7 +83,8 @@ const useContentful = () => {
       };
     });
     return {
-      detailedCases: sanitizedCaseEntries,
+      // detailedCases: sanitizedCaseEntries,
+      caseVideos: sanitizedVideoEntries,
       caseImages: sanitizedImageEntries,
     };
   };
